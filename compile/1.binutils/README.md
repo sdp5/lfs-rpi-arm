@@ -1,8 +1,8 @@
-### Binutils-2.24
+### Binutils-2.23.1 - Pass 1
 
 #### Configure
 ```
-./configure
+./configure                         \
     --prefix=/tools                 \
     --with-sysroot=$LFS             \
     --with-lib-path=/tools/lib      \
@@ -11,10 +11,9 @@
     --disable-werror
 ```
 
-#### Make
+#### Make, Install
 
 ```
 make
 make install
 ```
-

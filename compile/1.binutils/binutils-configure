@@ -1,6 +1,6 @@
 checking build system type... armv6l-unknown-linux-gnueabihf
 checking host system type... armv6l-unknown-linux-gnueabihf
-checking target system type... armv6l-lfs-linux-gnu
+checking target system type... armv6l-lfs-linux-gnueabihf
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether ln works... yes
 checking whether ln -s works... yes
@@ -18,14 +18,13 @@ checking for gcc option to accept ISO C89... none needed
 checking for g++... g++
 checking whether we are using the GNU C++ compiler... yes
 checking whether g++ accepts -g... yes
-checking whether g++ accepts -static-libstdc++ -static-libgcc... yes
 checking for gnatbind... no
 checking for gnatmake... no
 checking whether compiler driver understands Ada... no
 checking how to compare bootstrapped objects... cmp --ignore-initial=16 $$f1 $$f2
 checking for objdir... .libs
-checking for version 0.10 of ISL... no
-checking for version 0.11 of ISL... no
+checking for PWL_handle_timeout in -lpwl... no
+checking for version 0.11 (revision 0 or later) of PPL... no
 checking for default BUILD_CONFIG... 
 checking for bison... bison -y
 checking for bison... bison
@@ -35,7 +34,7 @@ checking for m4... m4
 checking for flex... no
 checking for lex... no
 checking for flex... no
-checking for makeinfo... no
+checking for makeinfo... makeinfo
 checking for expect... no
 checking for runtest... no
 checking for ar... ar
@@ -51,28 +50,28 @@ checking for windmc... no
 checking for objcopy... objcopy
 checking for objdump... objdump
 checking for readelf... readelf
-checking for armv6l-lfs-linux-gnu-cc... no
-checking for armv6l-lfs-linux-gnu-gcc... no
-checking for armv6l-lfs-linux-gnu-c++... no
-checking for armv6l-lfs-linux-gnu-g++... no
-checking for armv6l-lfs-linux-gnu-cxx... no
-checking for armv6l-lfs-linux-gnu-gxx... no
-checking for armv6l-lfs-linux-gnu-gcc... no
-checking for armv6l-lfs-linux-gnu-gcj... no
-checking for armv6l-lfs-linux-gnu-gfortran... no
-checking for armv6l-lfs-linux-gnu-gccgo... no
-checking for armv6l-lfs-linux-gnu-ar... no
-checking for armv6l-lfs-linux-gnu-as... no
-checking for armv6l-lfs-linux-gnu-dlltool... no
-checking for armv6l-lfs-linux-gnu-ld... no
-checking for armv6l-lfs-linux-gnu-lipo... no
-checking for armv6l-lfs-linux-gnu-nm... no
-checking for armv6l-lfs-linux-gnu-objdump... no
-checking for armv6l-lfs-linux-gnu-ranlib... no
-checking for armv6l-lfs-linux-gnu-readelf... no
-checking for armv6l-lfs-linux-gnu-strip... no
-checking for armv6l-lfs-linux-gnu-windres... no
-checking for armv6l-lfs-linux-gnu-windmc... no
+checking for armv6l-lfs-linux-gnueabihf-cc... no
+checking for armv6l-lfs-linux-gnueabihf-gcc... no
+checking for armv6l-lfs-linux-gnueabihf-c++... no
+checking for armv6l-lfs-linux-gnueabihf-g++... no
+checking for armv6l-lfs-linux-gnueabihf-cxx... no
+checking for armv6l-lfs-linux-gnueabihf-gxx... no
+checking for armv6l-lfs-linux-gnueabihf-gcc... no
+checking for armv6l-lfs-linux-gnueabihf-gcj... no
+checking for armv6l-lfs-linux-gnueabihf-gfortran... no
+checking for armv6l-lfs-linux-gnueabihf-gccgo... no
+checking for armv6l-lfs-linux-gnueabihf-ar... no
+checking for armv6l-lfs-linux-gnueabihf-as... no
+checking for armv6l-lfs-linux-gnueabihf-dlltool... no
+checking for armv6l-lfs-linux-gnueabihf-ld... no
+checking for armv6l-lfs-linux-gnueabihf-lipo... no
+checking for armv6l-lfs-linux-gnueabihf-nm... no
+checking for armv6l-lfs-linux-gnueabihf-objdump... no
+checking for armv6l-lfs-linux-gnueabihf-ranlib... no
+checking for armv6l-lfs-linux-gnueabihf-readelf... no
+checking for armv6l-lfs-linux-gnueabihf-strip... no
+checking for armv6l-lfs-linux-gnueabihf-windres... no
+checking for armv6l-lfs-linux-gnueabihf-windmc... no
 checking where to find the target ar... just compiled
 checking where to find the target as... just compiled
 checking where to find the target cc... pre-installed
@@ -93,5 +92,6 @@ checking where to find the target strip... just compiled
 checking where to find the target windres... just compiled
 checking where to find the target windmc... just compiled
 checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether -fkeep-inline-functions is supported... yes
 configure: creating ./config.status
 config.status: creating Makefile

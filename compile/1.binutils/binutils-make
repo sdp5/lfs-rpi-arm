@@ -1,15 +1,13 @@
-make[1]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24'
+make[1]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1'
 Configuring in ./libiberty
-configure: loading cache ./config.cache
+configure: creating cache ./config.cache
 checking whether to enable maintainer-specific portions of Makefiles... no
-checking for makeinfo... /mnt/lfs/sources/sandbox/binutils-2.24/missing makeinfo --split-size=5000000
+checking for makeinfo... makeinfo --split-size=5000000
 checking for perl... perl
 checking build system type... armv6l-unknown-linux-gnueabihf
 checking host system type... armv6l-unknown-linux-gnueabihf
 checking for armv6l-unknown-linux-gnueabihf-ar... ar
 checking for armv6l-unknown-linux-gnueabihf-ranlib... ranlib
-checking whether to install libiberty headers and static library... no
-configure: target_header_dir = 
 checking for armv6l-unknown-linux-gnueabihf-gcc... gcc
 checking for C compiler default output file name... a.out
 checking whether the C compiler works... yes
@@ -118,7 +116,6 @@ checking for strchr... yes
 checking for strdup... yes
 checking for strncasecmp... yes
 checking for strndup... yes
-checking for strnlen... yes
 checking for strrchr... yes
 checking for strstr... yes
 checking for strtod... yes
@@ -317,7 +314,7 @@ Configuring in ./bfd
 configure: creating cache ./config.cache
 checking build system type... armv6l-unknown-linux-gnueabihf
 checking host system type... armv6l-unknown-linux-gnueabihf
-checking target system type... armv6l-lfs-linux-gnu
+checking target system type... armv6l-lfs-linux-gnueabihf
 checking for armv6l-unknown-linux-gnueabihf-gcc... gcc
 checking for C compiler default output file name... a.out
 checking whether the C compiler works... yes
@@ -435,9 +432,6 @@ checking sys/time.h usability... yes
 checking sys/time.h presence... yes
 checking for sys/time.h... yes
 checking for sys/stat.h... (cached) yes
-checking sys/resource.h usability... yes
-checking sys/resource.h presence... yes
-checking for sys/resource.h... yes
 looking for a compliant stdint.h in stdint.h, checking for uintmax_t... yes
 checking for uintptr_t... yes
 checking for int_least32_t... yes
@@ -461,7 +455,6 @@ checking for getuid... yes
 checking for getgid... yes
 checking for fileno... yes
 checking for strtoull... yes
-checking for getrlimit... yes
 checking whether basename is declared... yes
 checking whether ftello is declared... yes
 checking whether ftello64 is declared... yes
@@ -507,7 +500,7 @@ config.status: executing libtool commands
 config.status: executing default-1 commands
 config.status: executing bfd_stdint.h commands
 config.status: executing default commands
-make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/libiberty'
+make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/libiberty'
 if [ x"" != x ] && [ ! -d pic ]; then \
   mkdir pic; \
 else true; fi
@@ -681,10 +674,6 @@ if [ x"" != x ]; then \
 else true; fi
 gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./simple-object-mach-o.c -o simple-object-mach-o.o
 if [ x"" != x ]; then \
-  gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./simple-object-xcoff.c -o pic/simple-object-xcoff.o; \
-else true; fi
-gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./simple-object-xcoff.c -o simple-object-xcoff.o
-if [ x"" != x ]; then \
   gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic   ./sort.c -o pic/sort.o; \
 else true; fi
 gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./sort.c -o sort.o
@@ -750,24 +739,24 @@ else true; fi
 gcc -c -DHAVE_CONFIG_H -g -O2  -I. -I./../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -pedantic  ./setproctitle.c -o setproctitle.o
 rm -f ./libiberty.a pic/./libiberty.a
 ar rc ./libiberty.a \
-  ./regex.o ./cplus-dem.o ./cp-demangle.o ./md5.o ./sha1.o ./alloca.o ./argv.o ./choose-temp.o ./concat.o ./cp-demint.o ./crc32.o ./dwarfnames.o ./dyn-string.o ./fdmatch.o ./fibheap.o ./filename_cmp.o ./floatformat.o ./fnmatch.o ./fopen_unlocked.o ./getopt.o ./getopt1.o ./getpwd.o ./getruntime.o ./hashtab.o ./hex.o ./lbasename.o ./lrealpath.o ./make-relative-prefix.o ./make-temp-file.o ./objalloc.o ./obstack.o ./partition.o ./pexecute.o ./physmem.o ./pex-common.o ./pex-one.o ./pex-unix.o ./safe-ctype.o ./simple-object.o ./simple-object-coff.o ./simple-object-elf.o ./simple-object-mach-o.o ./simple-object-xcoff.o ./sort.o ./spaces.o ./splay-tree.o ./stack-limit.o ./strerror.o ./strsignal.o ./timeval-utils.o ./unlink-if-ordinary.o ./xatexit.o ./xexit.o ./xmalloc.o ./xmemdup.o ./xstrdup.o ./xstrerror.o ./xstrndup.o  ./setproctitle.o
+  ./regex.o ./cplus-dem.o ./cp-demangle.o ./md5.o ./sha1.o ./alloca.o ./argv.o ./choose-temp.o ./concat.o ./cp-demint.o ./crc32.o ./dwarfnames.o ./dyn-string.o ./fdmatch.o ./fibheap.o ./filename_cmp.o ./floatformat.o ./fnmatch.o ./fopen_unlocked.o ./getopt.o ./getopt1.o ./getpwd.o ./getruntime.o ./hashtab.o ./hex.o ./lbasename.o ./lrealpath.o ./make-relative-prefix.o ./make-temp-file.o ./objalloc.o ./obstack.o ./partition.o ./pexecute.o ./physmem.o ./pex-common.o ./pex-one.o ./pex-unix.o ./safe-ctype.o ./simple-object.o ./simple-object-coff.o ./simple-object-elf.o ./simple-object-mach-o.o ./sort.o ./spaces.o ./splay-tree.o ./stack-limit.o ./strerror.o ./strsignal.o ./timeval-utils.o ./unlink-if-ordinary.o ./xatexit.o ./xexit.o ./xmalloc.o ./xmemdup.o ./xstrdup.o ./xstrerror.o ./xstrndup.o  ./setproctitle.o
 ranlib ./libiberty.a
 if [ x"" != x ]; then \
   cd pic; \
   ar rc ./libiberty.a \
-    ./regex.o ./cplus-dem.o ./cp-demangle.o ./md5.o ./sha1.o ./alloca.o ./argv.o ./choose-temp.o ./concat.o ./cp-demint.o ./crc32.o ./dwarfnames.o ./dyn-string.o ./fdmatch.o ./fibheap.o ./filename_cmp.o ./floatformat.o ./fnmatch.o ./fopen_unlocked.o ./getopt.o ./getopt1.o ./getpwd.o ./getruntime.o ./hashtab.o ./hex.o ./lbasename.o ./lrealpath.o ./make-relative-prefix.o ./make-temp-file.o ./objalloc.o ./obstack.o ./partition.o ./pexecute.o ./physmem.o ./pex-common.o ./pex-one.o ./pex-unix.o ./safe-ctype.o ./simple-object.o ./simple-object-coff.o ./simple-object-elf.o ./simple-object-mach-o.o ./simple-object-xcoff.o ./sort.o ./spaces.o ./splay-tree.o ./stack-limit.o ./strerror.o ./strsignal.o ./timeval-utils.o ./unlink-if-ordinary.o ./xatexit.o ./xexit.o ./xmalloc.o ./xmemdup.o ./xstrdup.o ./xstrerror.o ./xstrndup.o  ./setproctitle.o; \
+    ./regex.o ./cplus-dem.o ./cp-demangle.o ./md5.o ./sha1.o ./alloca.o ./argv.o ./choose-temp.o ./concat.o ./cp-demint.o ./crc32.o ./dwarfnames.o ./dyn-string.o ./fdmatch.o ./fibheap.o ./filename_cmp.o ./floatformat.o ./fnmatch.o ./fopen_unlocked.o ./getopt.o ./getopt1.o ./getpwd.o ./getruntime.o ./hashtab.o ./hex.o ./lbasename.o ./lrealpath.o ./make-relative-prefix.o ./make-temp-file.o ./objalloc.o ./obstack.o ./partition.o ./pexecute.o ./physmem.o ./pex-common.o ./pex-one.o ./pex-unix.o ./safe-ctype.o ./simple-object.o ./simple-object-coff.o ./simple-object-elf.o ./simple-object-mach-o.o ./sort.o ./spaces.o ./splay-tree.o ./stack-limit.o ./strerror.o ./strsignal.o ./timeval-utils.o ./unlink-if-ordinary.o ./xatexit.o ./xexit.o ./xmalloc.o ./xmemdup.o ./xstrdup.o ./xstrerror.o ./xstrndup.o  ./setproctitle.o; \
   ranlib ./libiberty.a; \
   cd ..; \
 else true; fi
-echo ./regex.o ./cplus-dem.o ./cp-demangle.o ./md5.o ./sha1.o ./alloca.o ./argv.o ./choose-temp.o ./concat.o ./cp-demint.o ./crc32.o ./dwarfnames.o ./dyn-string.o ./fdmatch.o ./fibheap.o ./filename_cmp.o ./floatformat.o ./fnmatch.o ./fopen_unlocked.o ./getopt.o ./getopt1.o ./getpwd.o ./getruntime.o ./hashtab.o ./hex.o ./lbasename.o ./lrealpath.o ./make-relative-prefix.o ./make-temp-file.o ./objalloc.o ./obstack.o ./partition.o ./pexecute.o ./physmem.o ./pex-common.o ./pex-one.o ./pex-unix.o ./safe-ctype.o ./simple-object.o ./simple-object-coff.o ./simple-object-elf.o ./simple-object-mach-o.o ./simple-object-xcoff.o ./sort.o ./spaces.o ./splay-tree.o ./stack-limit.o ./strerror.o ./strsignal.o ./timeval-utils.o ./unlink-if-ordinary.o ./xatexit.o ./xexit.o ./xmalloc.o ./xmemdup.o ./xstrdup.o ./xstrerror.o ./xstrndup.o > required-list
-make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/libiberty/testsuite'
+echo ./regex.o ./cplus-dem.o ./cp-demangle.o ./md5.o ./sha1.o ./alloca.o ./argv.o ./choose-temp.o ./concat.o ./cp-demint.o ./crc32.o ./dwarfnames.o ./dyn-string.o ./fdmatch.o ./fibheap.o ./filename_cmp.o ./floatformat.o ./fnmatch.o ./fopen_unlocked.o ./getopt.o ./getopt1.o ./getpwd.o ./getruntime.o ./hashtab.o ./hex.o ./lbasename.o ./lrealpath.o ./make-relative-prefix.o ./make-temp-file.o ./objalloc.o ./obstack.o ./partition.o ./pexecute.o ./physmem.o ./pex-common.o ./pex-one.o ./pex-unix.o ./safe-ctype.o ./simple-object.o ./simple-object-coff.o ./simple-object-elf.o ./simple-object-mach-o.o ./sort.o ./spaces.o ./splay-tree.o ./stack-limit.o ./strerror.o ./strsignal.o ./timeval-utils.o ./unlink-if-ordinary.o ./xatexit.o ./xexit.o ./xmalloc.o ./xmemdup.o ./xstrdup.o ./xstrerror.o ./xstrndup.o > required-list
+make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/libiberty/testsuite'
 make[3]: Nothing to be done for 'all'.
-make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/libiberty/testsuite'
-make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/libiberty'
-make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/intl'
+make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/libiberty/testsuite'
+make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/libiberty'
+make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/intl'
 make[2]: Nothing to be done for 'all'.
-make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/intl'
-make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/bfd'
+make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/intl'
+make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/bfd'
 creating bfdver.h
 rm -f elf32-target.h
 sed -e s/NN/32/g < ./elfxx-target.h > elf32-target.new
@@ -779,11 +768,11 @@ rm -f targmatch.h
 sed -f ./targmatch.sed < ./config.bfd > targmatch.new
 mv -f targmatch.new targmatch.h
 Making info in doc
-make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/bfd/doc'
+make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/bfd/doc'
 make[3]: Nothing to be done for 'info'.
-make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/bfd/doc'
+make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/bfd/doc'
 Making info in po
-make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/bfd/po'
+make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/bfd/po'
 ( if test 'x.' != 'x.'; then \
     posrcprefix='../'; \
   else \
@@ -813,21 +802,21 @@ config.status: executing default-1 commands
 config.status: executing bfd_stdint.h commands
 config.status: executing default commands
 make[3]: Nothing to be done for 'info'.
-make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/bfd/po'
-make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/bfd'
+make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/bfd/po'
+make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/bfd'
 make[3]: Nothing to be done for 'info-am'.
-make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/bfd'
+make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/bfd'
 make  all-recursive
-make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/bfd'
+make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/bfd'
 Making all in doc
-make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/bfd/doc'
+make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/bfd/doc'
 make[4]: Nothing to be done for 'all'.
-make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/bfd/doc'
+make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/bfd/doc'
 Making all in po
-make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/bfd/po'
+make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/bfd/po'
 make[4]: Nothing to be done for 'all'.
-make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/bfd/po'
-make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/bfd'
+make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/bfd/po'
+make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/bfd'
 rm -f bfd-tmp.h
 cp bfd-in3.h bfd-tmp.h
 /bin/sh ./../move-if-change bfd-tmp.h bfd.h
@@ -967,7 +956,7 @@ done ; \
 echo $f > tofiles
 /bin/sh ./../move-if-change tofiles ofiles
 touch stamp-ofiles
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -rpath /tools/armv6l-unknown-linux-gnueabihf/armv6l-lfs-linux-gnu/lib -release `cat libtool-soversion`  -static-libstdc++ -static-libgcc  -o libbfd.la  archive.lo archures.lo bfd.lo bfdio.lo bfdwin.lo cache.lo coffgen.lo corefile.lo format.lo init.lo libbfd.lo opncls.lo reloc.lo section.lo syms.lo targets.lo hash.lo linker.lo srec.lo binary.lo tekhex.lo ihex.lo stabs.lo stab-syms.lo merge.lo dwarf2.lo simple.lo compress.lo verilog.lo `cat ofiles`   -lz 
+/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -rpath /tools/armv6l-unknown-linux-gnueabihf/armv6l-lfs-linux-gnueabihf/lib -release `cat libtool-soversion`   -o libbfd.la  archive.lo archures.lo bfd.lo bfdio.lo bfdwin.lo cache.lo coffgen.lo corefile.lo format.lo init.lo libbfd.lo opncls.lo reloc.lo section.lo syms.lo targets.lo hash.lo linker.lo srec.lo binary.lo tekhex.lo ihex.lo stabs.lo stab-syms.lo merge.lo dwarf2.lo simple.lo compress.lo verilog.lo `cat ofiles`   -lz 
 libtool: link: ar rc .libs/libbfd.a  archive.o archures.o bfd.o bfdio.o bfdwin.o cache.o coffgen.o corefile.o format.o init.o libbfd.o opncls.o reloc.o section.o syms.o targets.o hash.o linker.o srec.o binary.o tekhex.o ihex.o stabs.o stab-syms.o merge.o dwarf2.o simple.o compress.o verilog.o elf32-arm.o elf32.o elf-nacl.o elf-vxworks.o elf.o elflink.o elf-attrs.o elf-strtab.o elf-eh-frame.o dwarf1.o elf32-gen.o cpu-arm.o
 libtool: link: ranlib .libs/libbfd.a
 libtool: link: ( cd ".libs" && rm -f "libbfd.la" && ln -s "../libbfd.la" "libbfd.la" )
@@ -978,14 +967,14 @@ if [ -f $libtooldir/libbfd.a ]; then \
   /bin/sh ./../move-if-change libbfd.tmp libbfd.a; \
 else true; fi
 touch stamp-lib
-make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/bfd'
-make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/bfd'
-make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/bfd'
+make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/bfd'
+make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/bfd'
+make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/bfd'
 Configuring in ./opcodes
 configure: creating cache ./config.cache
 checking build system type... armv6l-unknown-linux-gnueabihf
 checking host system type... armv6l-unknown-linux-gnueabihf
-checking target system type... armv6l-lfs-linux-gnu
+checking target system type... armv6l-lfs-linux-gnueabihf
 checking for armv6l-unknown-linux-gnueabihf-gcc... gcc
 checking for C compiler default output file name... a.out
 checking whether the C compiler works... yes
@@ -1091,11 +1080,11 @@ config.status: executing libtool commands
 config.status: executing default-1 commands
 config.status: creating po/POTFILES
 config.status: creating po/Makefile
-make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/opcodes'
+make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/opcodes'
 make  all-recursive
-make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/opcodes'
+make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/opcodes'
 Making all in .
-make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/opcodes'
+make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/opcodes'
 /bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../include -I./../bfd    -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT dis-buf.lo -MD -MP -MF .deps/dis-buf.Tpo -c -o dis-buf.lo dis-buf.c
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I../bfd -I./../include -I./../bfd -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT dis-buf.lo -MD -MP -MF .deps/dis-buf.Tpo -c dis-buf.c -o dis-buf.o
 mv -f .deps/dis-buf.Tpo .deps/dis-buf.Plo
@@ -1108,7 +1097,7 @@ mv -f .deps/dis-init.Tpo .deps/dis-init.Plo
 /bin/sh ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../include -I./../bfd    -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT arm-dis.lo -MD -MP -MF .deps/arm-dis.Tpo -c -o arm-dis.lo arm-dis.c
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I../bfd -I./../include -I./../bfd -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT arm-dis.lo -MD -MP -MF .deps/arm-dis.Tpo -c arm-dis.c -o arm-dis.o
 mv -f .deps/arm-dis.Tpo .deps/arm-dis.Plo
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -rpath /tools/armv6l-unknown-linux-gnueabihf/armv6l-lfs-linux-gnu/lib -release `cat ../bfd/libtool-soversion`  -static-libstdc++ -static-libgcc  -o libopcodes.la  dis-buf.lo disassemble.lo dis-init.lo arm-dis.lo  
+/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -rpath /tools/armv6l-unknown-linux-gnueabihf/armv6l-lfs-linux-gnueabihf/lib -release `cat ../bfd/libtool-soversion`   -o libopcodes.la  dis-buf.lo disassemble.lo dis-init.lo arm-dis.lo  
 libtool: link: ar rc .libs/libopcodes.a  dis-buf.o disassemble.o dis-init.o arm-dis.o
 libtool: link: ranlib .libs/libopcodes.a
 libtool: link: ( cd ".libs" && rm -f "libopcodes.la" && ln -s "../libopcodes.la" "libopcodes.la" )
@@ -1119,18 +1108,18 @@ if [ -f $libtooldir/libopcodes.a ]; then \
   /bin/sh ./../move-if-change libopcodes.tmp libopcodes.a; \
 else true; fi
 touch stamp-lib
-make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/opcodes'
+make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/opcodes'
 Making all in po
-make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/opcodes/po'
+make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/opcodes/po'
 make[4]: Nothing to be done for 'all'.
-make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/opcodes/po'
-make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/opcodes'
-make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/opcodes'
+make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/opcodes/po'
+make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/opcodes'
+make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/opcodes'
 Configuring in ./binutils
 configure: creating cache ./config.cache
 checking build system type... armv6l-unknown-linux-gnueabihf
 checking host system type... armv6l-unknown-linux-gnueabihf
-checking target system type... armv6l-lfs-linux-gnu
+checking target system type... armv6l-lfs-linux-gnueabihf
 checking for armv6l-unknown-linux-gnueabihf-gcc... gcc
 checking for C compiler default output file name... a.out
 checking whether the C compiler works... yes
@@ -1208,7 +1197,7 @@ checking whether to build shared libraries... yes
 checking whether to build static libraries... yes
 Setting warning flags = -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow
 checking for bison... bison -y
-checking for flex... /mnt/lfs/sources/sandbox/binutils-2.24/missing flex
+checking for flex... /mnt/lfs/sources/sandbox/binutils-2.23.1/missing flex
 checking lex output file root... lex.yy
 checking lex library... 
 checking whether yytext is a pointer... yes
@@ -1261,15 +1250,14 @@ checking for time_t in time.h... yes
 checking for time_t in sys/types.h... yes
 checking for a known getopt prototype in unistd.h... yes
 checking for utime.h... yes
-checking whether environ is declared... yes
 checking whether fprintf is declared... yes
-checking whether getc_unlocked is declared... yes
-checking whether getenv is declared... yes
-checking whether sbrk is declared... yes
-checking whether snprintf is declared... yes
 checking whether stpcpy is declared... yes
-checking whether strnlen is declared... yes
 checking whether strstr is declared... yes
+checking whether sbrk is declared... yes
+checking whether getenv is declared... yes
+checking whether environ is declared... yes
+checking whether getc_unlocked is declared... yes
+checking whether snprintf is declared... yes
 checking whether vsnprintf is declared... yes
 checking for library containing zlibVersion... -lz
 checking zlib.h usability... yes
@@ -1294,11 +1282,165 @@ config.status: executing libtool commands
 config.status: executing default-1 commands
 config.status: creating po/POTFILES
 config.status: creating po/Makefile
+make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/binutils'
+if [ -r sysinfo.c ]; then \
+  gcc -c -I. -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  sysinfo.c ; \
+else \
+  gcc -c -I. -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  ./sysinfo.c ; \
+fi
+gcc -c -I. -I. -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  ./syslex_wrap.c
+gcc -g -O2  -o sysinfo sysinfo.o syslex_wrap.o
+./sysinfo -d <./sysroff.info >sysroff.h
+Making info in doc
+make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/binutils/doc'
+if test -f cxxfilt.man; then \
+  man=cxxfilt.man; \
+else \
+  man=./cxxfilt.man; \
+fi; \
+sed -e 's/@PROGRAM@/c++filt/' \
+    -e 's/cxxfilt/c++filt/' < $man \
+	> c++filt.1
+make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/binutils/doc'
+Making info in po
+make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/binutils/po'
+make[3]: Nothing to be done for 'info'.
+make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/binutils/po'
+make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/binutils'
+make[3]: Nothing to be done for 'info-am'.
+make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/binutils'
+make  all-recursive
+make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/binutils'
+Making all in doc
+make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/binutils/doc'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/binutils/doc'
+Making all in po
+make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/binutils/po'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/binutils/po'
+make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/binutils'
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT size.o -MD -MP -MF .deps/size.Tpo -c -o size.o size.c
+mv -f .deps/size.Tpo .deps/size.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT bucomm.o -MD -MP -MF .deps/bucomm.Tpo -c -o bucomm.o bucomm.c
+mv -f .deps/bucomm.Tpo .deps/bucomm.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT version.o -MD -MP -MF .deps/version.Tpo -c -o version.o version.c
+mv -f .deps/version.Tpo .deps/version.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT filemode.o -MD -MP -MF .deps/filemode.Tpo -c -o filemode.o filemode.c
+mv -f .deps/filemode.Tpo .deps/filemode.Po
+/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2   -o size size.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -o size size.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT objdump.o -MD -MP -MF .deps/objdump.Tpo -c -o objdump.o -DOBJDUMP_PRIVATE_VECTORS="" ./objdump.c
+mv -f .deps/objdump.Tpo .deps/objdump.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT dwarf.o -MD -MP -MF .deps/dwarf.Tpo -c -o dwarf.o dwarf.c
+mv -f .deps/dwarf.Tpo .deps/dwarf.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT prdbg.o -MD -MP -MF .deps/prdbg.Tpo -c -o prdbg.o prdbg.c
+mv -f .deps/prdbg.Tpo .deps/prdbg.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT rddbg.o -MD -MP -MF .deps/rddbg.Tpo -c -o rddbg.o rddbg.c
+mv -f .deps/rddbg.Tpo .deps/rddbg.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT debug.o -MD -MP -MF .deps/debug.Tpo -c -o debug.o debug.c
+mv -f .deps/debug.Tpo .deps/debug.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT stabs.o -MD -MP -MF .deps/stabs.Tpo -c -o stabs.o stabs.c
+mv -f .deps/stabs.Tpo .deps/stabs.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT ieee.o -MD -MP -MF .deps/ieee.Tpo -c -o ieee.o ieee.c
+mv -f .deps/ieee.Tpo .deps/ieee.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT rdcoff.o -MD -MP -MF .deps/rdcoff.Tpo -c -o rdcoff.o rdcoff.c
+mv -f .deps/rdcoff.Tpo .deps/rdcoff.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT elfcomm.o -MD -MP -MF .deps/elfcomm.Tpo -c -o elfcomm.o elfcomm.c
+mv -f .deps/elfcomm.Tpo .deps/elfcomm.Po
+/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2   -o objdump objdump.o dwarf.o prdbg.o rddbg.o debug.o stabs.o ieee.o rdcoff.o bucomm.o version.o filemode.o elfcomm.o  ../opcodes/libopcodes.la ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -o objdump objdump.o dwarf.o prdbg.o rddbg.o debug.o stabs.o ieee.o rdcoff.o bucomm.o version.o filemode.o elfcomm.o  ../opcodes/.libs/libopcodes.a ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT arparse.o -MD -MP -MF .deps/arparse.Tpo -c -o arparse.o `test -f arparse.c || echo ./`arparse.c 
+mv -f .deps/arparse.Tpo .deps/arparse.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT arlex.o -MD -MP -MF .deps/arlex.Tpo -c -o arlex.o `test -f arlex.c || echo ./`arlex.c 
+mv -f .deps/arlex.Tpo .deps/arlex.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT ar.o -MD -MP -MF .deps/ar.Tpo -c -o ar.o ar.c
+mv -f .deps/ar.Tpo .deps/ar.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT not-ranlib.o -MD -MP -MF .deps/not-ranlib.Tpo -c -o not-ranlib.o not-ranlib.c
+mv -f .deps/not-ranlib.Tpo .deps/not-ranlib.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT arsup.o -MD -MP -MF .deps/arsup.Tpo -c -o arsup.o arsup.c
+mv -f .deps/arsup.Tpo .deps/arsup.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT rename.o -MD -MP -MF .deps/rename.Tpo -c -o rename.o rename.c
+mv -f .deps/rename.Tpo .deps/rename.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT binemul.o -MD -MP -MF .deps/binemul.Tpo -c -o binemul.o binemul.c
+mv -f .deps/binemul.Tpo .deps/binemul.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT emul_vanilla.o -MD -MP -MF .deps/emul_vanilla.Tpo -c -o emul_vanilla.o emul_vanilla.c
+mv -f .deps/emul_vanilla.Tpo .deps/emul_vanilla.Po
+/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2   -o ar arparse.o arlex.o ar.o not-ranlib.o arsup.o rename.o binemul.o emul_vanilla.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a   -lz 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -o ar arparse.o arlex.o ar.o not-ranlib.o arsup.o rename.o binemul.o emul_vanilla.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT strings.o -MD -MP -MF .deps/strings.Tpo -c -o strings.o strings.c
+mv -f .deps/strings.Tpo .deps/strings.Po
+/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2   -o strings strings.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -o strings strings.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT is-ranlib.o -MD -MP -MF .deps/is-ranlib.Tpo -c -o is-ranlib.o is-ranlib.c
+mv -f .deps/is-ranlib.Tpo .deps/is-ranlib.Po
+/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2   -o ranlib ar.o is-ranlib.o arparse.o arlex.o arsup.o rename.o binemul.o emul_vanilla.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a   -lz 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -o ranlib ar.o is-ranlib.o arparse.o arlex.o arsup.o rename.o binemul.o emul_vanilla.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT objcopy.o -MD -MP -MF .deps/objcopy.Tpo -c -o objcopy.o objcopy.c
+mv -f .deps/objcopy.Tpo .deps/objcopy.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT not-strip.o -MD -MP -MF .deps/not-strip.Tpo -c -o not-strip.o not-strip.c
+mv -f .deps/not-strip.Tpo .deps/not-strip.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT wrstabs.o -MD -MP -MF .deps/wrstabs.Tpo -c -o wrstabs.o wrstabs.c
+mv -f .deps/wrstabs.Tpo .deps/wrstabs.Po
+/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2   -o objcopy objcopy.o not-strip.o rename.o rddbg.o debug.o stabs.o ieee.o rdcoff.o wrstabs.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -o objcopy objcopy.o not-strip.o rename.o rddbg.o debug.o stabs.o ieee.o rdcoff.o wrstabs.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT addr2line.o -MD -MP -MF .deps/addr2line.Tpo -c -o addr2line.o addr2line.c
+mv -f .deps/addr2line.Tpo .deps/addr2line.Po
+/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2   -o addr2line addr2line.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -o addr2line addr2line.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT readelf.o -MD -MP -MF .deps/readelf.Tpo -c -o readelf.o readelf.c
+mv -f .deps/readelf.Tpo .deps/readelf.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT unwind-ia64.o -MD -MP -MF .deps/unwind-ia64.Tpo -c -o unwind-ia64.o unwind-ia64.c
+mv -f .deps/unwind-ia64.Tpo .deps/unwind-ia64.Po
+/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2   -o readelf readelf.o version.o unwind-ia64.o dwarf.o elfcomm.o  ../libiberty/libiberty.a -lz 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -o readelf readelf.o version.o unwind-ia64.o dwarf.o elfcomm.o  ../libiberty/libiberty.a -lz
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT elfedit.o -MD -MP -MF .deps/elfedit.Tpo -c -o elfedit.o elfedit.c
+mv -f .deps/elfedit.Tpo .deps/elfedit.Po
+/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2   -o elfedit elfedit.o version.o elfcomm.o  ../libiberty/libiberty.a -lz 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -o elfedit elfedit.o version.o elfcomm.o  ../libiberty/libiberty.a -lz
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT nm.o -MD -MP -MF .deps/nm.Tpo -c -o nm.o nm.c
+mv -f .deps/nm.Tpo .deps/nm.Po
+/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2   -o nm-new nm.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -o nm-new nm.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT is-strip.o -MD -MP -MF .deps/is-strip.Tpo -c -o is-strip.o is-strip.c
+mv -f .deps/is-strip.Tpo .deps/is-strip.Po
+/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2   -o strip-new objcopy.o is-strip.o rename.o rddbg.o debug.o stabs.o ieee.o rdcoff.o wrstabs.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -o strip-new objcopy.o is-strip.o rename.o rddbg.o debug.o stabs.o ieee.o rdcoff.o wrstabs.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT cxxfilt.o -MD -MP -MF .deps/cxxfilt.Tpo -c -o cxxfilt.o cxxfilt.c
+mv -f .deps/cxxfilt.Tpo .deps/cxxfilt.Po
+/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2   -o cxxfilt cxxfilt.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -o cxxfilt cxxfilt.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
+make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/binutils'
+make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/binutils'
+make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/binutils'
+Configuring in ./etc
+configure: creating cache ./config.cache
+checking for a BSD-compatible install... /usr/bin/install -c
+configure: updating cache ./config.cache
+configure: creating ./config.status
+config.status: creating Makefile
+make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/etc'
+for f in standards.info configure.info; do \
+  if test -f ./`echo $f | sed -e 's/.info$/.texi/'`; then \
+    if make "MAKEINFO=makeinfo --split-size=5000000 --split-size=5000000" $f; then \
+      true; \
+    else \
+      exit 1; \
+    fi; \
+  fi; \
+done
+make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/etc'
+make[3]: 'standards.info' is up to date.
+make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/etc'
+make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/etc'
+make[3]: 'configure.info' is up to date.
+make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/etc'
+make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/etc'
 Configuring in ./gas
 configure: creating cache ./config.cache
 checking build system type... armv6l-unknown-linux-gnueabihf
 checking host system type... armv6l-unknown-linux-gnueabihf
-checking target system type... armv6l-lfs-linux-gnu
+checking target system type... armv6l-lfs-linux-gnueabihf
 checking for armv6l-unknown-linux-gnueabihf-gcc... gcc
 checking for C compiler default output file name... a.out
 checking whether the C compiler works... yes
@@ -1377,7 +1519,7 @@ checking whether to build static libraries... yes
 Setting warning flags = -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow
 checking whether byte ordering is bigendian... no
 checking for bison... bison -y
-checking for flex... /mnt/lfs/sources/sandbox/binutils-2.24/missing flex
+checking for flex... /mnt/lfs/sources/sandbox/binutils-2.23.1/missing flex
 checking lex output file root... lex.yy
 checking lex library... 
 checking whether yytext is a pointer... yes
@@ -1453,18 +1595,18 @@ config.status: executing default-1 commands
 config.status: creating po/POTFILES
 config.status: creating po/Makefile
 config.status: executing default commands
-make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/gas'
+make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gas'
 make  all-recursive
-make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/gas'
+make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gas'
 Making all in doc
-make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/gas/doc'
+make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gas/doc'
 make[4]: Nothing to be done for 'all'.
-make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/gas/doc'
+make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gas/doc'
 Making all in po
-make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/gas/po'
+make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gas/po'
 make[4]: Nothing to be done for 'all'.
-make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/gas/po'
-make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/gas'
+make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gas/po'
+make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gas'
 gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT app.o -MD -MP -MF .deps/app.Tpo -c -o app.o app.c
 mv -f .deps/app.Tpo .deps/app.Po
 gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT as.o -MD -MP -MF .deps/as.Tpo -c -o as.o as.c
@@ -1531,178 +1673,16 @@ gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./.
 mv -f .deps/obj-elf.Tpo .deps/obj-elf.Po
 gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT atof-ieee.o -MD -MP -MF .deps/atof-ieee.Tpo -c -o atof-ieee.o `test -f 'config/atof-ieee.c' || echo './'`config/atof-ieee.c
 mv -f .deps/atof-ieee.Tpo .deps/atof-ieee.Po
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  -static-libstdc++ -static-libgcc  -o as-new app.o as.o atof-generic.o compress-debug.o cond.o depend.o dwarf2dbg.o dw2gencfi.o ecoff.o ehopt.o expr.o flonum-copy.o flonum-konst.o flonum-mult.o frags.o hash.o input-file.o input-scrub.o listing.o literal.o macro.o messages.o output-file.o read.o remap.o sb.o stabs.o subsegs.o symbols.o write.o tc-arm.o obj-elf.o atof-ieee.o  ../opcodes/libopcodes.la ../bfd/libbfd.la ../libiberty/libiberty.a   -lz 
-libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -static-libstdc++ -static-libgcc -o as-new app.o as.o atof-generic.o compress-debug.o cond.o depend.o dwarf2dbg.o dw2gencfi.o ecoff.o ehopt.o expr.o flonum-copy.o flonum-konst.o flonum-mult.o frags.o hash.o input-file.o input-scrub.o listing.o literal.o macro.o messages.o output-file.o read.o remap.o sb.o stabs.o subsegs.o symbols.o write.o tc-arm.o obj-elf.o atof-ieee.o  ../opcodes/.libs/libopcodes.a ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
-make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/gas'
-make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/gas'
-make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/gas'
-make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/binutils'
-if [ -r sysinfo.c ]; then \
-  gcc -c -I. -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  sysinfo.c ; \
-else \
-  gcc -c -I. -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  ./sysinfo.c ; \
-fi
-gcc -c -I. -I. -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  ./syslex_wrap.c
-gcc -g -O2  -o sysinfo sysinfo.o syslex_wrap.o
-./sysinfo -d <./sysroff.info >sysroff.h
-Making info in doc
-make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/binutils/doc'
-if test -f cxxfilt.man; then \
-  man=cxxfilt.man; \
-else \
-  man=./cxxfilt.man; \
-fi; \
-sed -e 's/@PROGRAM@/c++filt/' \
-    -e 's/cxxfilt/c++filt/' < $man \
-	> c++filt.1
-make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/binutils/doc'
-Making info in po
-make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/binutils/po'
-make[3]: Nothing to be done for 'info'.
-make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/binutils/po'
-make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/binutils'
-make[3]: Nothing to be done for 'info-am'.
-make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/binutils'
-make  all-recursive
-make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/binutils'
-Making all in doc
-make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/binutils/doc'
-make[4]: Nothing to be done for 'all'.
-make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/binutils/doc'
-Making all in po
-make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/binutils/po'
-make[4]: Nothing to be done for 'all'.
-make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/binutils/po'
-make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/binutils'
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT size.o -MD -MP -MF .deps/size.Tpo -c -o size.o size.c
-mv -f .deps/size.Tpo .deps/size.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT bucomm.o -MD -MP -MF .deps/bucomm.Tpo -c -o bucomm.o bucomm.c
-mv -f .deps/bucomm.Tpo .deps/bucomm.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT version.o -MD -MP -MF .deps/version.Tpo -c -o version.o version.c
-mv -f .deps/version.Tpo .deps/version.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT filemode.o -MD -MP -MF .deps/filemode.Tpo -c -o filemode.o filemode.c
-mv -f .deps/filemode.Tpo .deps/filemode.Po
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  -static-libstdc++ -static-libgcc  -o size size.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
-libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -static-libstdc++ -static-libgcc -o size size.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT objdump.o -MD -MP -MF .deps/objdump.Tpo -c -o objdump.o -DOBJDUMP_PRIVATE_VECTORS="" ./objdump.c
-mv -f .deps/objdump.Tpo .deps/objdump.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT dwarf.o -MD -MP -MF .deps/dwarf.Tpo -c -o dwarf.o dwarf.c
-mv -f .deps/dwarf.Tpo .deps/dwarf.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT prdbg.o -MD -MP -MF .deps/prdbg.Tpo -c -o prdbg.o prdbg.c
-mv -f .deps/prdbg.Tpo .deps/prdbg.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT rddbg.o -MD -MP -MF .deps/rddbg.Tpo -c -o rddbg.o rddbg.c
-mv -f .deps/rddbg.Tpo .deps/rddbg.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT debug.o -MD -MP -MF .deps/debug.Tpo -c -o debug.o debug.c
-mv -f .deps/debug.Tpo .deps/debug.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT stabs.o -MD -MP -MF .deps/stabs.Tpo -c -o stabs.o stabs.c
-mv -f .deps/stabs.Tpo .deps/stabs.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT ieee.o -MD -MP -MF .deps/ieee.Tpo -c -o ieee.o ieee.c
-mv -f .deps/ieee.Tpo .deps/ieee.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT rdcoff.o -MD -MP -MF .deps/rdcoff.Tpo -c -o rdcoff.o rdcoff.c
-mv -f .deps/rdcoff.Tpo .deps/rdcoff.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT elfcomm.o -MD -MP -MF .deps/elfcomm.Tpo -c -o elfcomm.o elfcomm.c
-mv -f .deps/elfcomm.Tpo .deps/elfcomm.Po
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  -static-libstdc++ -static-libgcc  -o objdump objdump.o dwarf.o prdbg.o rddbg.o debug.o stabs.o ieee.o rdcoff.o bucomm.o version.o filemode.o elfcomm.o  ../opcodes/libopcodes.la ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
-libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -static-libstdc++ -static-libgcc -o objdump objdump.o dwarf.o prdbg.o rddbg.o debug.o stabs.o ieee.o rdcoff.o bucomm.o version.o filemode.o elfcomm.o  ../opcodes/.libs/libopcodes.a ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT arparse.o -MD -MP -MF .deps/arparse.Tpo -c -o arparse.o `test -f arparse.c || echo ./`arparse.c 
-mv -f .deps/arparse.Tpo .deps/arparse.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT arlex.o -MD -MP -MF .deps/arlex.Tpo -c -o arlex.o `test -f arlex.c || echo ./`arlex.c 
-mv -f .deps/arlex.Tpo .deps/arlex.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT ar.o -MD -MP -MF .deps/ar.Tpo -c -o ar.o ar.c
-mv -f .deps/ar.Tpo .deps/ar.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT not-ranlib.o -MD -MP -MF .deps/not-ranlib.Tpo -c -o not-ranlib.o not-ranlib.c
-mv -f .deps/not-ranlib.Tpo .deps/not-ranlib.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT arsup.o -MD -MP -MF .deps/arsup.Tpo -c -o arsup.o arsup.c
-mv -f .deps/arsup.Tpo .deps/arsup.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT rename.o -MD -MP -MF .deps/rename.Tpo -c -o rename.o rename.c
-mv -f .deps/rename.Tpo .deps/rename.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT binemul.o -MD -MP -MF .deps/binemul.Tpo -c -o binemul.o binemul.c
-mv -f .deps/binemul.Tpo .deps/binemul.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT emul_vanilla.o -MD -MP -MF .deps/emul_vanilla.Tpo -c -o emul_vanilla.o emul_vanilla.c
-mv -f .deps/emul_vanilla.Tpo .deps/emul_vanilla.Po
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  -static-libstdc++ -static-libgcc  -o ar arparse.o arlex.o ar.o not-ranlib.o arsup.o rename.o binemul.o emul_vanilla.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a   -lz 
-libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -static-libstdc++ -static-libgcc -o ar arparse.o arlex.o ar.o not-ranlib.o arsup.o rename.o binemul.o emul_vanilla.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT strings.o -MD -MP -MF .deps/strings.Tpo -c -o strings.o strings.c
-mv -f .deps/strings.Tpo .deps/strings.Po
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  -static-libstdc++ -static-libgcc  -o strings strings.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
-libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -static-libstdc++ -static-libgcc -o strings strings.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT is-ranlib.o -MD -MP -MF .deps/is-ranlib.Tpo -c -o is-ranlib.o is-ranlib.c
-mv -f .deps/is-ranlib.Tpo .deps/is-ranlib.Po
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  -static-libstdc++ -static-libgcc  -o ranlib ar.o is-ranlib.o arparse.o arlex.o arsup.o rename.o binemul.o emul_vanilla.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a   -lz 
-libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -static-libstdc++ -static-libgcc -o ranlib ar.o is-ranlib.o arparse.o arlex.o arsup.o rename.o binemul.o emul_vanilla.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT objcopy.o -MD -MP -MF .deps/objcopy.Tpo -c -o objcopy.o objcopy.c
-mv -f .deps/objcopy.Tpo .deps/objcopy.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT not-strip.o -MD -MP -MF .deps/not-strip.Tpo -c -o not-strip.o not-strip.c
-mv -f .deps/not-strip.Tpo .deps/not-strip.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT wrstabs.o -MD -MP -MF .deps/wrstabs.Tpo -c -o wrstabs.o wrstabs.c
-mv -f .deps/wrstabs.Tpo .deps/wrstabs.Po
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  -static-libstdc++ -static-libgcc  -o objcopy objcopy.o not-strip.o rename.o rddbg.o debug.o stabs.o ieee.o rdcoff.o wrstabs.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
-libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -static-libstdc++ -static-libgcc -o objcopy objcopy.o not-strip.o rename.o rddbg.o debug.o stabs.o ieee.o rdcoff.o wrstabs.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT addr2line.o -MD -MP -MF .deps/addr2line.Tpo -c -o addr2line.o addr2line.c
-mv -f .deps/addr2line.Tpo .deps/addr2line.Po
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  -static-libstdc++ -static-libgcc  -o addr2line addr2line.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
-libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -static-libstdc++ -static-libgcc -o addr2line addr2line.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT readelf.o -MD -MP -MF .deps/readelf.Tpo -c -o readelf.o readelf.c
-mv -f .deps/readelf.Tpo .deps/readelf.Po
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT unwind-ia64.o -MD -MP -MF .deps/unwind-ia64.Tpo -c -o unwind-ia64.o unwind-ia64.c
-mv -f .deps/unwind-ia64.Tpo .deps/unwind-ia64.Po
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  -static-libstdc++ -static-libgcc  -o readelf readelf.o version.o unwind-ia64.o dwarf.o elfcomm.o  ../libiberty/libiberty.a -lz 
-libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -static-libstdc++ -static-libgcc -o readelf readelf.o version.o unwind-ia64.o dwarf.o elfcomm.o  ../libiberty/libiberty.a -lz
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT elfedit.o -MD -MP -MF .deps/elfedit.Tpo -c -o elfedit.o elfedit.c
-mv -f .deps/elfedit.Tpo .deps/elfedit.Po
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  -static-libstdc++ -static-libgcc  -o elfedit elfedit.o version.o elfcomm.o  ../libiberty/libiberty.a -lz 
-libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -static-libstdc++ -static-libgcc -o elfedit elfedit.o version.o elfcomm.o  ../libiberty/libiberty.a -lz
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT nm.o -MD -MP -MF .deps/nm.Tpo -c -o nm.o nm.c
-mv -f .deps/nm.Tpo .deps/nm.Po
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  -static-libstdc++ -static-libgcc  -o nm-new nm.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
-libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -static-libstdc++ -static-libgcc -o nm-new nm.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT is-strip.o -MD -MP -MF .deps/is-strip.Tpo -c -o is-strip.o is-strip.c
-mv -f .deps/is-strip.Tpo .deps/is-strip.Po
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  -static-libstdc++ -static-libgcc  -o strip-new objcopy.o is-strip.o rename.o rddbg.o debug.o stabs.o ieee.o rdcoff.o wrstabs.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
-libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -static-libstdc++ -static-libgcc -o strip-new objcopy.o is-strip.o rename.o rddbg.o debug.o stabs.o ieee.o rdcoff.o wrstabs.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT cxxfilt.o -MD -MP -MF .deps/cxxfilt.Tpo -c -o cxxfilt.o cxxfilt.c
-mv -f .deps/cxxfilt.Tpo .deps/cxxfilt.Po
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  -static-libstdc++ -static-libgcc  -o cxxfilt cxxfilt.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
-libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -static-libstdc++ -static-libgcc -o cxxfilt cxxfilt.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT bfdtest1.o -MD -MP -MF .deps/bfdtest1.Tpo -c -o bfdtest1.o bfdtest1.c
-mv -f .deps/bfdtest1.Tpo .deps/bfdtest1.Po
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  -static-libstdc++ -static-libgcc  -o bfdtest1 bfdtest1.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
-libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -static-libstdc++ -static-libgcc -o bfdtest1 bfdtest1.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include -DLOCALEDIR="\"/tools/share/locale\"" -Dbin_dummy_emulation=bin_vanilla_emulation  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT bfdtest2.o -MD -MP -MF .deps/bfdtest2.Tpo -c -o bfdtest2.o bfdtest2.c
-mv -f .deps/bfdtest2.Tpo .deps/bfdtest2.Po
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  -static-libstdc++ -static-libgcc  -o bfdtest2 bfdtest2.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lz 
-libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -static-libstdc++ -static-libgcc -o bfdtest2 bfdtest2.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
-make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/binutils'
-make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/binutils'
-make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/binutils'
-Configuring in ./etc
-configure: creating cache ./config.cache
-checking for a BSD-compatible install... /usr/bin/install -c
-configure: updating cache ./config.cache
-configure: creating ./config.status
-config.status: creating Makefile
-make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/etc'
-for f in standards.info configure.info; do \
-  if test -f ./`echo $f | sed -e 's/.info$/.texi/'`; then \
-    if make "MAKEINFO=/mnt/lfs/sources/sandbox/binutils-2.24/missing makeinfo --split-size=5000000 --split-size=5000000" $f; then \
-      true; \
-    else \
-      exit 1; \
-    fi; \
-  fi; \
-done
-make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/etc'
-make[3]: 'standards.info' is up to date.
-make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/etc'
-make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/etc'
-make[3]: 'configure.info' is up to date.
-make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/etc'
-make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/etc'
+/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2   -o as-new app.o as.o atof-generic.o compress-debug.o cond.o depend.o dwarf2dbg.o dw2gencfi.o ecoff.o ehopt.o expr.o flonum-copy.o flonum-konst.o flonum-mult.o frags.o hash.o input-file.o input-scrub.o listing.o literal.o macro.o messages.o output-file.o read.o remap.o sb.o stabs.o subsegs.o symbols.o write.o tc-arm.o obj-elf.o atof-ieee.o  ../opcodes/libopcodes.la ../bfd/libbfd.la ../libiberty/libiberty.a   -lz 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -o as-new app.o as.o atof-generic.o compress-debug.o cond.o depend.o dwarf2dbg.o dw2gencfi.o ecoff.o ehopt.o expr.o flonum-copy.o flonum-konst.o flonum-mult.o frags.o hash.o input-file.o input-scrub.o listing.o literal.o macro.o messages.o output-file.o read.o remap.o sb.o stabs.o subsegs.o symbols.o write.o tc-arm.o obj-elf.o atof-ieee.o  ../opcodes/.libs/libopcodes.a ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz
+make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gas'
+make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gas'
+make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gas'
 Configuring in ./gprof
 configure: creating cache ./config.cache
 checking build system type... armv6l-unknown-linux-gnueabihf
 checking host system type... armv6l-unknown-linux-gnueabihf
-checking target system type... armv6l-lfs-linux-gnu
+checking target system type... armv6l-lfs-linux-gnueabihf
 checking for armv6l-unknown-linux-gnueabihf-gcc... gcc
 checking for C compiler default output file name... a.out
 checking whether the C compiler works... yes
@@ -1802,14 +1782,14 @@ config.status: executing libtool commands
 config.status: executing default-1 commands
 config.status: creating po/POTFILES
 config.status: creating po/Makefile
-make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/gprof'
+make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gprof'
 make  all-recursive
-make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/gprof'
+make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gprof'
 Making all in po
-make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/gprof/po'
+make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gprof/po'
 make[4]: Nothing to be done for 'all'.
-make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/gprof/po'
-make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/gprof'
+make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gprof/po'
+make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gprof'
 gcc -DHAVE_CONFIG_H -I.  -DDEBUG -I../bfd -I./../include -I./../bfd  -I. -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT basic_blocks.o -MD -MP -MF .deps/basic_blocks.Tpo -c -o basic_blocks.o basic_blocks.c
 mv -f .deps/basic_blocks.Tpo .deps/basic_blocks.Po
 gcc -DHAVE_CONFIG_H -I.  -DDEBUG -I../bfd -I./../include -I./../bfd  -I. -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT call_graph.o -MD -MP -MF .deps/call_graph.Tpo -c -o call_graph.o call_graph.c
@@ -1852,24 +1832,22 @@ gcc -DHAVE_CONFIG_H -I.  -DDEBUG -I../bfd -I./../include -I./../bfd  -I. -DLOCAL
 mv -f .deps/sparc.Tpo .deps/sparc.Po
 gcc -DHAVE_CONFIG_H -I.  -DDEBUG -I../bfd -I./../include -I./../bfd  -I. -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT mips.o -MD -MP -MF .deps/mips.Tpo -c -o mips.o mips.c
 mv -f .deps/mips.Tpo .deps/mips.Po
-gcc -DHAVE_CONFIG_H -I.  -DDEBUG -I../bfd -I./../include -I./../bfd  -I. -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT aarch64.o -MD -MP -MF .deps/aarch64.Tpo -c -o aarch64.o aarch64.c
-mv -f .deps/aarch64.Tpo .deps/aarch64.Po
 gcc -DHAVE_CONFIG_H -I.  -DDEBUG -I../bfd -I./../include -I./../bfd  -I. -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT flat_bl.o -MD -MP -MF .deps/flat_bl.Tpo -c -o flat_bl.o flat_bl.c
 mv -f .deps/flat_bl.Tpo .deps/flat_bl.Po
 gcc -DHAVE_CONFIG_H -I.  -DDEBUG -I../bfd -I./../include -I./../bfd  -I. -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT bsd_callg_bl.o -MD -MP -MF .deps/bsd_callg_bl.Tpo -c -o bsd_callg_bl.o bsd_callg_bl.c
 mv -f .deps/bsd_callg_bl.Tpo .deps/bsd_callg_bl.Po
 gcc -DHAVE_CONFIG_H -I.  -DDEBUG -I../bfd -I./../include -I./../bfd  -I. -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT fsf_callg_bl.o -MD -MP -MF .deps/fsf_callg_bl.Tpo -c -o fsf_callg_bl.o fsf_callg_bl.c
 mv -f .deps/fsf_callg_bl.Tpo .deps/fsf_callg_bl.Po
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  -static-libstdc++ -static-libgcc  -o gprof basic_blocks.o call_graph.o cg_arcs.o cg_dfn.o cg_print.o corefile.o gmon_io.o gprof.o hertz.o hist.o source.o search_list.o symtab.o sym_ids.o utils.o i386.o alpha.o vax.o tahoe.o sparc.o mips.o aarch64.o flat_bl.o bsd_callg_bl.o fsf_callg_bl.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lm 
-libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -static-libstdc++ -static-libgcc -o gprof basic_blocks.o call_graph.o cg_arcs.o cg_dfn.o cg_print.o corefile.o gmon_io.o gprof.o hertz.o hist.o source.o search_list.o symtab.o sym_ids.o utils.o i386.o alpha.o vax.o tahoe.o sparc.o mips.o aarch64.o flat_bl.o bsd_callg_bl.o fsf_callg_bl.o  ../bfd/.libs/libbfd.a -lz ../libiberty/libiberty.a -lm
-make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/gprof'
-make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/gprof'
-make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/gprof'
+/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2   -o gprof basic_blocks.o call_graph.o cg_arcs.o cg_dfn.o cg_print.o corefile.o gmon_io.o gprof.o hertz.o hist.o source.o search_list.o symtab.o sym_ids.o utils.o i386.o alpha.o vax.o tahoe.o sparc.o mips.o flat_bl.o bsd_callg_bl.o fsf_callg_bl.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lm 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -o gprof basic_blocks.o call_graph.o cg_arcs.o cg_dfn.o cg_print.o corefile.o gmon_io.o gprof.o hertz.o hist.o source.o search_list.o symtab.o sym_ids.o utils.o i386.o alpha.o vax.o tahoe.o sparc.o mips.o flat_bl.o bsd_callg_bl.o fsf_callg_bl.o  ../bfd/.libs/libbfd.a -lz ../libiberty/libiberty.a -lm
+make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gprof'
+make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gprof'
+make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/gprof'
 Configuring in ./ld
 configure: creating cache ./config.cache
 checking build system type... armv6l-unknown-linux-gnueabihf
 checking host system type... armv6l-unknown-linux-gnueabihf
-checking target system type... armv6l-lfs-linux-gnu
+checking target system type... armv6l-lfs-linux-gnueabihf
 checking for armv6l-unknown-linux-gnueabihf-gcc... gcc
 checking for C compiler default output file name... a.out
 checking whether the C compiler works... yes
@@ -1970,7 +1948,7 @@ checking for gmsgfmt... :
 checking for xgettext... no
 checking for msgmerge... no
 checking for bison... bison -y
-checking for flex... /mnt/lfs/sources/sandbox/binutils-2.24/missing flex
+checking for flex... /mnt/lfs/sources/sandbox/binutils-2.23.1/missing flex
 checking lex output file root... lex.yy
 checking lex library... 
 checking whether yytext is a pointer... yes
@@ -2042,32 +2020,32 @@ config.status: executing libtool commands
 config.status: executing default-1 commands
 config.status: creating po/POTFILES
 config.status: creating po/Makefile
-make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/ld'
+make[2]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/ld'
 (echo "/* This file is automatically generated.  DO NOT EDIT! */";\
-for f in `echo " " earmelf_linux.o earmelf.o earmelfb.o earmelfb_linux.o "" \
+for f in `echo " " earmelf_linux_eabi.o earmelfb_linux_eabi.o "" \
  | sed -e 's/ e/ ld/g' -e 's/ ld/ /g' -e 's/[.]o//g'`; do \
     echo "extern ld_emulation_xfer_type ld_${f}_emulation;"; \
 done;\
 echo "";\
 echo "#define EMULATION_LIST \\";\
-for f in `echo " " earmelf_linux.o earmelf.o earmelfb.o earmelfb_linux.o "" \
+for f in `echo " " earmelf_linux_eabi.o earmelfb_linux_eabi.o "" \
  | sed -e 's/ e/ ld/g' -e 's/ ld/ /g' -e 's/[.]o//g'`; do \
     echo "  &ld_${f}_emulation, \\"; \
 done;\
 echo "  0") >ldemul-tmp.h
 mv ldemul-tmp.h ldemul-list.h
 make  all-recursive
-make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/ld'
+make[3]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/ld'
 Making all in po
-make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/ld/po'
+make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/ld/po'
 make[4]: Nothing to be done for 'all'.
-make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/ld/po'
-make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.24/ld'
+make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/ld/po'
+make[4]: Entering directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/ld'
 /bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include  -g -O2 -DENABLE_PLUGINS -DLOCALEDIR="\"/tools/share/locale\""  -g -O2 -g -O2 -MT libldtestplug_la-testplug.lo -MD -MP -MF .deps/libldtestplug_la-testplug.Tpo -c -o libldtestplug_la-testplug.lo `test -f 'testplug.c' || echo './'`testplug.c
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I../bfd -I./../bfd -I./../include -g -O2 -DENABLE_PLUGINS -DLOCALEDIR=\"/tools/share/locale\" -g -O2 -g -O2 -MT libldtestplug_la-testplug.lo -MD -MP -MF .deps/libldtestplug_la-testplug.Tpo -c testplug.c  -fPIC -DPIC -o .libs/libldtestplug_la-testplug.o
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I../bfd -I./../bfd -I./../include -g -O2 -DENABLE_PLUGINS -DLOCALEDIR=\"/tools/share/locale\" -g -O2 -g -O2 -MT libldtestplug_la-testplug.lo -MD -MP -MF .deps/libldtestplug_la-testplug.Tpo -c testplug.c -o libldtestplug_la-testplug.o >/dev/null 2>&1
 mv -f .deps/libldtestplug_la-testplug.Tpo .deps/libldtestplug_la-testplug.Plo
-/bin/sh ./libtool --tag=CC   --mode=link gcc -g -O2 -g -O2 -no-undefined -rpath /nowhere -static-libstdc++ -static-libgcc  -o libldtestplug.la  libldtestplug_la-testplug.lo  -lz -ldl 
+/bin/sh ./libtool --tag=CC   --mode=link gcc -g -O2 -g -O2 -no-undefined -rpath /nowhere  -o libldtestplug.la  libldtestplug_la-testplug.lo  -lz -ldl 
 libtool: link: gcc -shared  .libs/libldtestplug_la-testplug.o   -lz -ldl    -Wl,-soname -Wl,libldtestplug.so.0 -o .libs/libldtestplug.so.0.0.0
 libtool: link: (cd ".libs" && rm -f "libldtestplug.so.0" && ln -s "libldtestplug.so.0.0.0" "libldtestplug.so.0")
 libtool: link: (cd ".libs" && rm -f "libldtestplug.so" && ln -s "libldtestplug.so.0.0.0" "libldtestplug.so")
@@ -2087,9 +2065,9 @@ mv -f .deps/mri.Tpo .deps/mri.Po
 gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include  -g -O2 -DENABLE_PLUGINS -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT ldctor.o -MD -MP -MF .deps/ldctor.Tpo -c -o ldctor.o ldctor.c
 mv -f .deps/ldctor.Tpo .deps/ldctor.Po
 gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include  -g -O2 -DENABLE_PLUGINS -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT ldmain.o -MD -MP -MF .deps/ldmain.Tpo -c -o ldmain.o \
-  -DDEFAULT_EMULATION='"armelf_linux"' \
-  -DBINDIR='"/tools/bin"' -DTOOLBINDIR='"/tools/armv6l-lfs-linux-gnu/bin"' \
-  -DTARGET='"armv6l-lfs-linux-gnu"' -DTARGET_SYSTEM_ROOT=\"/mnt/lfs\" \
+  -DDEFAULT_EMULATION='"armelf_linux_eabi"' \
+  -DBINDIR='"/tools/bin"' -DTOOLBINDIR='"/tools/armv6l-lfs-linux-gnueabihf/bin"' \
+  -DTARGET='"armv6l-lfs-linux-gnueabihf"' -DTARGET_SYSTEM_ROOT=\"/mnt/lfs\" \
   ./ldmain.c
 mv -f .deps/ldmain.Tpo .deps/ldmain.Po
 gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include  -g -O2 -DENABLE_PLUGINS -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT ldwrite.o -MD -MP -MF .deps/ldwrite.Tpo -c -o ldwrite.o ldwrite.c
@@ -2103,7 +2081,7 @@ mv -f .deps/ldver.Tpo .deps/ldver.Po
 gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include  -g -O2 -DENABLE_PLUGINS -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT ldmisc.o -MD -MP -MF .deps/ldmisc.Tpo -c -o ldmisc.o ldmisc.c
 mv -f .deps/ldmisc.Tpo .deps/ldmisc.Po
 gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include  -g -O2 -DENABLE_PLUGINS -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT ldfile.o -MD -MP -MF .deps/ldfile.Tpo -c -o ldfile.o \
--DSCRIPTDIR='"/tools/armv6l-lfs-linux-gnu/lib"' -DBINDIR='"/tools/bin"' -DTOOLBINDIR='"/tools/armv6l-lfs-linux-gnu/bin"' \
+-DSCRIPTDIR='"/tools/armv6l-lfs-linux-gnueabihf/lib"' -DBINDIR='"/tools/bin"' -DTOOLBINDIR='"/tools/armv6l-lfs-linux-gnueabihf/bin"' \
  ./ldfile.c
 mv -f .deps/ldfile.Tpo .deps/ldfile.Po
 gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include  -g -O2 -DENABLE_PLUGINS -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT ldcref.o -MD -MP -MF .deps/ldcref.Tpo -c -o ldcref.o ldcref.c
@@ -2111,22 +2089,16 @@ mv -f .deps/ldcref.Tpo .deps/ldcref.Po
 gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include  -g -O2 -DENABLE_PLUGINS -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT plugin.o -MD -MP -MF .deps/plugin.Tpo -c -o plugin.o plugin.c
 mv -f .deps/plugin.Tpo .deps/plugin.Po
 cp ./emultempl/astring.sed stringify.sed
-LIB_PATH='/tools/lib' /bin/sh ./genscripts.sh "." "/tools/lib" "/tools" "/tools" armv6l-unknown-linux-gnueabihf armv6l-lfs-linux-gnu armv6l-lfs-linux-gnu "armelf_linux armelfb_linux" "/usr/local/lib /lib /usr/lib" yes no armelf_linux "armv6l-lfs-linux-gnu"
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include  -g -O2 -DENABLE_PLUGINS -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT earmelf_linux.o -MD -MP -MF .deps/earmelf_linux.Tpo -c -o earmelf_linux.o earmelf_linux.c
-mv -f .deps/earmelf_linux.Tpo .deps/earmelf_linux.Po
-LIB_PATH='/tools/lib' /bin/sh ./genscripts.sh "." "/tools/lib" "/tools" "/tools" armv6l-unknown-linux-gnueabihf armv6l-lfs-linux-gnu armv6l-lfs-linux-gnu "armelf_linux armelfb_linux" "/usr/local/lib /lib /usr/lib" yes no armelf "armv6l-lfs-linux-gnu"
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include  -g -O2 -DENABLE_PLUGINS -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT earmelf.o -MD -MP -MF .deps/earmelf.Tpo -c -o earmelf.o earmelf.c
-mv -f .deps/earmelf.Tpo .deps/earmelf.Po
-LIB_PATH='/tools/lib' /bin/sh ./genscripts.sh "." "/tools/lib" "/tools" "/tools" armv6l-unknown-linux-gnueabihf armv6l-lfs-linux-gnu armv6l-lfs-linux-gnu "armelf_linux armelfb_linux" "/usr/local/lib /lib /usr/lib" yes no armelfb "armv6l-lfs-linux-gnu"
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include  -g -O2 -DENABLE_PLUGINS -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT earmelfb.o -MD -MP -MF .deps/earmelfb.Tpo -c -o earmelfb.o earmelfb.c
-mv -f .deps/earmelfb.Tpo .deps/earmelfb.Po
-LIB_PATH='/tools/lib' /bin/sh ./genscripts.sh "." "/tools/lib" "/tools" "/tools" armv6l-unknown-linux-gnueabihf armv6l-lfs-linux-gnu armv6l-lfs-linux-gnu "armelf_linux armelfb_linux" "/usr/local/lib /lib /usr/lib" yes no armelfb_linux "armv6l-lfs-linux-gnu"
-gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include  -g -O2 -DENABLE_PLUGINS -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT earmelfb_linux.o -MD -MP -MF .deps/earmelfb_linux.Tpo -c -o earmelfb_linux.o earmelfb_linux.c
-mv -f .deps/earmelfb_linux.Tpo .deps/earmelfb_linux.Po
-/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2  -static-libstdc++ -static-libgcc  -o ld-new ldgram.o ldlex-wrapper.o lexsup.o ldlang.o mri.o ldctor.o ldmain.o ldwrite.o ldexp.o ldemul.o ldver.o ldmisc.o ldfile.o ldcref.o plugin.o earmelf_linux.o earmelf.o earmelfb.o earmelfb_linux.o  ../bfd/libbfd.la ../libiberty/libiberty.a  -lz -ldl 
-libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -static-libstdc++ -static-libgcc -o ld-new ldgram.o ldlex-wrapper.o lexsup.o ldlang.o mri.o ldctor.o ldmain.o ldwrite.o ldexp.o ldemul.o ldver.o ldmisc.o ldfile.o ldcref.o plugin.o earmelf_linux.o earmelf.o earmelfb.o earmelfb_linux.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz -ldl
-make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/ld'
-make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/ld'
-make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24/ld'
+LIB_PATH='/tools/lib' /bin/sh ./genscripts.sh "." "/tools/lib" "/tools" "/tools" armv6l-unknown-linux-gnueabihf armv6l-lfs-linux-gnueabihf armv6l-lfs-linux-gnueabihf "armelf_linux_eabi armelfb_linux_eabi" "/usr/local/lib /lib /usr/lib" yes no armelf_linux_eabi ""
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include  -g -O2 -DENABLE_PLUGINS -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT earmelf_linux_eabi.o -MD -MP -MF .deps/earmelf_linux_eabi.Tpo -c -o earmelf_linux_eabi.o earmelf_linux_eabi.c
+mv -f .deps/earmelf_linux_eabi.Tpo .deps/earmelf_linux_eabi.Po
+LIB_PATH='/tools/lib' /bin/sh ./genscripts.sh "." "/tools/lib" "/tools" "/tools" armv6l-unknown-linux-gnueabihf armv6l-lfs-linux-gnueabihf armv6l-lfs-linux-gnueabihf "armelf_linux_eabi armelfb_linux_eabi" "/usr/local/lib /lib /usr/lib" yes no armelfb_linux_eabi ""
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include  -g -O2 -DENABLE_PLUGINS -DLOCALEDIR="\"/tools/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -MT earmelfb_linux_eabi.o -MD -MP -MF .deps/earmelfb_linux_eabi.Tpo -c -o earmelfb_linux_eabi.o earmelfb_linux_eabi.c
+mv -f .deps/earmelfb_linux_eabi.Tpo .deps/earmelfb_linux_eabi.Po
+/bin/sh ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2   -o ld-new ldgram.o ldlex-wrapper.o lexsup.o ldlang.o mri.o ldctor.o ldmain.o ldwrite.o ldexp.o ldemul.o ldver.o ldmisc.o ldfile.o ldcref.o plugin.o earmelf_linux_eabi.o earmelfb_linux_eabi.o  ../bfd/libbfd.la ../libiberty/libiberty.a  -lz -ldl 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -g -O2 -o ld-new ldgram.o ldlex-wrapper.o lexsup.o ldlang.o mri.o ldctor.o ldmain.o ldwrite.o ldexp.o ldemul.o ldver.o ldmisc.o ldfile.o ldcref.o plugin.o earmelf_linux_eabi.o earmelfb_linux_eabi.o  ../bfd/.libs/libbfd.a ../libiberty/libiberty.a -lz -ldl
+make[4]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/ld'
+make[3]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/ld'
+make[2]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1/ld'
 make[1]: Nothing to be done for 'all-target'.
-make[1]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.24'
+make[1]: Leaving directory '/mnt/lfs/sources/sandbox/binutils-2.23.1'
