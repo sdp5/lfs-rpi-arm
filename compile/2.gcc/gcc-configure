@@ -1,0 +1,103 @@
+checking build system type... armv6l-unknown-linux-gnueabihf
+checking host system type... armv6l-unknown-linux-gnueabihf
+checking target system type... armv6l-lfs-linux-gnueabihf
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln works... yes
+checking whether ln -s works... yes
+checking for a sed that does not truncate output... /bin/sed
+checking for gawk... gawk
+checking for libitm support... yes
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for gnatbind... no
+checking for gnatmake... no
+checking whether compiler driver understands Ada... no
+checking how to compare bootstrapped objects... cmp --ignore-initial=16 $$f1 $$f2
+checking for objdir... .libs
+checking for PWL_handle_timeout in -lpwl... no
+checking for version 0.11 (revision 0 or later) of PPL... no
+checking for default BUILD_CONFIG... 
+checking for bison... bison -y
+checking for bison... bison
+checking for gm4... no
+checking for gnum4... no
+checking for m4... m4
+checking for flex... no
+checking for lex... no
+checking for flex... no
+checking for makeinfo... makeinfo
+checking for expect... no
+checking for runtest... no
+checking for ar... ar
+checking for as... as
+checking for dlltool... no
+checking for ld... ld
+checking for lipo... no
+checking for nm... nm
+checking for ranlib... ranlib
+checking for strip... strip
+checking for windres... no
+checking for windmc... no
+checking for objcopy... objcopy
+checking for objdump... objdump
+checking for readelf... readelf
+checking for armv6l-lfs-linux-gnueabihf-cc... no
+checking for armv6l-lfs-linux-gnueabihf-gcc... armv6l-lfs-linux-gnueabihf-gcc
+checking for armv6l-lfs-linux-gnueabihf-c++... no
+checking for armv6l-lfs-linux-gnueabihf-g++... no
+checking for armv6l-lfs-linux-gnueabihf-cxx... no
+checking for armv6l-lfs-linux-gnueabihf-gxx... no
+checking for armv6l-lfs-linux-gnueabihf-gcc... armv6l-lfs-linux-gnueabihf-gcc
+checking for armv6l-lfs-linux-gnueabihf-gcj... no
+checking for armv6l-lfs-linux-gnueabihf-gfortran... no
+checking for armv6l-lfs-linux-gnueabihf-gccgo... no
+checking for ar... /tools/armv6l-lfs-linux-gnueabihf/bin/ar
+checking for as... /tools/armv6l-lfs-linux-gnueabihf/bin/as
+checking for dlltool... no
+checking for armv6l-lfs-linux-gnueabihf-dlltool... no
+checking for ld... /tools/armv6l-lfs-linux-gnueabihf/bin/ld
+checking for lipo... no
+checking for armv6l-lfs-linux-gnueabihf-lipo... no
+checking for nm... /tools/armv6l-lfs-linux-gnueabihf/bin/nm
+checking for objdump... /tools/armv6l-lfs-linux-gnueabihf/bin/objdump
+checking for ranlib... /tools/armv6l-lfs-linux-gnueabihf/bin/ranlib
+checking for readelf... no
+checking for armv6l-lfs-linux-gnueabihf-readelf... armv6l-lfs-linux-gnueabihf-readelf
+checking for strip... /tools/armv6l-lfs-linux-gnueabihf/bin/strip
+checking for windres... no
+checking for armv6l-lfs-linux-gnueabihf-windres... no
+checking for windmc... no
+checking for armv6l-lfs-linux-gnueabihf-windmc... no
+checking where to find the target ar... pre-installed in /tools/armv6l-lfs-linux-gnueabihf/bin
+checking where to find the target as... pre-installed in /tools/armv6l-lfs-linux-gnueabihf/bin
+checking where to find the target cc... just compiled
+checking where to find the target c++... pre-installed
+checking where to find the target c++ for libstdc++... pre-installed
+checking where to find the target dlltool... pre-installed
+checking where to find the target gcc... just compiled
+checking where to find the target gcj... pre-installed
+checking where to find the target gfortran... pre-installed
+checking where to find the target gccgo... pre-installed
+checking where to find the target ld... pre-installed in /tools/armv6l-lfs-linux-gnueabihf/bin
+checking where to find the target lipo... pre-installed
+checking where to find the target nm... pre-installed in /tools/armv6l-lfs-linux-gnueabihf/bin
+checking where to find the target objdump... pre-installed in /tools/armv6l-lfs-linux-gnueabihf/bin
+checking where to find the target ranlib... pre-installed in /tools/armv6l-lfs-linux-gnueabihf/bin
+checking where to find the target readelf... pre-installed
+checking where to find the target strip... pre-installed in /tools/armv6l-lfs-linux-gnueabihf/bin
+checking where to find the target windres... pre-installed
+checking where to find the target windmc... pre-installed
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether -fkeep-inline-functions is supported... yes
+configure: creating ./config.status
+config.status: creating Makefile

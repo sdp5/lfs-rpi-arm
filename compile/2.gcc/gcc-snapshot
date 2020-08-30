@@ -1,0 +1,314 @@
+/tools
+|-- armv6l-lfs-linux-gnueabihf
+|   |-- bin
+|   |   |-- ar
+|   |   |-- as
+|   |   |-- gcc
+|   |   |-- ld
+|   |   |-- ld.bfd
+|   |   |-- nm
+|   |   |-- objcopy
+|   |   |-- objdump
+|   |   |-- ranlib
+|   |   `-- strip
+|   `-- lib
+|       `-- ldscripts
+|           |-- armelf_linux_eabi.x
+|           |-- armelf_linux_eabi.xbn
+|           |-- armelf_linux_eabi.xc
+|           |-- armelf_linux_eabi.xd
+|           |-- armelf_linux_eabi.xdc
+|           |-- armelf_linux_eabi.xdw
+|           |-- armelf_linux_eabi.xn
+|           |-- armelf_linux_eabi.xr
+|           |-- armelf_linux_eabi.xs
+|           |-- armelf_linux_eabi.xsc
+|           |-- armelf_linux_eabi.xsw
+|           |-- armelf_linux_eabi.xu
+|           |-- armelf_linux_eabi.xw
+|           |-- armelfb_linux_eabi.x
+|           |-- armelfb_linux_eabi.xbn
+|           |-- armelfb_linux_eabi.xc
+|           |-- armelfb_linux_eabi.xd
+|           |-- armelfb_linux_eabi.xdc
+|           |-- armelfb_linux_eabi.xdw
+|           |-- armelfb_linux_eabi.xn
+|           |-- armelfb_linux_eabi.xr
+|           |-- armelfb_linux_eabi.xs
+|           |-- armelfb_linux_eabi.xsc
+|           |-- armelfb_linux_eabi.xsw
+|           |-- armelfb_linux_eabi.xu
+|           `-- armelfb_linux_eabi.xw
+|-- bin
+|   |-- armv6l-lfs-linux-gnueabihf-addr2line
+|   |-- armv6l-lfs-linux-gnueabihf-ar
+|   |-- armv6l-lfs-linux-gnueabihf-as
+|   |-- armv6l-lfs-linux-gnueabihf-c++filt
+|   |-- armv6l-lfs-linux-gnueabihf-cpp
+|   |-- armv6l-lfs-linux-gnueabihf-elfedit
+|   |-- armv6l-lfs-linux-gnueabihf-gcc
+|   |-- armv6l-lfs-linux-gnueabihf-gcc-4.7.2
+|   |-- armv6l-lfs-linux-gnueabihf-gcc-ar
+|   |-- armv6l-lfs-linux-gnueabihf-gcc-nm
+|   |-- armv6l-lfs-linux-gnueabihf-gcc-ranlib
+|   |-- armv6l-lfs-linux-gnueabihf-gcov
+|   |-- armv6l-lfs-linux-gnueabihf-gprof
+|   |-- armv6l-lfs-linux-gnueabihf-ld
+|   |-- armv6l-lfs-linux-gnueabihf-ld.bfd
+|   |-- armv6l-lfs-linux-gnueabihf-nm
+|   |-- armv6l-lfs-linux-gnueabihf-objcopy
+|   |-- armv6l-lfs-linux-gnueabihf-objdump
+|   |-- armv6l-lfs-linux-gnueabihf-ranlib
+|   |-- armv6l-lfs-linux-gnueabihf-readelf
+|   |-- armv6l-lfs-linux-gnueabihf-size
+|   |-- armv6l-lfs-linux-gnueabihf-strings
+|   `-- armv6l-lfs-linux-gnueabihf-strip
+|-- include
+|-- lib
+|   |-- gcc
+|   |   `-- armv6l-lfs-linux-gnueabihf
+|   |       `-- 4.7.2
+|   |           |-- include
+|   |           |   |-- arm_neon.h
+|   |           |   |-- float.h
+|   |           |   |-- iso646.h
+|   |           |   |-- mmintrin.h
+|   |           |   |-- stdalign.h
+|   |           |   |-- stdarg.h
+|   |           |   |-- stdbool.h
+|   |           |   |-- stddef.h
+|   |           |   |-- stdfix.h
+|   |           |   |-- stdint-gcc.h
+|   |           |   |-- stdint.h
+|   |           |   |-- stdnoreturn.h
+|   |           |   |-- unwind-arm-common.h
+|   |           |   `-- varargs.h
+|   |           |-- include-fixed
+|   |           |   |-- README
+|   |           |   |-- limits.h
+|   |           |   `-- syslimits.h
+|   |           |-- install-tools
+|   |           |   |-- fixinc_list
+|   |           |   |-- gsyslimits.h
+|   |           |   |-- include
+|   |           |   |   |-- README
+|   |           |   |   `-- limits.h
+|   |           |   |-- macro_list
+|   |           |   `-- mkheaders.conf
+|   |           `-- plugin
+|   |               |-- gtype.state
+|   |               `-- include
+|   |                   |-- ada
+|   |                   |   `-- gcc-interface
+|   |                   |       `-- ada-tree.def
+|   |                   |-- alias.h
+|   |                   |-- all-tree.def
+|   |                   |-- alloc-pool.h
+|   |                   |-- ansidecl.h
+|   |                   |-- auto-host.h
+|   |                   |-- b-header-vars
+|   |                   |-- basic-block.h
+|   |                   |-- bitmap.h
+|   |                   |-- builtins.def
+|   |                   |-- bversion.h
+|   |                   |-- c-family
+|   |                   |   |-- c-common.def
+|   |                   |   |-- c-common.h
+|   |                   |   |-- c-objc.h
+|   |                   |   |-- c-pragma.h
+|   |                   |   `-- c-pretty-print.h
+|   |                   |-- c-tree.h
+|   |                   |-- cfghooks.h
+|   |                   |-- cfgloop.h
+|   |                   |-- cgraph.h
+|   |                   |-- cif-code.def
+|   |                   |-- config
+|   |                   |   |-- arm
+|   |                   |   |   |-- aout.h
+|   |                   |   |   |-- arm-opts.h
+|   |                   |   |   |-- arm-protos.h
+|   |                   |   |   |-- arm.h
+|   |                   |   |   |-- bpabi.h
+|   |                   |   |   |-- elf.h
+|   |                   |   |   |-- linux-eabi.h
+|   |                   |   |   |-- linux-elf.h
+|   |                   |   |   `-- linux-gas.h
+|   |                   |   |-- dbxelf.h
+|   |                   |   |-- elfos.h
+|   |                   |   |-- glibc-stdint.h
+|   |                   |   |-- gnu-user.h
+|   |                   |   |-- initfini-array.h
+|   |                   |   |-- linux-android.h
+|   |                   |   `-- linux.h
+|   |                   |-- config.h
+|   |                   |-- configargs.h
+|   |                   |-- coretypes.h
+|   |                   |-- cp
+|   |                   |   `-- cp-tree.def
+|   |                   |-- cppdefault.h
+|   |                   |-- cpplib.h
+|   |                   |-- debug.h
+|   |                   |-- defaults.h
+|   |                   |-- diagnostic-core.h
+|   |                   |-- diagnostic.def
+|   |                   |-- diagnostic.h
+|   |                   |-- double-int.h
+|   |                   |-- emit-rtl.h
+|   |                   |-- except.h
+|   |                   |-- filenames.h
+|   |                   |-- fixed-value.h
+|   |                   |-- flag-types.h
+|   |                   |-- flags.h
+|   |                   |-- function.h
+|   |                   |-- gcc-plugin.h
+|   |                   |-- genrtl.h
+|   |                   |-- ggc.h
+|   |                   |-- gimple-pretty-print.h
+|   |                   |-- gimple.def
+|   |                   |-- gimple.h
+|   |                   |-- gsstruct.def
+|   |                   |-- gtm-builtins.def
+|   |                   |-- gtype-desc.h
+|   |                   |-- hard-reg-set.h
+|   |                   |-- hashtab.h
+|   |                   |-- highlev-plugin-common.h
+|   |                   |-- hwint.h
+|   |                   |-- incpath.h
+|   |                   |-- input.h
+|   |                   |-- insn-constants.h
+|   |                   |-- insn-flags.h
+|   |                   |-- insn-modes.h
+|   |                   |-- insn-notes.def
+|   |                   |-- internal-fn.def
+|   |                   |-- internal-fn.h
+|   |                   |-- intl.h
+|   |                   |-- ipa-prop.h
+|   |                   |-- ipa-ref-inline.h
+|   |                   |-- ipa-ref.h
+|   |                   |-- ipa-reference.h
+|   |                   |-- ipa-utils.h
+|   |                   |-- java
+|   |                   |   `-- java-tree.def
+|   |                   |-- langhooks.h
+|   |                   |-- libiberty.h
+|   |                   |-- line-map.h
+|   |                   |-- machmode.h
+|   |                   |-- md5.h
+|   |                   |-- mode-classes.def
+|   |                   |-- objc
+|   |                   |   `-- objc-tree.def
+|   |                   |-- obstack.h
+|   |                   |-- omp-builtins.def
+|   |                   |-- options.h
+|   |                   |-- opts.h
+|   |                   |-- output.h
+|   |                   |-- params.def
+|   |                   |-- params.h
+|   |                   |-- plugin-api.h
+|   |                   |-- plugin-version.h
+|   |                   |-- plugin.def
+|   |                   |-- plugin.h
+|   |                   |-- pointer-set.h
+|   |                   |-- predict.def
+|   |                   |-- predict.h
+|   |                   |-- prefix.h
+|   |                   |-- pretty-print.h
+|   |                   |-- real.h
+|   |                   |-- realmpfr.h
+|   |                   |-- reg-notes.def
+|   |                   |-- rtl.def
+|   |                   |-- rtl.h
+|   |                   |-- safe-ctype.h
+|   |                   |-- sbitmap.h
+|   |                   |-- splay-tree.h
+|   |                   |-- statistics.h
+|   |                   |-- symtab.h
+|   |                   |-- sync-builtins.def
+|   |                   |-- system.h
+|   |                   |-- target-hooks-macros.h
+|   |                   |-- target.def
+|   |                   |-- target.h
+|   |                   |-- timevar.def
+|   |                   |-- timevar.h
+|   |                   |-- tm-preds.h
+|   |                   |-- tm.h
+|   |                   |-- tm_p.h
+|   |                   |-- toplev.h
+|   |                   |-- tree-check.h
+|   |                   |-- tree-dump.h
+|   |                   |-- tree-flow-inline.h
+|   |                   |-- tree-flow.h
+|   |                   |-- tree-inline.h
+|   |                   |-- tree-iterator.h
+|   |                   |-- tree-pass.h
+|   |                   |-- tree-pretty-print.h
+|   |                   |-- tree-ssa-alias.h
+|   |                   |-- tree-ssa-operands.h
+|   |                   |-- tree-ssa-sccvn.h
+|   |                   |-- tree.def
+|   |                   |-- tree.h
+|   |                   |-- treestruct.def
+|   |                   |-- vec.h
+|   |                   |-- vecir.h
+|   |                   |-- vecprim.h
+|   |                   `-- version.h
+|   `-- libiberty.a
+|-- libexec
+|   `-- gcc
+|       `-- armv6l-lfs-linux-gnueabihf
+|           `-- 4.7.2
+|               |-- cc1
+|               |-- collect2
+|               |-- install-tools
+|               |   |-- fixinc.sh
+|               |   |-- fixincl
+|               |   |-- mkheaders
+|               |   `-- mkinstalldirs
+|               |-- liblto_plugin.la
+|               |-- liblto_plugin.so -> liblto_plugin.so.0.0.0
+|               |-- liblto_plugin.so.0 -> liblto_plugin.so.0.0.0
+|               |-- liblto_plugin.so.0.0.0
+|               |-- lto-wrapper
+|               |-- lto1
+|               `-- plugin
+|                   `-- gengtype
+`-- share
+    |-- info
+    |   |-- as.info
+    |   |-- bfd.info
+    |   |-- binutils.info
+    |   |-- configure.info
+    |   |-- dir
+    |   |-- gprof.info
+    |   |-- ld.info
+    |   `-- standards.info
+    `-- man
+        |-- man1
+        |   |-- armv6l-lfs-linux-gnueabihf-addr2line.1
+        |   |-- armv6l-lfs-linux-gnueabihf-ar.1
+        |   |-- armv6l-lfs-linux-gnueabihf-as.1
+        |   |-- armv6l-lfs-linux-gnueabihf-c++filt.1
+        |   |-- armv6l-lfs-linux-gnueabihf-cpp.1
+        |   |-- armv6l-lfs-linux-gnueabihf-dlltool.1
+        |   |-- armv6l-lfs-linux-gnueabihf-elfedit.1
+        |   |-- armv6l-lfs-linux-gnueabihf-gcc.1
+        |   |-- armv6l-lfs-linux-gnueabihf-gcov.1
+        |   |-- armv6l-lfs-linux-gnueabihf-gprof.1
+        |   |-- armv6l-lfs-linux-gnueabihf-ld.1
+        |   |-- armv6l-lfs-linux-gnueabihf-nlmconv.1
+        |   |-- armv6l-lfs-linux-gnueabihf-nm.1
+        |   |-- armv6l-lfs-linux-gnueabihf-objcopy.1
+        |   |-- armv6l-lfs-linux-gnueabihf-objdump.1
+        |   |-- armv6l-lfs-linux-gnueabihf-ranlib.1
+        |   |-- armv6l-lfs-linux-gnueabihf-readelf.1
+        |   |-- armv6l-lfs-linux-gnueabihf-size.1
+        |   |-- armv6l-lfs-linux-gnueabihf-strings.1
+        |   |-- armv6l-lfs-linux-gnueabihf-strip.1
+        |   |-- armv6l-lfs-linux-gnueabihf-windmc.1
+        |   `-- armv6l-lfs-linux-gnueabihf-windres.1
+        `-- man7
+            |-- fsf-funding.7
+            |-- gfdl.7
+            `-- gpl.7
+
+35 directories, 276 files
