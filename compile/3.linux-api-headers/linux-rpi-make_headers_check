@@ -1,0 +1,88 @@
+  CHK     include/linux/version.h
+  UPD     include/linux/version.h
+  HOSTCC  scripts/basic/fixdep
+  WRAP    arch/arm/include/generated/asm/auxvec.h
+  WRAP    arch/arm/include/generated/asm/bitsperlong.h
+  WRAP    arch/arm/include/generated/asm/cputime.h
+  WRAP    arch/arm/include/generated/asm/emergency-restart.h
+  WRAP    arch/arm/include/generated/asm/errno.h
+  WRAP    arch/arm/include/generated/asm/ioctl.h
+  WRAP    arch/arm/include/generated/asm/irq_regs.h
+  WRAP    arch/arm/include/generated/asm/kdebug.h
+  WRAP    arch/arm/include/generated/asm/local.h
+  WRAP    arch/arm/include/generated/asm/local64.h
+  WRAP    arch/arm/include/generated/asm/percpu.h
+  WRAP    arch/arm/include/generated/asm/poll.h
+  WRAP    arch/arm/include/generated/asm/resource.h
+  WRAP    arch/arm/include/generated/asm/sections.h
+  WRAP    arch/arm/include/generated/asm/siginfo.h
+  WRAP    arch/arm/include/generated/asm/sizes.h
+  HOSTCC  scripts/unifdef
+  INSTALL include/asm-generic (35 files)
+  INSTALL include/drm (15 files)
+  INSTALL include/linux/byteorder (2 files)
+  INSTALL include/linux/caif (2 files)
+  INSTALL include/linux/can (5 files)
+  INSTALL include/linux/dvb (8 files)
+  INSTALL include/linux/hdlc (1 file)
+  INSTALL include/linux/hsi (1 file)
+  INSTALL include/linux/isdn (1 file)
+  INSTALL include/linux/mmc (1 file)
+  INSTALL include/linux/netfilter/ipset (4 files)
+  INSTALL include/linux/netfilter (76 files)
+  INSTALL include/linux/netfilter_arp (2 files)
+  INSTALL include/linux/netfilter_bridge (18 files)
+  INSTALL include/linux/netfilter_ipv4 (10 files)
+  INSTALL include/linux/netfilter_ipv6 (11 files)
+  INSTALL include/linux/nfsd (5 files)
+  INSTALL include/linux/raid (2 files)
+  INSTALL include/linux/spi (1 file)
+  INSTALL include/linux/sunrpc (1 file)
+  INSTALL include/linux/tc_act (7 files)
+  INSTALL include/linux/tc_ematch (4 files)
+  INSTALL include/linux/usb (10 files)
+  INSTALL include/linux/wimax (1 file)
+  INSTALL include/linux (378 files)
+  INSTALL include/mtd (5 files)
+  INSTALL include/rdma (6 files)
+  INSTALL include/scsi/fc (4 files)
+  INSTALL include/scsi (3 files)
+  INSTALL include/sound (10 files)
+  INSTALL include/video (3 files)
+  INSTALL include/xen (2 files)
+  INSTALL include (0 file)
+  INSTALL include/asm (33 files)
+  CHECK   include/asm-generic (35 files)
+  CHECK   include/drm (15 files)
+  CHECK   include/linux/byteorder (2 files)
+  CHECK   include/linux/caif (2 files)
+  CHECK   include/linux/can (5 files)
+  CHECK   include/linux/dvb (8 files)
+  CHECK   include/linux/hdlc (1 files)
+  CHECK   include/linux/hsi (1 files)
+  CHECK   include/linux/isdn (1 files)
+  CHECK   include/linux/mmc (1 files)
+  CHECK   include/linux/netfilter/ipset (4 files)
+  CHECK   include/linux/netfilter (76 files)
+  CHECK   include/linux/netfilter_arp (2 files)
+  CHECK   include/linux/netfilter_bridge (18 files)
+  CHECK   include/linux/netfilter_ipv4 (10 files)
+  CHECK   include/linux/netfilter_ipv6 (11 files)
+  CHECK   include/linux/nfsd (5 files)
+  CHECK   include/linux/raid (2 files)
+  CHECK   include/linux/spi (1 files)
+  CHECK   include/linux/sunrpc (1 files)
+  CHECK   include/linux/tc_act (7 files)
+  CHECK   include/linux/tc_ematch (4 files)
+  CHECK   include/linux/usb (10 files)
+  CHECK   include/linux/wimax (1 files)
+  CHECK   include/linux (378 files)
+  CHECK   include/mtd (5 files)
+  CHECK   include/rdma (6 files)
+  CHECK   include/scsi/fc (4 files)
+  CHECK   include/scsi (3 files)
+  CHECK   include/sound (10 files)
+  CHECK   include/video (3 files)
+  CHECK   include/xen (2 files)
+  CHECK   include (0 files)
+  CHECK   include/asm (33 files)

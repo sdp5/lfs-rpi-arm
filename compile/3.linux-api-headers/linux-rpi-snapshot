@@ -1,0 +1,1014 @@
+/tools
+|-- armv6l-lfs-linux-gnueabihf
+|   |-- bin
+|   |   |-- ar
+|   |   |-- as
+|   |   |-- gcc
+|   |   |-- ld
+|   |   |-- ld.bfd
+|   |   |-- nm
+|   |   |-- objcopy
+|   |   |-- objdump
+|   |   |-- ranlib
+|   |   `-- strip
+|   `-- lib
+|       `-- ldscripts
+|           |-- armelf_linux_eabi.x
+|           |-- armelf_linux_eabi.xbn
+|           |-- armelf_linux_eabi.xc
+|           |-- armelf_linux_eabi.xd
+|           |-- armelf_linux_eabi.xdc
+|           |-- armelf_linux_eabi.xdw
+|           |-- armelf_linux_eabi.xn
+|           |-- armelf_linux_eabi.xr
+|           |-- armelf_linux_eabi.xs
+|           |-- armelf_linux_eabi.xsc
+|           |-- armelf_linux_eabi.xsw
+|           |-- armelf_linux_eabi.xu
+|           |-- armelf_linux_eabi.xw
+|           |-- armelfb_linux_eabi.x
+|           |-- armelfb_linux_eabi.xbn
+|           |-- armelfb_linux_eabi.xc
+|           |-- armelfb_linux_eabi.xd
+|           |-- armelfb_linux_eabi.xdc
+|           |-- armelfb_linux_eabi.xdw
+|           |-- armelfb_linux_eabi.xn
+|           |-- armelfb_linux_eabi.xr
+|           |-- armelfb_linux_eabi.xs
+|           |-- armelfb_linux_eabi.xsc
+|           |-- armelfb_linux_eabi.xsw
+|           |-- armelfb_linux_eabi.xu
+|           `-- armelfb_linux_eabi.xw
+|-- bin
+|   |-- armv6l-lfs-linux-gnueabihf-addr2line
+|   |-- armv6l-lfs-linux-gnueabihf-ar
+|   |-- armv6l-lfs-linux-gnueabihf-as
+|   |-- armv6l-lfs-linux-gnueabihf-c++filt
+|   |-- armv6l-lfs-linux-gnueabihf-cpp
+|   |-- armv6l-lfs-linux-gnueabihf-elfedit
+|   |-- armv6l-lfs-linux-gnueabihf-gcc
+|   |-- armv6l-lfs-linux-gnueabihf-gcc-4.7.2
+|   |-- armv6l-lfs-linux-gnueabihf-gcc-ar
+|   |-- armv6l-lfs-linux-gnueabihf-gcc-nm
+|   |-- armv6l-lfs-linux-gnueabihf-gcc-ranlib
+|   |-- armv6l-lfs-linux-gnueabihf-gcov
+|   |-- armv6l-lfs-linux-gnueabihf-gprof
+|   |-- armv6l-lfs-linux-gnueabihf-ld
+|   |-- armv6l-lfs-linux-gnueabihf-ld.bfd
+|   |-- armv6l-lfs-linux-gnueabihf-nm
+|   |-- armv6l-lfs-linux-gnueabihf-objcopy
+|   |-- armv6l-lfs-linux-gnueabihf-objdump
+|   |-- armv6l-lfs-linux-gnueabihf-ranlib
+|   |-- armv6l-lfs-linux-gnueabihf-readelf
+|   |-- armv6l-lfs-linux-gnueabihf-size
+|   |-- armv6l-lfs-linux-gnueabihf-strings
+|   `-- armv6l-lfs-linux-gnueabihf-strip
+|-- include
+|   |-- asm
+|   |   |-- a.out.h
+|   |   |-- auxvec.h
+|   |   |-- bitsperlong.h
+|   |   |-- byteorder.h
+|   |   |-- errno.h
+|   |   |-- fcntl.h
+|   |   |-- hwcap.h
+|   |   |-- ioctl.h
+|   |   |-- ioctls.h
+|   |   |-- ipcbuf.h
+|   |   |-- kvm_para.h
+|   |   |-- mman.h
+|   |   |-- msgbuf.h
+|   |   |-- param.h
+|   |   |-- poll.h
+|   |   |-- posix_types.h
+|   |   |-- ptrace.h
+|   |   |-- resource.h
+|   |   |-- sembuf.h
+|   |   |-- setup.h
+|   |   |-- shmbuf.h
+|   |   |-- sigcontext.h
+|   |   |-- siginfo.h
+|   |   |-- signal.h
+|   |   |-- socket.h
+|   |   |-- sockios.h
+|   |   |-- stat.h
+|   |   |-- statfs.h
+|   |   |-- swab.h
+|   |   |-- termbits.h
+|   |   |-- termios.h
+|   |   |-- types.h
+|   |   `-- unistd.h
+|   |-- asm-generic
+|   |   |-- auxvec.h
+|   |   |-- bitsperlong.h
+|   |   |-- errno-base.h
+|   |   |-- errno.h
+|   |   |-- fcntl.h
+|   |   |-- int-l64.h
+|   |   |-- int-ll64.h
+|   |   |-- ioctl.h
+|   |   |-- ioctls.h
+|   |   |-- ipcbuf.h
+|   |   |-- kvm_para.h
+|   |   |-- mman-common.h
+|   |   |-- mman.h
+|   |   |-- msgbuf.h
+|   |   |-- param.h
+|   |   |-- poll.h
+|   |   |-- posix_types.h
+|   |   |-- resource.h
+|   |   |-- sembuf.h
+|   |   |-- setup.h
+|   |   |-- shmbuf.h
+|   |   |-- shmparam.h
+|   |   |-- siginfo.h
+|   |   |-- signal-defs.h
+|   |   |-- signal.h
+|   |   |-- socket.h
+|   |   |-- sockios.h
+|   |   |-- stat.h
+|   |   |-- statfs.h
+|   |   |-- swab.h
+|   |   |-- termbits.h
+|   |   |-- termios.h
+|   |   |-- types.h
+|   |   |-- ucontext.h
+|   |   `-- unistd.h
+|   |-- drm
+|   |   |-- drm.h
+|   |   |-- drm_fourcc.h
+|   |   |-- drm_mode.h
+|   |   |-- drm_sarea.h
+|   |   |-- exynos_drm.h
+|   |   |-- i810_drm.h
+|   |   |-- i915_drm.h
+|   |   |-- mga_drm.h
+|   |   |-- nouveau_drm.h
+|   |   |-- r128_drm.h
+|   |   |-- radeon_drm.h
+|   |   |-- savage_drm.h
+|   |   |-- sis_drm.h
+|   |   |-- via_drm.h
+|   |   `-- vmwgfx_drm.h
+|   |-- linux
+|   |   |-- a.out.h
+|   |   |-- acct.h
+|   |   |-- adb.h
+|   |   |-- adfs_fs.h
+|   |   |-- affs_hardblocks.h
+|   |   |-- agpgart.h
+|   |   |-- aio_abi.h
+|   |   |-- apm_bios.h
+|   |   |-- arcfb.h
+|   |   |-- atalk.h
+|   |   |-- atm.h
+|   |   |-- atm_eni.h
+|   |   |-- atm_he.h
+|   |   |-- atm_idt77105.h
+|   |   |-- atm_nicstar.h
+|   |   |-- atm_tcp.h
+|   |   |-- atm_zatm.h
+|   |   |-- atmapi.h
+|   |   |-- atmarp.h
+|   |   |-- atmbr2684.h
+|   |   |-- atmclip.h
+|   |   |-- atmdev.h
+|   |   |-- atmioc.h
+|   |   |-- atmlec.h
+|   |   |-- atmmpc.h
+|   |   |-- atmppp.h
+|   |   |-- atmsap.h
+|   |   |-- atmsvc.h
+|   |   |-- audit.h
+|   |   |-- auto_fs.h
+|   |   |-- auto_fs4.h
+|   |   |-- auxvec.h
+|   |   |-- ax25.h
+|   |   |-- b1lli.h
+|   |   |-- baycom.h
+|   |   |-- bfs_fs.h
+|   |   |-- binfmts.h
+|   |   |-- blk_types.h
+|   |   |-- blkpg.h
+|   |   |-- blktrace_api.h
+|   |   |-- bpqether.h
+|   |   |-- bsg.h
+|   |   |-- byteorder
+|   |   |   |-- big_endian.h
+|   |   |   `-- little_endian.h
+|   |   |-- caif
+|   |   |   |-- caif_socket.h
+|   |   |   `-- if_caif.h
+|   |   |-- can
+|   |   |   |-- bcm.h
+|   |   |   |-- error.h
+|   |   |   |-- gw.h
+|   |   |   |-- netlink.h
+|   |   |   `-- raw.h
+|   |   |-- can.h
+|   |   |-- capability.h
+|   |   |-- capi.h
+|   |   |-- cciss_defs.h
+|   |   |-- cciss_ioctl.h
+|   |   |-- cdk.h
+|   |   |-- cdrom.h
+|   |   |-- cgroupstats.h
+|   |   |-- chio.h
+|   |   |-- cm4000_cs.h
+|   |   |-- cn_proc.h
+|   |   |-- coda.h
+|   |   |-- coda_psdev.h
+|   |   |-- coff.h
+|   |   |-- comstats.h
+|   |   |-- connector.h
+|   |   |-- const.h
+|   |   |-- cramfs_fs.h
+|   |   |-- cuda.h
+|   |   |-- cyclades.h
+|   |   |-- cycx_cfm.h
+|   |   |-- dcbnl.h
+|   |   |-- dccp.h
+|   |   |-- dlm.h
+|   |   |-- dlm_device.h
+|   |   |-- dlm_netlink.h
+|   |   |-- dlm_plock.h
+|   |   |-- dlmconstants.h
+|   |   |-- dm-ioctl.h
+|   |   |-- dm-log-userspace.h
+|   |   |-- dn.h
+|   |   |-- dqblk_xfs.h
+|   |   |-- dvb
+|   |   |   |-- audio.h
+|   |   |   |-- ca.h
+|   |   |   |-- dmx.h
+|   |   |   |-- frontend.h
+|   |   |   |-- net.h
+|   |   |   |-- osd.h
+|   |   |   |-- version.h
+|   |   |   `-- video.h
+|   |   |-- edd.h
+|   |   |-- efs_fs_sb.h
+|   |   |-- elf-em.h
+|   |   |-- elf-fdpic.h
+|   |   |-- elf.h
+|   |   |-- elfcore.h
+|   |   |-- errno.h
+|   |   |-- errqueue.h
+|   |   |-- ethtool.h
+|   |   |-- eventpoll.h
+|   |   |-- fadvise.h
+|   |   |-- falloc.h
+|   |   |-- fanotify.h
+|   |   |-- fb.h
+|   |   |-- fcntl.h
+|   |   |-- fd.h
+|   |   |-- fdreg.h
+|   |   |-- fib_rules.h
+|   |   |-- fiemap.h
+|   |   |-- filter.h
+|   |   |-- firewire-cdev.h
+|   |   |-- firewire-constants.h
+|   |   |-- flat.h
+|   |   |-- fs.h
+|   |   |-- fsl_hypervisor.h
+|   |   |-- fuse.h
+|   |   |-- futex.h
+|   |   |-- gameport.h
+|   |   |-- gen_stats.h
+|   |   |-- generic_serial.h
+|   |   |-- genetlink.h
+|   |   |-- gfs2_ondisk.h
+|   |   |-- gigaset_dev.h
+|   |   |-- hdlc
+|   |   |   `-- ioctl.h
+|   |   |-- hdlc.h
+|   |   |-- hdlcdrv.h
+|   |   |-- hdreg.h
+|   |   |-- hid.h
+|   |   |-- hiddev.h
+|   |   |-- hidraw.h
+|   |   |-- hpet.h
+|   |   |-- hsi
+|   |   |   `-- hsi_char.h
+|   |   |-- hysdn_if.h
+|   |   |-- i2c-dev.h
+|   |   |-- i2c.h
+|   |   |-- i2o-dev.h
+|   |   |-- i8k.h
+|   |   |-- icmp.h
+|   |   |-- icmpv6.h
+|   |   |-- if.h
+|   |   |-- if_addr.h
+|   |   |-- if_addrlabel.h
+|   |   |-- if_alg.h
+|   |   |-- if_arcnet.h
+|   |   |-- if_arp.h
+|   |   |-- if_bonding.h
+|   |   |-- if_bridge.h
+|   |   |-- if_cablemodem.h
+|   |   |-- if_eql.h
+|   |   |-- if_ether.h
+|   |   |-- if_fc.h
+|   |   |-- if_fddi.h
+|   |   |-- if_frad.h
+|   |   |-- if_hippi.h
+|   |   |-- if_infiniband.h
+|   |   |-- if_link.h
+|   |   |-- if_ltalk.h
+|   |   |-- if_packet.h
+|   |   |-- if_phonet.h
+|   |   |-- if_plip.h
+|   |   |-- if_ppp.h
+|   |   |-- if_pppol2tp.h
+|   |   |-- if_pppox.h
+|   |   |-- if_slip.h
+|   |   |-- if_team.h
+|   |   |-- if_tun.h
+|   |   |-- if_tunnel.h
+|   |   |-- if_vlan.h
+|   |   |-- if_x25.h
+|   |   |-- igmp.h
+|   |   |-- in.h
+|   |   |-- in6.h
+|   |   |-- in_route.h
+|   |   |-- inet_diag.h
+|   |   |-- inotify.h
+|   |   |-- input.h
+|   |   |-- ioctl.h
+|   |   |-- ip.h
+|   |   |-- ip6_tunnel.h
+|   |   |-- ip_vs.h
+|   |   |-- ipc.h
+|   |   |-- ipmi.h
+|   |   |-- ipmi_msgdefs.h
+|   |   |-- ipsec.h
+|   |   |-- ipv6.h
+|   |   |-- ipv6_route.h
+|   |   |-- ipx.h
+|   |   |-- irda.h
+|   |   |-- irqnr.h
+|   |   |-- isdn
+|   |   |   `-- capicmd.h
+|   |   |-- isdn.h
+|   |   |-- isdn_divertif.h
+|   |   |-- isdn_ppp.h
+|   |   |-- isdnif.h
+|   |   |-- iso_fs.h
+|   |   |-- ivtv.h
+|   |   |-- ivtvfb.h
+|   |   |-- ixjuser.h
+|   |   |-- jffs2.h
+|   |   |-- joystick.h
+|   |   |-- kd.h
+|   |   |-- kdev_t.h
+|   |   |-- kernel-page-flags.h
+|   |   |-- kernel.h
+|   |   |-- kernelcapi.h
+|   |   |-- kexec.h
+|   |   |-- keyboard.h
+|   |   |-- keyctl.h
+|   |   |-- kvm_para.h
+|   |   |-- l2tp.h
+|   |   |-- limits.h
+|   |   |-- llc.h
+|   |   |-- loop.h
+|   |   |-- lp.h
+|   |   |-- magic.h
+|   |   |-- major.h
+|   |   |-- map_to_7segment.h
+|   |   |-- matroxfb.h
+|   |   |-- mdio.h
+|   |   |-- media.h
+|   |   |-- mei.h
+|   |   |-- mempolicy.h
+|   |   |-- meye.h
+|   |   |-- mii.h
+|   |   |-- minix_fs.h
+|   |   |-- mman.h
+|   |   |-- mmc
+|   |   |   `-- ioctl.h
+|   |   |-- mmtimer.h
+|   |   |-- mqueue.h
+|   |   |-- mroute.h
+|   |   |-- mroute6.h
+|   |   |-- msdos_fs.h
+|   |   |-- msg.h
+|   |   |-- mtio.h
+|   |   |-- n_r3964.h
+|   |   |-- nbd.h
+|   |   |-- ncp.h
+|   |   |-- ncp_fs.h
+|   |   |-- ncp_mount.h
+|   |   |-- ncp_no.h
+|   |   |-- neighbour.h
+|   |   |-- net.h
+|   |   |-- net_dropmon.h
+|   |   |-- net_tstamp.h
+|   |   |-- netdevice.h
+|   |   |-- netfilter
+|   |   |   |-- ipset
+|   |   |   |   |-- ip_set.h
+|   |   |   |   |-- ip_set_bitmap.h
+|   |   |   |   |-- ip_set_hash.h
+|   |   |   |   `-- ip_set_list.h
+|   |   |   |-- nf_conntrack_common.h
+|   |   |   |-- nf_conntrack_ftp.h
+|   |   |   |-- nf_conntrack_sctp.h
+|   |   |   |-- nf_conntrack_tcp.h
+|   |   |   |-- nf_conntrack_tuple_common.h
+|   |   |   |-- nf_nat.h
+|   |   |   |-- nfnetlink.h
+|   |   |   |-- nfnetlink_acct.h
+|   |   |   |-- nfnetlink_compat.h
+|   |   |   |-- nfnetlink_conntrack.h
+|   |   |   |-- nfnetlink_cthelper.h
+|   |   |   |-- nfnetlink_cttimeout.h
+|   |   |   |-- nfnetlink_log.h
+|   |   |   |-- nfnetlink_queue.h
+|   |   |   |-- x_tables.h
+|   |   |   |-- xt_AUDIT.h
+|   |   |   |-- xt_CHECKSUM.h
+|   |   |   |-- xt_CLASSIFY.h
+|   |   |   |-- xt_CONNMARK.h
+|   |   |   |-- xt_CONNSECMARK.h
+|   |   |   |-- xt_CT.h
+|   |   |   |-- xt_DSCP.h
+|   |   |   |-- xt_IDLETIMER.h
+|   |   |   |-- xt_LED.h
+|   |   |   |-- xt_LOG.h
+|   |   |   |-- xt_MARK.h
+|   |   |   |-- xt_NFLOG.h
+|   |   |   |-- xt_NFQUEUE.h
+|   |   |   |-- xt_RATEEST.h
+|   |   |   |-- xt_SECMARK.h
+|   |   |   |-- xt_TCPMSS.h
+|   |   |   |-- xt_TCPOPTSTRIP.h
+|   |   |   |-- xt_TEE.h
+|   |   |   |-- xt_TPROXY.h
+|   |   |   |-- xt_addrtype.h
+|   |   |   |-- xt_cluster.h
+|   |   |   |-- xt_comment.h
+|   |   |   |-- xt_connbytes.h
+|   |   |   |-- xt_connlimit.h
+|   |   |   |-- xt_connmark.h
+|   |   |   |-- xt_conntrack.h
+|   |   |   |-- xt_cpu.h
+|   |   |   |-- xt_dccp.h
+|   |   |   |-- xt_devgroup.h
+|   |   |   |-- xt_dscp.h
+|   |   |   |-- xt_ecn.h
+|   |   |   |-- xt_esp.h
+|   |   |   |-- xt_hashlimit.h
+|   |   |   |-- xt_helper.h
+|   |   |   |-- xt_iprange.h
+|   |   |   |-- xt_ipvs.h
+|   |   |   |-- xt_length.h
+|   |   |   |-- xt_limit.h
+|   |   |   |-- xt_mac.h
+|   |   |   |-- xt_mark.h
+|   |   |   |-- xt_multiport.h
+|   |   |   |-- xt_nfacct.h
+|   |   |   |-- xt_osf.h
+|   |   |   |-- xt_owner.h
+|   |   |   |-- xt_physdev.h
+|   |   |   |-- xt_pkttype.h
+|   |   |   |-- xt_policy.h
+|   |   |   |-- xt_quota.h
+|   |   |   |-- xt_rateest.h
+|   |   |   |-- xt_realm.h
+|   |   |   |-- xt_recent.h
+|   |   |   |-- xt_sctp.h
+|   |   |   |-- xt_set.h
+|   |   |   |-- xt_socket.h
+|   |   |   |-- xt_state.h
+|   |   |   |-- xt_statistic.h
+|   |   |   |-- xt_string.h
+|   |   |   |-- xt_tcpmss.h
+|   |   |   |-- xt_tcpudp.h
+|   |   |   |-- xt_time.h
+|   |   |   `-- xt_u32.h
+|   |   |-- netfilter.h
+|   |   |-- netfilter_arp
+|   |   |   |-- arp_tables.h
+|   |   |   `-- arpt_mangle.h
+|   |   |-- netfilter_arp.h
+|   |   |-- netfilter_bridge
+|   |   |   |-- ebt_802_3.h
+|   |   |   |-- ebt_among.h
+|   |   |   |-- ebt_arp.h
+|   |   |   |-- ebt_arpreply.h
+|   |   |   |-- ebt_ip.h
+|   |   |   |-- ebt_ip6.h
+|   |   |   |-- ebt_limit.h
+|   |   |   |-- ebt_log.h
+|   |   |   |-- ebt_mark_m.h
+|   |   |   |-- ebt_mark_t.h
+|   |   |   |-- ebt_nat.h
+|   |   |   |-- ebt_nflog.h
+|   |   |   |-- ebt_pkttype.h
+|   |   |   |-- ebt_redirect.h
+|   |   |   |-- ebt_stp.h
+|   |   |   |-- ebt_ulog.h
+|   |   |   |-- ebt_vlan.h
+|   |   |   `-- ebtables.h
+|   |   |-- netfilter_bridge.h
+|   |   |-- netfilter_decnet.h
+|   |   |-- netfilter_ipv4
+|   |   |   |-- ip_tables.h
+|   |   |   |-- ipt_CLUSTERIP.h
+|   |   |   |-- ipt_ECN.h
+|   |   |   |-- ipt_LOG.h
+|   |   |   |-- ipt_REJECT.h
+|   |   |   |-- ipt_TTL.h
+|   |   |   |-- ipt_ULOG.h
+|   |   |   |-- ipt_ah.h
+|   |   |   |-- ipt_ecn.h
+|   |   |   `-- ipt_ttl.h
+|   |   |-- netfilter_ipv4.h
+|   |   |-- netfilter_ipv6
+|   |   |   |-- ip6_tables.h
+|   |   |   |-- ip6t_HL.h
+|   |   |   |-- ip6t_LOG.h
+|   |   |   |-- ip6t_REJECT.h
+|   |   |   |-- ip6t_ah.h
+|   |   |   |-- ip6t_frag.h
+|   |   |   |-- ip6t_hl.h
+|   |   |   |-- ip6t_ipv6header.h
+|   |   |   |-- ip6t_mh.h
+|   |   |   |-- ip6t_opts.h
+|   |   |   `-- ip6t_rt.h
+|   |   |-- netfilter_ipv6.h
+|   |   |-- netlink.h
+|   |   |-- netrom.h
+|   |   |-- nfc.h
+|   |   |-- nfs.h
+|   |   |-- nfs2.h
+|   |   |-- nfs3.h
+|   |   |-- nfs4.h
+|   |   |-- nfs4_mount.h
+|   |   |-- nfs_fs.h
+|   |   |-- nfs_idmap.h
+|   |   |-- nfs_mount.h
+|   |   |-- nfsacl.h
+|   |   |-- nfsd
+|   |   |   |-- cld.h
+|   |   |   |-- debug.h
+|   |   |   |-- export.h
+|   |   |   |-- nfsfh.h
+|   |   |   `-- stats.h
+|   |   |-- nl80211.h
+|   |   |-- nubus.h
+|   |   |-- nvram.h
+|   |   |-- omap3isp.h
+|   |   |-- omapfb.h
+|   |   |-- oom.h
+|   |   |-- param.h
+|   |   |-- parport.h
+|   |   |-- patchkey.h
+|   |   |-- pci.h
+|   |   |-- pci_regs.h
+|   |   |-- perf_event.h
+|   |   |-- personality.h
+|   |   |-- pfkeyv2.h
+|   |   |-- pg.h
+|   |   |-- phantom.h
+|   |   |-- phonet.h
+|   |   |-- pkt_cls.h
+|   |   |-- pkt_sched.h
+|   |   |-- pktcdvd.h
+|   |   |-- pmu.h
+|   |   |-- poll.h
+|   |   |-- posix_types.h
+|   |   |-- ppdev.h
+|   |   |-- ppp-comp.h
+|   |   |-- ppp-ioctl.h
+|   |   |-- ppp_defs.h
+|   |   |-- pps.h
+|   |   |-- prctl.h
+|   |   |-- ptp_clock.h
+|   |   |-- ptrace.h
+|   |   |-- qnx4_fs.h
+|   |   |-- qnxtypes.h
+|   |   |-- quota.h
+|   |   |-- radeonfb.h
+|   |   |-- raid
+|   |   |   |-- md_p.h
+|   |   |   `-- md_u.h
+|   |   |-- random.h
+|   |   |-- raw.h
+|   |   |-- rds.h
+|   |   |-- reboot.h
+|   |   |-- reiserfs_fs.h
+|   |   |-- reiserfs_xattr.h
+|   |   |-- resource.h
+|   |   |-- rfkill.h
+|   |   |-- romfs_fs.h
+|   |   |-- rose.h
+|   |   |-- route.h
+|   |   |-- rtc.h
+|   |   |-- rtnetlink.h
+|   |   |-- scc.h
+|   |   |-- sched.h
+|   |   |-- screen_info.h
+|   |   |-- sdla.h
+|   |   |-- seccomp.h
+|   |   |-- securebits.h
+|   |   |-- selinux_netlink.h
+|   |   |-- sem.h
+|   |   |-- serial.h
+|   |   |-- serial_core.h
+|   |   |-- serial_reg.h
+|   |   |-- serio.h
+|   |   |-- shm.h
+|   |   |-- signal.h
+|   |   |-- signalfd.h
+|   |   |-- snmp.h
+|   |   |-- sock_diag.h
+|   |   |-- socket.h
+|   |   |-- sockios.h
+|   |   |-- som.h
+|   |   |-- sonet.h
+|   |   |-- sonypi.h
+|   |   |-- sound.h
+|   |   |-- soundcard.h
+|   |   |-- spi
+|   |   |   `-- spidev.h
+|   |   |-- stat.h
+|   |   |-- stddef.h
+|   |   |-- string.h
+|   |   |-- sunrpc
+|   |   |   `-- debug.h
+|   |   |-- suspend_ioctls.h
+|   |   |-- swab.h
+|   |   |-- synclink.h
+|   |   |-- sysctl.h
+|   |   |-- sysinfo.h
+|   |   |-- taskstats.h
+|   |   |-- tc_act
+|   |   |   |-- tc_csum.h
+|   |   |   |-- tc_gact.h
+|   |   |   |-- tc_ipt.h
+|   |   |   |-- tc_mirred.h
+|   |   |   |-- tc_nat.h
+|   |   |   |-- tc_pedit.h
+|   |   |   `-- tc_skbedit.h
+|   |   |-- tc_ematch
+|   |   |   |-- tc_em_cmp.h
+|   |   |   |-- tc_em_meta.h
+|   |   |   |-- tc_em_nbyte.h
+|   |   |   `-- tc_em_text.h
+|   |   |-- tcp.h
+|   |   |-- telephony.h
+|   |   |-- termios.h
+|   |   |-- time.h
+|   |   |-- times.h
+|   |   |-- timex.h
+|   |   |-- tiocl.h
+|   |   |-- tipc.h
+|   |   |-- tipc_config.h
+|   |   |-- toshiba.h
+|   |   |-- tty.h
+|   |   |-- types.h
+|   |   |-- udf_fs_i.h
+|   |   |-- udp.h
+|   |   |-- uhid.h
+|   |   |-- uinput.h
+|   |   |-- uio.h
+|   |   |-- ultrasound.h
+|   |   |-- un.h
+|   |   |-- unistd.h
+|   |   |-- unix_diag.h
+|   |   |-- usb
+|   |   |   |-- audio.h
+|   |   |   |-- cdc.h
+|   |   |   |-- ch11.h
+|   |   |   |-- ch9.h
+|   |   |   |-- functionfs.h
+|   |   |   |-- g_printer.h
+|   |   |   |-- gadgetfs.h
+|   |   |   |-- midi.h
+|   |   |   |-- tmc.h
+|   |   |   `-- video.h
+|   |   |-- usbdevice_fs.h
+|   |   |-- utime.h
+|   |   |-- utsname.h
+|   |   |-- uuid.h
+|   |   |-- uvcvideo.h
+|   |   |-- v4l2-common.h
+|   |   |-- v4l2-dv-timings.h
+|   |   |-- v4l2-mediabus.h
+|   |   |-- v4l2-subdev.h
+|   |   |-- version.h
+|   |   |-- veth.h
+|   |   |-- vfio.h
+|   |   |-- vhost.h
+|   |   |-- videodev2.h
+|   |   |-- virtio_9p.h
+|   |   |-- virtio_balloon.h
+|   |   |-- virtio_blk.h
+|   |   |-- virtio_config.h
+|   |   |-- virtio_console.h
+|   |   |-- virtio_ids.h
+|   |   |-- virtio_net.h
+|   |   |-- virtio_pci.h
+|   |   |-- virtio_ring.h
+|   |   |-- virtio_rng.h
+|   |   |-- vt.h
+|   |   |-- wait.h
+|   |   |-- wanrouter.h
+|   |   |-- watchdog.h
+|   |   |-- wimax
+|   |   |   `-- i2400m.h
+|   |   |-- wimax.h
+|   |   |-- wireless.h
+|   |   |-- x25.h
+|   |   |-- xattr.h
+|   |   `-- xfrm.h
+|   |-- mtd
+|   |   |-- inftl-user.h
+|   |   |-- mtd-abi.h
+|   |   |-- mtd-user.h
+|   |   |-- nftl-user.h
+|   |   `-- ubi-user.h
+|   |-- rdma
+|   |   |-- ib_user_cm.h
+|   |   |-- ib_user_mad.h
+|   |   |-- ib_user_sa.h
+|   |   |-- ib_user_verbs.h
+|   |   |-- rdma_netlink.h
+|   |   `-- rdma_user_cm.h
+|   |-- scsi
+|   |   |-- fc
+|   |   |   |-- fc_els.h
+|   |   |   |-- fc_fs.h
+|   |   |   |-- fc_gs.h
+|   |   |   `-- fc_ns.h
+|   |   |-- scsi_bsg_fc.h
+|   |   |-- scsi_netlink.h
+|   |   `-- scsi_netlink_fc.h
+|   |-- sound
+|   |   |-- asequencer.h
+|   |   |-- asound.h
+|   |   |-- asound_fm.h
+|   |   |-- compress_offload.h
+|   |   |-- compress_params.h
+|   |   |-- emu10k1.h
+|   |   |-- hdsp.h
+|   |   |-- hdspm.h
+|   |   |-- sb16_csp.h
+|   |   `-- sfnt_info.h
+|   |-- video
+|   |   |-- edid.h
+|   |   |-- sisfb.h
+|   |   `-- uvesafb.h
+|   `-- xen
+|       |-- evtchn.h
+|       `-- privcmd.h
+|-- lib
+|   |-- gcc
+|   |   `-- armv6l-lfs-linux-gnueabihf
+|   |       `-- 4.7.2
+|   |           |-- include
+|   |           |   |-- arm_neon.h
+|   |           |   |-- float.h
+|   |           |   |-- iso646.h
+|   |           |   |-- mmintrin.h
+|   |           |   |-- stdalign.h
+|   |           |   |-- stdarg.h
+|   |           |   |-- stdbool.h
+|   |           |   |-- stddef.h
+|   |           |   |-- stdfix.h
+|   |           |   |-- stdint-gcc.h
+|   |           |   |-- stdint.h
+|   |           |   |-- stdnoreturn.h
+|   |           |   |-- unwind-arm-common.h
+|   |           |   `-- varargs.h
+|   |           |-- include-fixed
+|   |           |   |-- README
+|   |           |   |-- limits.h
+|   |           |   `-- syslimits.h
+|   |           |-- install-tools
+|   |           |   |-- fixinc_list
+|   |           |   |-- gsyslimits.h
+|   |           |   |-- include
+|   |           |   |   |-- README
+|   |           |   |   `-- limits.h
+|   |           |   |-- macro_list
+|   |           |   `-- mkheaders.conf
+|   |           `-- plugin
+|   |               |-- gtype.state
+|   |               `-- include
+|   |                   |-- ada
+|   |                   |   `-- gcc-interface
+|   |                   |       `-- ada-tree.def
+|   |                   |-- alias.h
+|   |                   |-- all-tree.def
+|   |                   |-- alloc-pool.h
+|   |                   |-- ansidecl.h
+|   |                   |-- auto-host.h
+|   |                   |-- b-header-vars
+|   |                   |-- basic-block.h
+|   |                   |-- bitmap.h
+|   |                   |-- builtins.def
+|   |                   |-- bversion.h
+|   |                   |-- c-family
+|   |                   |   |-- c-common.def
+|   |                   |   |-- c-common.h
+|   |                   |   |-- c-objc.h
+|   |                   |   |-- c-pragma.h
+|   |                   |   `-- c-pretty-print.h
+|   |                   |-- c-tree.h
+|   |                   |-- cfghooks.h
+|   |                   |-- cfgloop.h
+|   |                   |-- cgraph.h
+|   |                   |-- cif-code.def
+|   |                   |-- config
+|   |                   |   |-- arm
+|   |                   |   |   |-- aout.h
+|   |                   |   |   |-- arm-opts.h
+|   |                   |   |   |-- arm-protos.h
+|   |                   |   |   |-- arm.h
+|   |                   |   |   |-- bpabi.h
+|   |                   |   |   |-- elf.h
+|   |                   |   |   |-- linux-eabi.h
+|   |                   |   |   |-- linux-elf.h
+|   |                   |   |   `-- linux-gas.h
+|   |                   |   |-- dbxelf.h
+|   |                   |   |-- elfos.h
+|   |                   |   |-- glibc-stdint.h
+|   |                   |   |-- gnu-user.h
+|   |                   |   |-- initfini-array.h
+|   |                   |   |-- linux-android.h
+|   |                   |   `-- linux.h
+|   |                   |-- config.h
+|   |                   |-- configargs.h
+|   |                   |-- coretypes.h
+|   |                   |-- cp
+|   |                   |   `-- cp-tree.def
+|   |                   |-- cppdefault.h
+|   |                   |-- cpplib.h
+|   |                   |-- debug.h
+|   |                   |-- defaults.h
+|   |                   |-- diagnostic-core.h
+|   |                   |-- diagnostic.def
+|   |                   |-- diagnostic.h
+|   |                   |-- double-int.h
+|   |                   |-- emit-rtl.h
+|   |                   |-- except.h
+|   |                   |-- filenames.h
+|   |                   |-- fixed-value.h
+|   |                   |-- flag-types.h
+|   |                   |-- flags.h
+|   |                   |-- function.h
+|   |                   |-- gcc-plugin.h
+|   |                   |-- genrtl.h
+|   |                   |-- ggc.h
+|   |                   |-- gimple-pretty-print.h
+|   |                   |-- gimple.def
+|   |                   |-- gimple.h
+|   |                   |-- gsstruct.def
+|   |                   |-- gtm-builtins.def
+|   |                   |-- gtype-desc.h
+|   |                   |-- hard-reg-set.h
+|   |                   |-- hashtab.h
+|   |                   |-- highlev-plugin-common.h
+|   |                   |-- hwint.h
+|   |                   |-- incpath.h
+|   |                   |-- input.h
+|   |                   |-- insn-constants.h
+|   |                   |-- insn-flags.h
+|   |                   |-- insn-modes.h
+|   |                   |-- insn-notes.def
+|   |                   |-- internal-fn.def
+|   |                   |-- internal-fn.h
+|   |                   |-- intl.h
+|   |                   |-- ipa-prop.h
+|   |                   |-- ipa-ref-inline.h
+|   |                   |-- ipa-ref.h
+|   |                   |-- ipa-reference.h
+|   |                   |-- ipa-utils.h
+|   |                   |-- java
+|   |                   |   `-- java-tree.def
+|   |                   |-- langhooks.h
+|   |                   |-- libiberty.h
+|   |                   |-- line-map.h
+|   |                   |-- machmode.h
+|   |                   |-- md5.h
+|   |                   |-- mode-classes.def
+|   |                   |-- objc
+|   |                   |   `-- objc-tree.def
+|   |                   |-- obstack.h
+|   |                   |-- omp-builtins.def
+|   |                   |-- options.h
+|   |                   |-- opts.h
+|   |                   |-- output.h
+|   |                   |-- params.def
+|   |                   |-- params.h
+|   |                   |-- plugin-api.h
+|   |                   |-- plugin-version.h
+|   |                   |-- plugin.def
+|   |                   |-- plugin.h
+|   |                   |-- pointer-set.h
+|   |                   |-- predict.def
+|   |                   |-- predict.h
+|   |                   |-- prefix.h
+|   |                   |-- pretty-print.h
+|   |                   |-- real.h
+|   |                   |-- realmpfr.h
+|   |                   |-- reg-notes.def
+|   |                   |-- rtl.def
+|   |                   |-- rtl.h
+|   |                   |-- safe-ctype.h
+|   |                   |-- sbitmap.h
+|   |                   |-- splay-tree.h
+|   |                   |-- statistics.h
+|   |                   |-- symtab.h
+|   |                   |-- sync-builtins.def
+|   |                   |-- system.h
+|   |                   |-- target-hooks-macros.h
+|   |                   |-- target.def
+|   |                   |-- target.h
+|   |                   |-- timevar.def
+|   |                   |-- timevar.h
+|   |                   |-- tm-preds.h
+|   |                   |-- tm.h
+|   |                   |-- tm_p.h
+|   |                   |-- toplev.h
+|   |                   |-- tree-check.h
+|   |                   |-- tree-dump.h
+|   |                   |-- tree-flow-inline.h
+|   |                   |-- tree-flow.h
+|   |                   |-- tree-inline.h
+|   |                   |-- tree-iterator.h
+|   |                   |-- tree-pass.h
+|   |                   |-- tree-pretty-print.h
+|   |                   |-- tree-ssa-alias.h
+|   |                   |-- tree-ssa-operands.h
+|   |                   |-- tree-ssa-sccvn.h
+|   |                   |-- tree.def
+|   |                   |-- tree.h
+|   |                   |-- treestruct.def
+|   |                   |-- vec.h
+|   |                   |-- vecir.h
+|   |                   |-- vecprim.h
+|   |                   `-- version.h
+|   `-- libiberty.a
+|-- libexec
+|   `-- gcc
+|       `-- armv6l-lfs-linux-gnueabihf
+|           `-- 4.7.2
+|               |-- cc1
+|               |-- collect2
+|               |-- install-tools
+|               |   |-- fixinc.sh
+|               |   |-- fixincl
+|               |   |-- mkheaders
+|               |   `-- mkinstalldirs
+|               |-- liblto_plugin.la
+|               |-- liblto_plugin.so -> liblto_plugin.so.0.0.0
+|               |-- liblto_plugin.so.0 -> liblto_plugin.so.0.0.0
+|               |-- liblto_plugin.so.0.0.0
+|               |-- lto-wrapper
+|               |-- lto1
+|               `-- plugin
+|                   `-- gengtype
+`-- share
+    |-- info
+    |   |-- as.info
+    |   |-- bfd.info
+    |   |-- binutils.info
+    |   |-- configure.info
+    |   |-- dir
+    |   |-- gprof.info
+    |   |-- ld.info
+    |   `-- standards.info
+    `-- man
+        |-- man1
+        |   |-- armv6l-lfs-linux-gnueabihf-addr2line.1
+        |   |-- armv6l-lfs-linux-gnueabihf-ar.1
+        |   |-- armv6l-lfs-linux-gnueabihf-as.1
+        |   |-- armv6l-lfs-linux-gnueabihf-c++filt.1
+        |   |-- armv6l-lfs-linux-gnueabihf-cpp.1
+        |   |-- armv6l-lfs-linux-gnueabihf-dlltool.1
+        |   |-- armv6l-lfs-linux-gnueabihf-elfedit.1
+        |   |-- armv6l-lfs-linux-gnueabihf-gcc.1
+        |   |-- armv6l-lfs-linux-gnueabihf-gcov.1
+        |   |-- armv6l-lfs-linux-gnueabihf-gprof.1
+        |   |-- armv6l-lfs-linux-gnueabihf-ld.1
+        |   |-- armv6l-lfs-linux-gnueabihf-nlmconv.1
+        |   |-- armv6l-lfs-linux-gnueabihf-nm.1
+        |   |-- armv6l-lfs-linux-gnueabihf-objcopy.1
+        |   |-- armv6l-lfs-linux-gnueabihf-objdump.1
+        |   |-- armv6l-lfs-linux-gnueabihf-ranlib.1
+        |   |-- armv6l-lfs-linux-gnueabihf-readelf.1
+        |   |-- armv6l-lfs-linux-gnueabihf-size.1
+        |   |-- armv6l-lfs-linux-gnueabihf-strings.1
+        |   |-- armv6l-lfs-linux-gnueabihf-strip.1
+        |   |-- armv6l-lfs-linux-gnueabihf-windmc.1
+        |   `-- armv6l-lfs-linux-gnueabihf-windres.1
+        `-- man7
+            |-- fsf-funding.7
+            |-- gfdl.7
+            `-- gpl.7
+
+68 directories, 943 files
