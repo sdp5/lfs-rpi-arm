@@ -1,7 +1,7 @@
 # lfs-rpi-armv6l
 linux build log
 
-- Linux from scratch v7.3 with the [fix](https://sourceware.org/bugzilla/attachment.cgi?id=6807).
+- Linux from scratch v9.0 with the [fix](https://sourceware.org/bugzilla/attachment.cgi?id=6807).
 - Raspberry Pi 2011.12
     - Model B Revision 2.0 (512MB)
     - Linux raspberrypi 5.4.51+ #1333 armv6l GNU/Linux
@@ -19,7 +19,7 @@ linux build log
 4. `mkdir -v $LFS/tools` and `ln -sv $LFS/tools /tools`
     - `export PREFIX=/tools`
 5. `groupadd lfs` and `useradd -s /bin/bash -g lfs -m -k /dev/null lfs`
-6. Follow [LFS v7.3](http://www.linuxfromscratch.org/lfs/downloads/7.3/LFS-BOOK-7.3.pdf) to set environment.
+6. Follow [LFS v9.0](http://www.linuxfromscratch.org/lfs/downloads/9.0/LFS-BOOK-9.0.pdf) to set environment.
 
 ### Moving further
 
