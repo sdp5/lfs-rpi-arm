@@ -7,3 +7,4 @@
 5. [Libstdc++](https://github.com/sundeep-anand/lfs-rpi-armv6l/tree/master/compile/5.libstdc++)
 6. [Tcl](https://github.com/sundeep-anand/lfs-rpi-armv6l/tree/master/compile/6.tcl)
 7. [Expect](https://github.com/sundeep-anand/lfs-rpi-armv6l/tree/master/compile/7.expect)
+8. [DejaGNU](https://github.com/sundeep-anand/lfs-rpi-armv6l/tree/master/compile/8.dejagnu)
