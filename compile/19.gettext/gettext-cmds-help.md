@@ -1,7 +1,6 @@
 
 
 ## gettext-runtime/src
----
 
 ### envsubst
 ```
@@ -96,9 +95,7 @@ Report bugs in the bug tracker at <https://savannah.gnu.org/projects/gettext>
 or by email to <bug-gettext@gnu.org>.
 ```
 
----
 ## gettext-tools/src
----
 
 ### cldr-plurals
 ```
