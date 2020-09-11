@@ -1,0 +1,159 @@
+  LEX      examples/c/reccalc/scan.stamp
+  GEN      lib/alloca.h
+  GEN      lib/configmake.h
+  GEN      lib/fcntl.h
+  GEN      lib/inttypes.h
+  GEN      lib/textstyle.h
+  GEN      lib/limits.h
+  GEN      lib/math.h
+  GEN      lib/signal.h
+  GEN      lib/spawn.h
+  GEN      lib/stdint.h
+  GEN      lib/stdio.h
+  GEN      lib/stdlib.h
+  GEN      lib/string.h
+  GEN      lib/sys/resource.h
+  GEN      lib/sys/time.h
+  GEN      lib/sys/times.h
+  GEN      lib/sys/types.h
+  GEN      lib/sys/wait.h
+  GEN      lib/time.h
+  GEN      lib/unistd.h
+  GEN      lib/unitypes.h
+  GEN      lib/uniwidth.h
+  GEN      lib/wchar.h
+  GEN      lib/wctype.h
+make  all-recursive
+make[1]: Entering directory '/mnt/lfs/sources/bison-3.4.1'
+Making all in po
+make[2]: Entering directory '/mnt/lfs/sources/bison-3.4.1/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/bison-3.4.1/po'
+Making all in runtime-po
+make[2]: Entering directory '/mnt/lfs/sources/bison-3.4.1/runtime-po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/bison-3.4.1/runtime-po'
+Making all in gnulib-po
+make[2]: Entering directory '/mnt/lfs/sources/bison-3.4.1/gnulib-po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/bison-3.4.1/gnulib-po'
+Making all in .
+make[2]: Entering directory '/mnt/lfs/sources/bison-3.4.1'
+  CC       src/bison-AnnotationList.o
+  CC       src/bison-InadequacyList.o
+  CC       src/bison-Sbitset.o
+  CC       src/bison-assoc.o
+  CC       src/bison-closure.o
+  CC       src/bison-complain.o
+  CC       src/bison-conflicts.o
+  CC       src/bison-derives.o
+  CC       src/bison-files.o
+  CC       src/bison-fixits.o
+  CC       src/bison-getargs.o
+  CC       src/bison-gram.o
+  CC       src/bison-graphviz.o
+  CC       src/bison-ielr.o
+  CC       src/bison-lalr.o
+  CC       src/bison-location.o
+  CC       src/bison-lr0.o
+  CC       src/bison-main.o
+  CC       src/bison-muscle-tab.o
+  CC       src/bison-named-ref.o
+  CC       src/bison-nullable.o
+  CC       src/bison-output.o
+  CC       src/bison-parse-gram.o
+  CC       src/bison-print-graph.o
+  CC       src/bison-print-xml.o
+  CC       src/bison-print.o
+  CC       src/bison-reader.o
+  CC       src/bison-reduce.o
+  CC       src/bison-relation.o
+  CC       src/bison-scan-code-c.o
+  CC       src/bison-scan-gram-c.o
+  CC       src/bison-scan-skel-c.o
+  CC       src/bison-state.o
+  CC       src/bison-symlist.o
+  CC       src/bison-symtab.o
+  CC       src/bison-tables.o
+  CC       src/bison-uniqstr.o
+  CC       lib/allocator.o
+  CC       lib/areadlink.o
+  CC       lib/argmatch.o
+  CC       lib/gl_array_list.o
+  CC       lib/binary-io.o
+  CC       lib/bitrotate.o
+  CC       lib/bitset.o
+  CC       lib/bitset/array.o
+  CC       lib/bitset/stats.o
+  CC       lib/bitset/table.o
+  CC       lib/bitset/list.o
+  CC       lib/bitset/vector.o
+  CC       lib/bitsetv.o
+  CC       lib/c-ctype.o
+  CC       lib/c-strcasecmp.o
+  CC       lib/c-strncasecmp.o
+  CC       lib/careadlinkat.o
+  CC       lib/cloexec.o
+  CC       lib/close-stream.o
+  CC       lib/closeout.o
+  CC       lib/concat-filename.o
+  CC       lib/dirname.o
+  CC       lib/basename.o
+  CC       lib/dirname-lgpl.o
+  CC       lib/basename-lgpl.o
+  CC       lib/stripslash.o
+  CC       lib/exitfail.o
+  CC       lib/fatal-signal.o
+  CC       lib/fd-safer-flag.o
+  CC       lib/dup-safer-flag.o
+  CC       lib/fopen-safer.o
+  CC       lib/gethrxtime.o
+  CC       lib/xtime.o
+  CC       lib/getprogname.o
+  CC       lib/gettime.o
+  CC       lib/hard-locale.o
+  CC       lib/hash.o
+  CC       lib/gl_list.o
+  CC       lib/localcharset.o
+  CC       lib/math.o
+  CC       lib/mbswidth.o
+  CC       lib/pipe2.o
+  CC       lib/pipe2-safer.o
+  CC       lib/progname.o
+  CC       lib/quotearg.o
+  CC       lib/sig-handler.o
+  CC       lib/spawn-pipe.o
+  CC       lib/timespec.o
+  CC       lib/timevar.o
+  CC       lib/unistd.o
+  CC       lib/dup-safer.o
+  CC       lib/fd-safer.o
+  CC       lib/pipe-safer.o
+  CC       lib/uniwidth/width.o
+  CC       lib/wait-process.o
+  CC       lib/wctype-h.o
+  CC       lib/xmalloc.o
+  CC       lib/xalloc-die.o
+  CC       lib/xconcat-filename.o
+  CC       lib/gl_xlist.o
+  CC       lib/xreadlink.o
+  CC       lib/xsize.o
+  CC       lib/xstrndup.o
+  CC       lib/get-errno.o
+  CC       lib/path-join.o
+  CC       lib/asnprintf.o
+  CC       lib/fcntl.o
+  CC       lib/mbrtowc.o
+  CC       lib/obstack.o
+  CC       lib/printf-args.o
+  CC       lib/printf-parse.o
+  CC       lib/vasnprintf.o
+  CC       lib/xmemdup0.o
+  AR       lib/libbison.a
+  CCLD     src/bison
+  GEN      doc/bison.help
+  CC       lib/main.o
+  CC       lib/yyerror.o
+  AR       lib/liby.a
+make[2]: Leaving directory '/mnt/lfs/sources/bison-3.4.1'
+make[1]: Leaving directory '/mnt/lfs/sources/bison-3.4.1'

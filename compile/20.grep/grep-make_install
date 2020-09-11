@@ -1,0 +1,115 @@
+Making install in po
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.3/po'
+installing af.gmo as /tools/share/locale/af/LC_MESSAGES/grep.mo
+installing be.gmo as /tools/share/locale/be/LC_MESSAGES/grep.mo
+installing bg.gmo as /tools/share/locale/bg/LC_MESSAGES/grep.mo
+installing ca.gmo as /tools/share/locale/ca/LC_MESSAGES/grep.mo
+installing cs.gmo as /tools/share/locale/cs/LC_MESSAGES/grep.mo
+installing da.gmo as /tools/share/locale/da/LC_MESSAGES/grep.mo
+installing de.gmo as /tools/share/locale/de/LC_MESSAGES/grep.mo
+installing el.gmo as /tools/share/locale/el/LC_MESSAGES/grep.mo
+installing eo.gmo as /tools/share/locale/eo/LC_MESSAGES/grep.mo
+installing es.gmo as /tools/share/locale/es/LC_MESSAGES/grep.mo
+installing et.gmo as /tools/share/locale/et/LC_MESSAGES/grep.mo
+installing eu.gmo as /tools/share/locale/eu/LC_MESSAGES/grep.mo
+installing fi.gmo as /tools/share/locale/fi/LC_MESSAGES/grep.mo
+installing fr.gmo as /tools/share/locale/fr/LC_MESSAGES/grep.mo
+installing ga.gmo as /tools/share/locale/ga/LC_MESSAGES/grep.mo
+installing gl.gmo as /tools/share/locale/gl/LC_MESSAGES/grep.mo
+installing he.gmo as /tools/share/locale/he/LC_MESSAGES/grep.mo
+installing hr.gmo as /tools/share/locale/hr/LC_MESSAGES/grep.mo
+installing hu.gmo as /tools/share/locale/hu/LC_MESSAGES/grep.mo
+installing id.gmo as /tools/share/locale/id/LC_MESSAGES/grep.mo
+installing it.gmo as /tools/share/locale/it/LC_MESSAGES/grep.mo
+installing ja.gmo as /tools/share/locale/ja/LC_MESSAGES/grep.mo
+installing ko.gmo as /tools/share/locale/ko/LC_MESSAGES/grep.mo
+installing ky.gmo as /tools/share/locale/ky/LC_MESSAGES/grep.mo
+installing lt.gmo as /tools/share/locale/lt/LC_MESSAGES/grep.mo
+installing nb.gmo as /tools/share/locale/nb/LC_MESSAGES/grep.mo
+installing nl.gmo as /tools/share/locale/nl/LC_MESSAGES/grep.mo
+installing pa.gmo as /tools/share/locale/pa/LC_MESSAGES/grep.mo
+installing pl.gmo as /tools/share/locale/pl/LC_MESSAGES/grep.mo
+installing pt.gmo as /tools/share/locale/pt/LC_MESSAGES/grep.mo
+installing pt_BR.gmo as /tools/share/locale/pt_BR/LC_MESSAGES/grep.mo
+installing ro.gmo as /tools/share/locale/ro/LC_MESSAGES/grep.mo
+installing ru.gmo as /tools/share/locale/ru/LC_MESSAGES/grep.mo
+installing sk.gmo as /tools/share/locale/sk/LC_MESSAGES/grep.mo
+installing sl.gmo as /tools/share/locale/sl/LC_MESSAGES/grep.mo
+installing sr.gmo as /tools/share/locale/sr/LC_MESSAGES/grep.mo
+installing sv.gmo as /tools/share/locale/sv/LC_MESSAGES/grep.mo
+installing th.gmo as /tools/share/locale/th/LC_MESSAGES/grep.mo
+installing tr.gmo as /tools/share/locale/tr/LC_MESSAGES/grep.mo
+installing uk.gmo as /tools/share/locale/uk/LC_MESSAGES/grep.mo
+installing vi.gmo as /tools/share/locale/vi/LC_MESSAGES/grep.mo
+installing zh_CN.gmo as /tools/share/locale/zh_CN/LC_MESSAGES/grep.mo
+installing zh_TW.gmo as /tools/share/locale/zh_TW/LC_MESSAGES/grep.mo
+if test "grep" = "gettext-tools"; then \
+  /bin/mkdir -p /tools/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /tools/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /tools/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.3/po'
+Making install in lib
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.3/lib'
+make  install-am
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.3/lib'
+make[3]: Entering directory '/mnt/lfs/sources/grep-3.3/lib'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/mnt/lfs/sources/grep-3.3/lib'
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.3/lib'
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.3/lib'
+Making install in doc
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.3/doc'
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.3/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/tools/share/info'
+ /usr/bin/install -c -m 644 ./grep.info '/tools/share/info'
+ install-info --info-dir='/tools/share/info' '/tools/share/info/grep.info'
+ /bin/mkdir -p '/tools/share/man/man1'
+ /usr/bin/install -c -m 644 grep.1 fgrep.1 egrep.1 '/tools/share/man/man1'
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.3/doc'
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.3/doc'
+Making install in src
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.3/src'
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.3/src'
+ /bin/mkdir -p '/tools/bin'
+  /usr/bin/install -c grep '/tools/bin'
+ /bin/mkdir -p '/tools/bin'
+ /usr/bin/install -c egrep fgrep '/tools/bin'
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.3/src'
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.3/src'
+Making install in tests
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.3/tests'
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.3/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.3/tests'
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.3/tests'
+Making install in gnulib-tests
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.3/gnulib-tests'
+make  install-recursive
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.3/gnulib-tests'
+Making install in .
+make[3]: Entering directory '/mnt/lfs/sources/grep-3.3/gnulib-tests'
+make[4]: Entering directory '/mnt/lfs/sources/grep-3.3/gnulib-tests'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/mnt/lfs/sources/grep-3.3/gnulib-tests'
+make[3]: Leaving directory '/mnt/lfs/sources/grep-3.3/gnulib-tests'
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.3/gnulib-tests'
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.3/gnulib-tests'
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.3'
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.3'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.3'
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.3'

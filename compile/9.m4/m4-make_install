@@ -1,0 +1,91 @@
+make  install-recursive
+make[1]: Entering directory '/mnt/lfs/sources/m4-1.4.18'
+Making install in .
+make[2]: Entering directory '/mnt/lfs/sources/m4-1.4.18'
+make[3]: Entering directory '/mnt/lfs/sources/m4-1.4.18'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/mnt/lfs/sources/m4-1.4.18'
+make[2]: Leaving directory '/mnt/lfs/sources/m4-1.4.18'
+Making install in examples
+make[2]: Entering directory '/mnt/lfs/sources/m4-1.4.18/examples'
+make[3]: Entering directory '/mnt/lfs/sources/m4-1.4.18/examples'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/mnt/lfs/sources/m4-1.4.18/examples'
+make[2]: Leaving directory '/mnt/lfs/sources/m4-1.4.18/examples'
+Making install in lib
+make[2]: Entering directory '/mnt/lfs/sources/m4-1.4.18/lib'
+make  install-am
+make[3]: Entering directory '/mnt/lfs/sources/m4-1.4.18/lib'
+make[4]: Entering directory '/mnt/lfs/sources/m4-1.4.18/lib'
+if test yes = no; then \
+  case 'linux-gnueabihf' in \
+    darwin[56]*) \
+      need_charset_alias=true ;; \
+    darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+      need_charset_alias=false ;; \
+    *) \
+      need_charset_alias=true ;; \
+  esac ; \
+else \
+  need_charset_alias=false ; \
+fi ; \
+if $need_charset_alias; then \
+  /bin/sh /mnt/lfs/sources/m4-1.4.18/build-aux/install-sh -d /tools/lib ; \
+fi ; \
+if test -f /tools/lib/charset.alias; then \
+  sed -f ref-add.sed /tools/lib/charset.alias > /tools/lib/charset.tmp ; \
+  /usr/bin/install -c -m 644 /tools/lib/charset.tmp /tools/lib/charset.alias ; \
+  rm -f /tools/lib/charset.tmp ; \
+else \
+  if $need_charset_alias; then \
+    sed -f ref-add.sed charset.alias > /tools/lib/charset.tmp ; \
+    /usr/bin/install -c -m 644 /tools/lib/charset.tmp /tools/lib/charset.alias ; \
+    rm -f /tools/lib/charset.tmp ; \
+  fi ; \
+fi
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/mnt/lfs/sources/m4-1.4.18/lib'
+make[3]: Leaving directory '/mnt/lfs/sources/m4-1.4.18/lib'
+make[2]: Leaving directory '/mnt/lfs/sources/m4-1.4.18/lib'
+Making install in src
+make[2]: Entering directory '/mnt/lfs/sources/m4-1.4.18/src'
+make[3]: Entering directory '/mnt/lfs/sources/m4-1.4.18/src'
+ /bin/mkdir -p '/tools/bin'
+  /usr/bin/install -c m4 '/tools/bin'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/mnt/lfs/sources/m4-1.4.18/src'
+make[2]: Leaving directory '/mnt/lfs/sources/m4-1.4.18/src'
+Making install in doc
+make[2]: Entering directory '/mnt/lfs/sources/m4-1.4.18/doc'
+make[3]: Entering directory '/mnt/lfs/sources/m4-1.4.18/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/tools/share/info'
+ /usr/bin/install -c -m 644 ./m4.info ./m4.info-1 ./m4.info-2 '/tools/share/info'
+ install-info --info-dir='/tools/share/info' '/tools/share/info/m4.info'
+ /bin/mkdir -p '/tools/share/man/man1'
+ /usr/bin/install -c -m 644 ./m4.1 '/tools/share/man/man1'
+make[3]: Leaving directory '/mnt/lfs/sources/m4-1.4.18/doc'
+make[2]: Leaving directory '/mnt/lfs/sources/m4-1.4.18/doc'
+Making install in checks
+make[2]: Entering directory '/mnt/lfs/sources/m4-1.4.18/checks'
+make[3]: Entering directory '/mnt/lfs/sources/m4-1.4.18/checks'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/mnt/lfs/sources/m4-1.4.18/checks'
+make[2]: Leaving directory '/mnt/lfs/sources/m4-1.4.18/checks'
+Making install in tests
+make[2]: Entering directory '/mnt/lfs/sources/m4-1.4.18/tests'
+make  install-recursive
+make[3]: Entering directory '/mnt/lfs/sources/m4-1.4.18/tests'
+Making install in .
+make[4]: Entering directory '/mnt/lfs/sources/m4-1.4.18/tests'
+make[5]: Entering directory '/mnt/lfs/sources/m4-1.4.18/tests'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/mnt/lfs/sources/m4-1.4.18/tests'
+make[4]: Leaving directory '/mnt/lfs/sources/m4-1.4.18/tests'
+make[3]: Leaving directory '/mnt/lfs/sources/m4-1.4.18/tests'
+make[2]: Leaving directory '/mnt/lfs/sources/m4-1.4.18/tests'
+make[1]: Leaving directory '/mnt/lfs/sources/m4-1.4.18'
