@@ -17,4 +17,4 @@ make
 make DESTDIR=$LFS install
 ```
 ---
-See [gettext-commands](https://github.com/sundeep-anand/lfs-rpi-armv6l/tree/master/compile/19.gettext/gettext-cmds-help.md) and logs.
+See [gettext-commands](https://github.com/sundeep-anand/lfs-rpi-armv6l/tree/lfs-9.0/compile/19.gettext/gettext-cmds-help.md) and logs.
