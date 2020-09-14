@@ -25,8 +25,8 @@ linux build log
 
 Task | Directory
 -----|-----------
-Download packages, patches | [packages](https://github.com/sundeep-anand/lfs-rpi-armv6l/tree/master/packages)
-Construct temp system | [compile](https://github.com/sundeep-anand/lfs-rpi-armv6l/tree/master/compile)
+Download packages, patches | [packages](https://github.com/sundeep-anand/lfs-rpi-armv6l/tree/lfs-7.3/packages)
+Construct temp system | [compile](https://github.com/sundeep-anand/lfs-rpi-armv6l/tree/lfs-7.3/compile)
 
 
 ## Disclaimer
