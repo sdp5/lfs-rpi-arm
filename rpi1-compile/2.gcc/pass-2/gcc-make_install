@@ -1,0 +1,111 @@
+make[1]: Entering directory '/mnt/lfs/sources/gcc-build'
+/bin/sh ../gcc-9.2.0/mkinstalldirs /tools /tools
+make[2]: Entering directory '/mnt/lfs/sources/gcc-build/fixincludes'
+rm -rf /tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/install-tools
+/bin/sh ../../gcc-9.2.0/fixincludes/../mkinstalldirs /tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/install-tools
+mkdir -p -- /tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/install-tools
+/bin/sh ../../gcc-9.2.0/fixincludes/../mkinstalldirs /tools/lib/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/install-tools/include
+mkdir -p -- /tools/lib/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/install-tools/include
+/usr/bin/install -c -m 644 ../../gcc-9.2.0/fixincludes/README-fixinc \
+  /tools/lib/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/install-tools/include/README
+/usr/bin/install -c fixinc.sh /tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/install-tools/fixinc.sh
+/usr/bin/install -c fixincl /tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/install-tools/fixincl
+/usr/bin/install -c mkheaders /tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/install-tools/mkheaders
+make[2]: Leaving directory '/mnt/lfs/sources/gcc-build/fixincludes'
+make[2]: Entering directory '/mnt/lfs/sources/gcc-build/lto-plugin'
+make[3]: Entering directory '/mnt/lfs/sources/gcc-build/lto-plugin'
+ /bin/mkdir -p '/tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0'
+ /bin/sh ./libtool --tag=disable-static  --mode=install /usr/bin/install -c   liblto_plugin.la '/tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0'
+libtool: install: /usr/bin/install -c .libs/liblto_plugin.so.0.0.0 /tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/liblto_plugin.so.0.0.0
+libtool: install: (cd /tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0 && { ln -s -f liblto_plugin.so.0.0.0 liblto_plugin.so.0 || { rm -f liblto_plugin.so.0 && ln -s liblto_plugin.so.0.0.0 liblto_plugin.so.0; }; })
+libtool: install: (cd /tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0 && { ln -s -f liblto_plugin.so.0.0.0 liblto_plugin.so || { rm -f liblto_plugin.so && ln -s liblto_plugin.so.0.0.0 liblto_plugin.so; }; })
+libtool: install: /usr/bin/install -c .libs/liblto_plugin.lai /tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/liblto_plugin.la
+libtool: finish: PATH="/tools/bin:/bin:/usr/bin:/sbin" ldconfig -n /tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/mnt/lfs/sources/gcc-build/lto-plugin'
+make[2]: Leaving directory '/mnt/lfs/sources/gcc-build/lto-plugin'
+make[2]: Entering directory '/mnt/lfs/sources/gcc-build/gcc'
+/bin/sh ../../gcc-9.2.0/gcc/../mkinstalldirs /tools/lib/gcc/armv6l-unknown-linux-gnueabihf/9.2.0
+/bin/sh ../../gcc-9.2.0/gcc/../mkinstalldirs /tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0
+/bin/sh ../../gcc-9.2.0/gcc/../mkinstalldirs /tools/bin
+/bin/sh ../../gcc-9.2.0/gcc/../mkinstalldirs /tools/include
+/bin/sh ../../gcc-9.2.0/gcc/../mkinstalldirs /tools/share/info
+/bin/sh ../../gcc-9.2.0/gcc/../mkinstalldirs /tools/share/man/man1
+/bin/sh ../../gcc-9.2.0/gcc/../mkinstalldirs /tools/share/man/man7
+if test "" != "yes" ; then \
+  rm -f /tools/bin/g++; \
+  /usr/bin/install -c xg++ /tools/bin/g++; \
+  chmod a+x /tools/bin/g++; \
+  rm -f /tools/bin/c++; \
+  ( cd /tools/bin && \
+    ln g++ c++ ); \
+  if [ -f cc1plus ] ; then \
+    if [ ! -f g++-cross ] ; then \
+      rm -f /tools/bin/armv6l-unknown-linux-gnueabihf-g++; \
+      ( cd /tools/bin && \
+	ln g++ armv6l-unknown-linux-gnueabihf-g++ ); \
+      rm -f /tools/bin/armv6l-unknown-linux-gnueabihf-c++; \
+      ( cd /tools/bin && \
+	ln c++ armv6l-unknown-linux-gnueabihf-c++ ); \
+    fi ; \
+  fi; \
+fi
+for file in gnat1 brig1 cc1 cc1plus d21 f951 go1  lto1 cc1obj cc1objplus; do \
+  if [ -f $file ] ; then \
+    rm -f /tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/$file; \
+    /usr/bin/install -c $file /tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/$file; \
+  else true; \
+  fi; \
+done
+for file in  collect2 ..; do \
+  if [ x"$file" != x.. ]; then \
+    rm -f /tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/$file; \
+    /usr/bin/install -c $file /tools/libexec/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/$file; \
+  else true; fi; \
+done
+rm -f /tools/lib/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/specs
+if test "" != "yes" ; then \
+  if [ -f gcov ]; \
+  then \
+    rm -f /tools/bin/gcov; \
+    /usr/bin/install -c gcov /tools/bin/gcov; \
+  fi; \
+fi
+if test "" != "yes" ; then \
+  if [ -f gcov-tool ]; \
+  then \
+    rm -f /tools/bin/gcov-tool; \
+    /usr/bin/install -c \
+    gcov-tool /tools/bin/gcov-tool; \
+  fi; \
+fi
+if test "" != "yes" ; then \
+  if [ -f gcov-dump ]; \
+  then \
+    rm -f /tools/bin/gcov-dump; \
+    /usr/bin/install -c \
+    gcov-dump /tools/bin/gcov-dump; \
+  fi; \
+fi
+/bin/sh ../../gcc-9.2.0/gcc/../mkinstalldirs /tools/lib/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/include
+mkdir -p -- /tools/lib/gcc/armv6l-unknown-linux-gnueabihf/9.2.0/include
+make[2]: Leaving directory '/mnt/lfs/sources/gcc-build/gcc'
+make[1]: Leaving directory '/mnt/lfs/sources/gcc-build'

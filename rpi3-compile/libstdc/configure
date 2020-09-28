@@ -1,0 +1,511 @@
+checking build system type... armv7l-unknown-linux-gnueabihf
+checking host system type... armv7l-lfs-linux-gnueabihf
+checking target system type... armv7l-lfs-linux-gnueabihf
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for armv7l-lfs-linux-gnueabihf-strip... armv7l-lfs-linux-gnueabihf-strip
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for armv7l-lfs-linux-gnueabihf-gcc... armv7l-lfs-linux-gnueabihf-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether armv7l-lfs-linux-gnueabihf-gcc accepts -g... yes
+checking for armv7l-lfs-linux-gnueabihf-gcc option to accept ISO C89... none needed
+checking whether armv7l-lfs-linux-gnueabihf-gcc understands -c and -o together... yes
+checking for armv7l-lfs-linux-gnueabihf-g++... armv7l-lfs-linux-gnueabihf-g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether armv7l-lfs-linux-gnueabihf-g++ accepts -g... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... 64
+checking how to run the C preprocessor... armv7l-lfs-linux-gnueabihf-gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking whether ln -s works... yes
+checking for armv7l-lfs-linux-gnueabihf-as... armv7l-lfs-linux-gnueabihf-as
+checking for armv7l-lfs-linux-gnueabihf-ar... armv7l-lfs-linux-gnueabihf-ar
+checking for armv7l-lfs-linux-gnueabihf-ranlib... armv7l-lfs-linux-gnueabihf-ranlib
+checking whether to enable maintainer-specific portions of Makefiles... no
+configure: CPU config directory is cpu/arm
+configure: OS config directory is os/gnu-linux
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by armv7l-lfs-linux-gnueabihf-gcc... /mnt/lfs/tools/armv7l-lfs-linux-gnueabihf/bin/ld
+checking if the linker (/mnt/lfs/tools/armv7l-lfs-linux-gnueabihf/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /mnt/lfs/tools/bin/armv7l-lfs-linux-gnueabihf-nm -B
+checking the name lister (/mnt/lfs/tools/bin/armv7l-lfs-linux-gnueabihf-nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /mnt/lfs/tools/armv7l-lfs-linux-gnueabihf/bin/ld option to reload object files... -r
+checking for armv7l-lfs-linux-gnueabihf-objdump... armv7l-lfs-linux-gnueabihf-objdump
+checking how to recognize dependent libraries... pass_all
+checking for armv7l-lfs-linux-gnueabihf-ar... (cached) armv7l-lfs-linux-gnueabihf-ar
+checking for armv7l-lfs-linux-gnueabihf-strip... (cached) armv7l-lfs-linux-gnueabihf-strip
+checking for armv7l-lfs-linux-gnueabihf-ranlib... (cached) armv7l-lfs-linux-gnueabihf-ranlib
+checking command to parse /mnt/lfs/tools/bin/armv7l-lfs-linux-gnueabihf-nm -B output from armv7l-lfs-linux-gnueabihf-gcc object... ok
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if armv7l-lfs-linux-gnueabihf-gcc supports -fno-rtti -fno-exceptions... no
+checking for armv7l-lfs-linux-gnueabihf-gcc option to produce PIC... -fPIC -DPIC
+checking if armv7l-lfs-linux-gnueabihf-gcc PIC flag -fPIC -DPIC works... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc static flag -static works... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc supports -c -o file.o... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc supports -c -o file.o... (cached) yes
+checking whether the armv7l-lfs-linux-gnueabihf-gcc linker (/mnt/lfs/tools/armv7l-lfs-linux-gnueabihf/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... no
+checking for dlopen in -ldl... yes
+checking whether a program can dlopen itself... cross
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... armv7l-lfs-linux-gnueabihf-g++ -E
+checking for ld used by armv7l-lfs-linux-gnueabihf-g++... /mnt/lfs/tools/armv7l-lfs-linux-gnueabihf/bin/ld
+checking if the linker (/mnt/lfs/tools/armv7l-lfs-linux-gnueabihf/bin/ld) is GNU ld... yes
+checking whether the armv7l-lfs-linux-gnueabihf-g++ linker (/mnt/lfs/tools/armv7l-lfs-linux-gnueabihf/bin/ld) supports shared libraries... yes
+checking for armv7l-lfs-linux-gnueabihf-g++ option to produce PIC... -fPIC -DPIC
+checking if armv7l-lfs-linux-gnueabihf-g++ PIC flag -fPIC -DPIC works... yes
+checking if armv7l-lfs-linux-gnueabihf-g++ static flag -static works... no
+checking if armv7l-lfs-linux-gnueabihf-g++ supports -c -o file.o... yes
+checking if armv7l-lfs-linux-gnueabihf-g++ supports -c -o file.o... (cached) yes
+checking whether the armv7l-lfs-linux-gnueabihf-g++ linker (/mnt/lfs/tools/armv7l-lfs-linux-gnueabihf/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for enabled PCH... no
+checking for thread model used by GCC... single
+checking for atomic builtins for bool... no
+checking for atomic builtins for short... no
+checking for atomic builtins for int... no
+checking for atomic builtins for long long... no
+checking for lock policy for shared_ptr reference counts... atomic
+checking for ISO/IEC TR 24733 ... no
+checking for __int128... no
+checking for __float128... no
+checking for g++ that supports -ffunction-sections -fdata-sections... yes
+checking for underlying I/O to use... stdio
+checking for C locale to use... gnu
+checking for msgfmt... yes
+checking for std::allocator base class... new
+configure: "C" header strategy set to c_global
+checking for enabled long long specializations... yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking for mbstate_t... yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking for enabled wchar_t specializations... yes
+checking for sin in -lm... no
+checking for ISO C99 support in <math.h> for C++98... no
+checking tgmath.h usability... no
+checking tgmath.h presence... no
+checking for tgmath.h... no
+checking complex.h usability... no
+checking complex.h presence... no
+checking for complex.h... no
+
+checking for ISO C99 support in <stdio.h> for C++98... yes
+checking for ISO C99 support in <stdlib.h> for C++98... no
+checking for ISO C99 support in <wchar.h> for C++98... yes
+checking for sin in -lm... (cached) no
+checking for ISO C99 support in <math.h> for C++11... no
+checking for tgmath.h... (cached) no
+checking for complex.h... (cached) no
+
+checking for ISO C99 support in <stdio.h> for C++11... yes
+checking for ISO C99 support in <stdlib.h> for C++11... no
+checking for ISO C99 support in <wchar.h> for C++11... yes
+checking for fully enabled ISO C99 support... no
+configure: Debug build flags set to -gdwarf-4 -g3 -O0 -D_GLIBCXX_ASSERTIONS
+checking for additional debug build... no
+configure: target-libgomp not built
+checking for parallel mode support... no
+checking for extra compiler flags for building... 
+checking for extern template support... yes
+checking for custom python install directory... no
+checking for -Werror... no
+checking for vtable verify support... no
+checking for gets declaration... yes
+checking for obsolete isinf function in <math.h>... no
+checking for obsolete isnan function in <math.h>... no
+checking for EOWNERDEAD... yes
+checking for ENOTRECOVERABLE... yes
+checking for ENOLINK... yes
+checking for EPROTO... yes
+checking for ENODATA... yes
+checking for ENOSR... yes
+checking for ENOSTR... yes
+checking for ETIME... yes
+checking for EBADMSG... yes
+checking for ECANCELED... yes
+checking for EOVERFLOW... yes
+checking for ENOTSUP... yes
+checking for EIDRM... yes
+checking for ETXTBSY... yes
+checking for ECHILD... yes
+checking for ENOSPC... yes
+checking for EPERM... yes
+checking for ETIMEDOUT... yes
+checking for EWOULDBLOCK... yes
+checking uchar.h usability... yes
+checking uchar.h presence... yes
+checking for uchar.h... yes
+checking for ISO C11 support for <uchar.h>... yes
+checking for int64_t... yes
+checking for int64_t as long... checking for int64_t as long long... yes
+checking for LFS support... no
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/filio.h usability... no
+checking sys/filio.h presence... no
+checking for sys/filio.h... no
+checking for poll... no
+checking for S_ISREG or S_IFREG... no
+checking sys/uio.h usability... yes
+checking sys/uio.h presence... yes
+checking for sys/uio.h... yes
+checking for writev... no
+checking fenv.h usability... yes
+checking fenv.h presence... yes
+checking for fenv.h... yes
+checking for complex.h... (cached) no
+checking for complex.h... (cached) no
+no
+checking for ISO C99 support to TR1 in <ctype.h>... yes
+checking for fenv.h... (cached) yes
+checking for ISO C99 support to TR1 in <fenv.h>... no
+checking for ISO C99 support to TR1 in <stdint.h>... yes
+checking for ISO C99 support to TR1 in <math.h>... no
+checking for ISO C99 support to TR1 in <inttypes.h>... yes
+checking for wchar_t ISO C99 support to TR1 in <inttypes.h>... yes
+checking stdbool.h usability... no
+checking stdbool.h presence... yes
+checking for stdbool.h... no
+checking stdalign.h usability... no
+checking stdalign.h presence... yes
+checking for stdalign.h... no
+checking for the value of EOF... -1
+checking for the value of SEEK_CUR... 1
+checking for the value of SEEK_END... 2
+checking for gettimeofday... checking sys/time.h usability... no
+checking sys/time.h presence... yes
+checking for sys/time.h... no
+checking for library containing clock_gettime... no
+checking for clock_gettime syscall... yes
+checking for tmpnam... no
+checking for pthread_cond_clockwait... no
+checking for pthread_mutex_clocklock... no
+checking for pthread_rwlock_clockrdlock, pthread_wlock_clockwrlock... no
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking for LC_MESSAGES... yes
+checking sys/sysinfo.h usability... yes
+checking sys/sysinfo.h presence... yes
+checking for sys/sysinfo.h... yes
+checking for get_nprocs... no
+checking for unistd.h... (cached) yes
+checking for _SC_NPROCESSORS_ONLN... no
+checking for _SC_NPROC_ONLN... no
+checking for pthreads_num_processors_np... no
+checking for hw.ncpu sysctl... no
+checking for suitable sys/sdt.h... no
+checking endian.h usability... yes
+checking endian.h presence... yes
+checking for endian.h... yes
+checking execinfo.h usability... yes
+checking execinfo.h presence... yes
+checking for execinfo.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking fp.h usability... no
+checking fp.h presence... no
+checking for fp.h... no
+checking ieeefp.h usability... no
+checking ieeefp.h presence... no
+checking for ieeefp.h... no
+checking for inttypes.h... (cached) yes
+checking for locale.h... (cached) yes
+checking machine/endian.h usability... no
+checking machine/endian.h presence... no
+checking for machine/endian.h... no
+checking machine/param.h usability... no
+checking machine/param.h presence... no
+checking for machine/param.h... no
+checking nan.h usability... no
+checking nan.h presence... no
+checking for nan.h... no
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking sys/ipc.h usability... yes
+checking sys/ipc.h presence... yes
+checking for sys/ipc.h... yes
+checking sys/isa_defs.h usability... no
+checking sys/isa_defs.h presence... no
+checking for sys/isa_defs.h... no
+checking sys/machine.h usability... no
+checking sys/machine.h presence... no
+checking for sys/machine.h... no
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/sem.h usability... yes
+checking sys/sem.h presence... yes
+checking for sys/sem.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/time.h... (cached) no
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... (cached) yes
+checking for wctype.h... (cached) yes
+checking linux/types.h usability... yes
+checking linux/types.h presence... yes
+checking for linux/types.h... yes
+checking for linux/random.h... yes
+checking for g++ that supports -ffunction-sections -fdata-sections... yes
+checking for ld version... 23500
+checking for ld that supports -Wl,--gc-sections... yes
+checking for ld that supports -Wl,-z,relro... yes
+checking for sin in -lm... (cached) no
+checking for isinf declaration... no
+checking for _isinf declaration... no
+checking for isnan declaration... no
+checking for _isnan declaration... no
+checking for finite declaration... no
+checking for _finite declaration... no
+checking for sincos declaration... no
+checking for _sincos declaration... no
+checking for fpclass declaration... no
+checking for _fpclass declaration... no
+checking for qfpclass declaration... no
+checking for _qfpclass declaration... no
+checking for hypot declaration... no
+checking for _hypot declaration... no
+checking for float trig functions... no
+checking for _float trig functions... no
+checking for float round functions... no
+checking for _float round functions... no
+checking for expf declaration... no
+checking for _expf declaration... no
+checking for isnanf declaration... no
+checking for _isnanf declaration... no
+checking for isinff declaration... no
+checking for _isinff declaration... no
+checking for atan2f declaration... no
+checking for _atan2f declaration... no
+checking for fabsf declaration... no
+checking for _fabsf declaration... no
+checking for fmodf declaration... no
+checking for _fmodf declaration... no
+checking for frexpf declaration... no
+checking for _frexpf declaration... no
+checking for hypotf declaration... no
+checking for _hypotf declaration... no
+checking for ldexpf declaration... no
+checking for _ldexpf declaration... no
+checking for logf declaration... no
+checking for _logf declaration... no
+checking for log10f declaration... no
+checking for _log10f declaration... no
+checking for modff declaration... no
+checking for _modff declaration... no
+checking for modf declaration... no
+checking for _modf declaration... no
+checking for powf declaration... no
+checking for _powf declaration... no
+checking for sqrtf declaration... no
+checking for _sqrtf declaration... no
+checking for sincosf declaration... no
+checking for _sincosf declaration... no
+checking for finitef declaration... no
+checking for _finitef declaration... no
+checking for long double trig functions... no
+checking for _long double trig functions... no
+checking for long double round functions... no
+checking for _long double round functions... no
+checking for isnanl declaration... no
+checking for _isnanl declaration... no
+checking for isinfl declaration... no
+checking for _isinfl declaration... no
+checking for atan2l declaration... no
+checking for _atan2l declaration... no
+checking for expl declaration... no
+checking for _expl declaration... no
+checking for fabsl declaration... no
+checking for _fabsl declaration... no
+checking for fmodl declaration... no
+checking for _fmodl declaration... no
+checking for frexpl declaration... no
+checking for _frexpl declaration... no
+checking for hypotl declaration... no
+checking for _hypotl declaration... no
+checking for ldexpl declaration... no
+checking for _ldexpl declaration... no
+checking for logl declaration... no
+checking for _logl declaration... no
+checking for log10l declaration... no
+checking for _log10l declaration... no
+checking for modfl declaration... no
+checking for _modfl declaration... no
+checking for powl declaration... no
+checking for _powl declaration... no
+checking for sqrtl declaration... no
+checking for _sqrtl declaration... no
+checking for sincosl declaration... no
+checking for _sincosl declaration... no
+checking for finitel declaration... no
+checking for _finitel declaration... no
+checking for at_quick_exit declaration... no
+checking for quick_exit declaration... no
+checking for strtold declaration... no
+checking for strtof declaration... no
+checking whether the target supports thread-local storage... yes
+checking for __cxa_thread_atexit_impl... yes
+checking for aligned_alloc... yes
+checking for posix_memalign... yes
+checking for memalign... yes
+checking for _aligned_malloc... no
+checking for timespec_get... yes
+checking for sockatmark... yes
+checking for iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+looking for a compliant stdint.h in stdint.h, checking for uintmax_t... yes
+checking for uintptr_t... yes
+checking for int_least32_t... yes
+checking for int_fast32_t... yes
+checking for uint64_t... yes
+checking what to include in include/gstdint.h... stdint.h (already complete)
+checking for GNU c++filt... /usr/bin/c++filt
+checking for shared libgcc... no
+checking whether the target supports .symver directive... yes
+configure: versioning on shared library symbols is no
+checking for size_t as unsigned int... yes
+checking for ptrdiff_t as int... yes
+checking whether the target supports hidden visibility... yes
+configure: visibility supported: yes
+checking for default std::string ABI to use... new
+checking for rdrand support in assembler... no
+checking for rdseed support in assembler... no
+checking for unistd.h... (cached) yes
+checking for sys/time.h... (cached) no
+checking for sys/resource.h... (cached) yes
+checking for testsuite resource limits support... no
+checking whether it can be safely assumed that mutex_timedlock is available... yes
+checking for gthreads library... no
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking sys/statvfs.h usability... yes
+checking sys/statvfs.h presence... yes
+checking for sys/statvfs.h... yes
+checking utime.h usability... yes
+checking utime.h presence... yes
+checking for utime.h... yes
+checking whether to build Filesystem TS support... yes
+checking for struct dirent.d_type... no
+checking for realpath... no
+checking for utimensat... no
+checking for utime... no
+checking for lstat... no
+checking for struct stat.st_mtim.tv_nsec... no
+checking for fchmod... no
+checking for fchmodat... no
+checking for sendfile that can copy files... no
+checking for link... no
+checking for readlink... no
+checking for symlink... no
+checking for truncate... no
+checking for fcntl.h... (cached) yes
+checking for sys/ioctl.h... (cached) yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking for sys/uio.h... (cached) yes
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking netinet/tcp.h usability... yes
+checking netinet/tcp.h presence... yes
+checking for netinet/tcp.h... yes
+checking how size_t is mangled... j
+checking for makeinfo... ${SHELL} /mnt/lfs/sources/gcc-10.2.0/missing makeinfo
+checking for modern makeinfo... yes
+checking for doxygen... no
+checking for dot... no
+checking for xmlcatalog... no
+checking for xsltproc... no
+checking for xmllint... no
+checking for local stylesheet directory... no
+checking for epub3 stylesheets for documentation creation... no
+checking for dblatex... no
+checking for pdflatex... no
+checking for CET support... no
+checking for gxx-include-dir... /tools/armv7l-lfs-linux-gnueabihf/include/c++/10.2.0
+checking for --enable-version-specific-runtime-libs... no
+checking for install location... /tools/armv7l-lfs-linux-gnueabihf/include/c++/10.2.0
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating scripts/testsuite_flags
+config.status: creating scripts/extract_symvers
+config.status: creating doc/xsl/customization.xsl
+config.status: creating include/Makefile
+config.status: creating libsupc++/Makefile
+config.status: creating src/Makefile
+config.status: creating src/c++98/Makefile
+config.status: creating src/c++11/Makefile
+config.status: creating src/c++17/Makefile
+config.status: creating src/filesystem/Makefile
+config.status: creating doc/Makefile
+config.status: creating po/Makefile
+config.status: creating testsuite/Makefile
+config.status: creating python/Makefile
+config.status: creating config.h
+config.status: executing default-1 commands
+config.status: executing libtool commands
+config.status: executing include/gstdint.h commands
+config.status: executing generate-headers commands
+echo timestamp > stamp-host

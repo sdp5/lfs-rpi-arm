@@ -1,0 +1,37 @@
+if ( test ! -d /tools/bin ) ; then mkdir -p /tools/bin ; fi
+if ( test ! -d /tools/lib ) ; then mkdir -p /tools/lib ; fi
+if ( test ! -d /tools/man ) ; then mkdir -p /tools/man ; fi
+if ( test ! -d /tools/man/man1 ) ; then mkdir -p /tools/man/man1 ; fi
+if ( test ! -d /tools/include ) ; then mkdir -p /tools/include ; fi
+cp -f bzip2 /tools/bin/bzip2
+cp -f bzip2 /tools/bin/bunzip2
+cp -f bzip2 /tools/bin/bzcat
+cp -f bzip2recover /tools/bin/bzip2recover
+chmod a+x /tools/bin/bzip2
+chmod a+x /tools/bin/bunzip2
+chmod a+x /tools/bin/bzcat
+chmod a+x /tools/bin/bzip2recover
+cp -f bzip2.1 /tools/man/man1
+chmod a+r /tools/man/man1/bzip2.1
+cp -f bzlib.h /tools/include
+chmod a+r /tools/include/bzlib.h
+cp -f libbz2.a /tools/lib
+chmod a+r /tools/lib/libbz2.a
+cp -f bzgrep /tools/bin/bzgrep
+ln -s -f /tools/bin/bzgrep /tools/bin/bzegrep
+ln -s -f /tools/bin/bzgrep /tools/bin/bzfgrep
+chmod a+x /tools/bin/bzgrep
+cp -f bzmore /tools/bin/bzmore
+ln -s -f /tools/bin/bzmore /tools/bin/bzless
+chmod a+x /tools/bin/bzmore
+cp -f bzdiff /tools/bin/bzdiff
+ln -s -f /tools/bin/bzdiff /tools/bin/bzcmp
+chmod a+x /tools/bin/bzdiff
+cp -f bzgrep.1 bzmore.1 bzdiff.1 /tools/man/man1
+chmod a+r /tools/man/man1/bzgrep.1
+chmod a+r /tools/man/man1/bzmore.1
+chmod a+r /tools/man/man1/bzdiff.1
+echo ".so man1/bzgrep.1" > /tools/man/man1/bzegrep.1
+echo ".so man1/bzgrep.1" > /tools/man/man1/bzfgrep.1
+echo ".so man1/bzmore.1" > /tools/man/man1/bzless.1
+echo ".so man1/bzdiff.1" > /tools/man/man1/bzcmp.1

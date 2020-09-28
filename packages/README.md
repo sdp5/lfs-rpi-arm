@@ -242,13 +242,3 @@ generally available and is useful for decompressing packages in XZ or LZMA forma
 
 ### Zlib
 This package contains compression and decompression routines used by some programs.
-
-
-# Downloads
-```
-$ wget --input-file=http://mirror.jaleco.com/lfs/pub/lfs/lfs-packages/9.0/wget-list --continue --directory-prefix=$LFS/sources
-$ wget https://intestinate.com/pilfs/patches/gcc-9.1.0-rpi1-cpu-default.patch -O $LFS/sources/gcc-9.1.0-rpi1-cpu-default.patch
-$ wget https://github.com/raspberrypi/linux/archive/rpi-5.0.y.tar.gz -O $LFS/sources/raspberrypi-linux-git.tar.gz
-$ wget https://github.com/raspberrypi/firmware/archive/master.tar.gz -O $LFS/sources/raspberrypi-firmware-git.tar.gz
-$ mkdir patches; mv *patch patches/
-```

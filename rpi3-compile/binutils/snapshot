@@ -1,0 +1,106 @@
+/tools
+|-- armv7l-lfs-linux-gnueabihf
+|   |-- bin
+|   |   |-- ar
+|   |   |-- as
+|   |   |-- ld
+|   |   |-- ld.bfd
+|   |   |-- nm
+|   |   |-- objcopy
+|   |   |-- objdump
+|   |   |-- ranlib
+|   |   |-- readelf
+|   |   `-- strip
+|   `-- lib
+|       `-- ldscripts
+|           |-- armelf_linux_eabi.x
+|           |-- armelf_linux_eabi.xbn
+|           |-- armelf_linux_eabi.xc
+|           |-- armelf_linux_eabi.xce
+|           |-- armelf_linux_eabi.xd
+|           |-- armelf_linux_eabi.xdc
+|           |-- armelf_linux_eabi.xdce
+|           |-- armelf_linux_eabi.xde
+|           |-- armelf_linux_eabi.xdw
+|           |-- armelf_linux_eabi.xdwe
+|           |-- armelf_linux_eabi.xe
+|           |-- armelf_linux_eabi.xn
+|           |-- armelf_linux_eabi.xr
+|           |-- armelf_linux_eabi.xs
+|           |-- armelf_linux_eabi.xsc
+|           |-- armelf_linux_eabi.xsce
+|           |-- armelf_linux_eabi.xse
+|           |-- armelf_linux_eabi.xsw
+|           |-- armelf_linux_eabi.xswe
+|           |-- armelf_linux_eabi.xu
+|           |-- armelf_linux_eabi.xw
+|           |-- armelf_linux_eabi.xwe
+|           |-- armelfb_linux_eabi.x
+|           |-- armelfb_linux_eabi.xbn
+|           |-- armelfb_linux_eabi.xc
+|           |-- armelfb_linux_eabi.xce
+|           |-- armelfb_linux_eabi.xd
+|           |-- armelfb_linux_eabi.xdc
+|           |-- armelfb_linux_eabi.xdce
+|           |-- armelfb_linux_eabi.xde
+|           |-- armelfb_linux_eabi.xdw
+|           |-- armelfb_linux_eabi.xdwe
+|           |-- armelfb_linux_eabi.xe
+|           |-- armelfb_linux_eabi.xn
+|           |-- armelfb_linux_eabi.xr
+|           |-- armelfb_linux_eabi.xs
+|           |-- armelfb_linux_eabi.xsc
+|           |-- armelfb_linux_eabi.xsce
+|           |-- armelfb_linux_eabi.xse
+|           |-- armelfb_linux_eabi.xsw
+|           |-- armelfb_linux_eabi.xswe
+|           |-- armelfb_linux_eabi.xu
+|           |-- armelfb_linux_eabi.xw
+|           `-- armelfb_linux_eabi.xwe
+|-- bin
+|   |-- armv7l-lfs-linux-gnueabihf-addr2line
+|   |-- armv7l-lfs-linux-gnueabihf-ar
+|   |-- armv7l-lfs-linux-gnueabihf-as
+|   |-- armv7l-lfs-linux-gnueabihf-c++filt
+|   |-- armv7l-lfs-linux-gnueabihf-elfedit
+|   |-- armv7l-lfs-linux-gnueabihf-gprof
+|   |-- armv7l-lfs-linux-gnueabihf-ld
+|   |-- armv7l-lfs-linux-gnueabihf-ld.bfd
+|   |-- armv7l-lfs-linux-gnueabihf-nm
+|   |-- armv7l-lfs-linux-gnueabihf-objcopy
+|   |-- armv7l-lfs-linux-gnueabihf-objdump
+|   |-- armv7l-lfs-linux-gnueabihf-ranlib
+|   |-- armv7l-lfs-linux-gnueabihf-readelf
+|   |-- armv7l-lfs-linux-gnueabihf-size
+|   |-- armv7l-lfs-linux-gnueabihf-strings
+|   `-- armv7l-lfs-linux-gnueabihf-strip
+`-- share
+    |-- info
+    |   |-- as.info
+    |   |-- bfd.info
+    |   |-- binutils.info
+    |   |-- dir
+    |   |-- gprof.info
+    |   `-- ld.info
+    `-- man
+        `-- man1
+            |-- armv7l-lfs-linux-gnueabihf-addr2line.1
+            |-- armv7l-lfs-linux-gnueabihf-ar.1
+            |-- armv7l-lfs-linux-gnueabihf-as.1
+            |-- armv7l-lfs-linux-gnueabihf-c++filt.1
+            |-- armv7l-lfs-linux-gnueabihf-dlltool.1
+            |-- armv7l-lfs-linux-gnueabihf-elfedit.1
+            |-- armv7l-lfs-linux-gnueabihf-gprof.1
+            |-- armv7l-lfs-linux-gnueabihf-ld.1
+            |-- armv7l-lfs-linux-gnueabihf-nm.1
+            |-- armv7l-lfs-linux-gnueabihf-objcopy.1
+            |-- armv7l-lfs-linux-gnueabihf-objdump.1
+            |-- armv7l-lfs-linux-gnueabihf-ranlib.1
+            |-- armv7l-lfs-linux-gnueabihf-readelf.1
+            |-- armv7l-lfs-linux-gnueabihf-size.1
+            |-- armv7l-lfs-linux-gnueabihf-strings.1
+            |-- armv7l-lfs-linux-gnueabihf-strip.1
+            |-- armv7l-lfs-linux-gnueabihf-windmc.1
+            `-- armv7l-lfs-linux-gnueabihf-windres.1
+
+9 directories, 94 files
