@@ -1,0 +1,122 @@
+make  all-recursive
+make[1]: Entering directory '/mnt/lfs/sources/patch-2.7.6'
+Making all in lib
+make[2]: Entering directory '/mnt/lfs/sources/patch-2.7.6/lib'
+  GEN      alloca.h
+  GEN      configmake.h
+  GEN      dirent.h
+  GEN      fcntl.h
+  GEN      getopt.h
+  GEN      getopt-cdefs.h
+  GEN      inttypes.h
+  GEN      limits.h
+  GEN      signal.h
+  GEN      stdio.h
+  GEN      stdlib.h
+  GEN      string.h
+  GEN      sys/stat.h
+  GEN      sys/time.h
+  GEN      sys/types.h
+  GEN      time.h
+  GEN      unistd.h
+  GEN      wchar.h
+  GEN      wctype.h
+make  all-am
+make[3]: Entering directory '/mnt/lfs/sources/patch-2.7.6/lib'
+  CC       argmatch.o
+  CC       backupfile.o
+  CC       backup-find.o
+  CC       bitrotate.o
+  CC       c-ctype.o
+  CC       c-strcasecmp.o
+  CC       c-strncasecmp.o
+  CC       cloexec.o
+  CC       opendir-safer.o
+  CC       dirname.o
+  CC       basename.o
+  CC       dirname-lgpl.o
+  CC       basename-lgpl.o
+  CC       stripslash.o
+  CC       exitfail.o
+  CC       chmodat.o
+  CC       chownat.o
+  CC       fd-hook.o
+  CC       fd-safer-flag.o
+  CC       dup-safer-flag.o
+  CC       filenamecat-lgpl.o
+  CC       full-write.o
+  CC       getprogname.o
+  CC       gettime.o
+  CC       hard-locale.o
+  CC       hash.o
+  CC       gl_linked_list.o
+  CC       gl_list.o
+  CC       localcharset.o
+  CC       malloca.o
+  CC       nstrftime.o
+  CC       openat-die.o
+  CC       parse-datetime.o
+  CC       progname.o
+  CC       quotearg.o
+  CC       renameat2.o
+  CC       safe-write.o
+  CC       save-cwd.o
+  CC       stat-time.o
+  CC       statat.o
+  CC       tempname.o
+  CC       timespec.o
+  CC       unistd.o
+  CC       dup-safer.o
+  CC       fd-safer.o
+  CC       pipe-safer.o
+  CC       utimens.o
+  CC       verror.o
+  CC       wctype-h.o
+  CC       xmalloc.o
+  CC       xalloc-die.o
+  CC       gl_xlist.o
+  CC       xsize.o
+  CC       xstrndup.o
+  CC       xvasprintf.o
+  CC       xasprintf.o
+  CC       asnprintf.o
+  CC       chdir-long.o
+  CC       fchownat.o
+  CC       fcntl.o
+  CC       getopt.o
+  CC       getopt1.o
+  CC       localtime-buffer.o
+  CC       mbrtowc.o
+  CC       memchr.o
+  CC       mktime.o
+  CC       openat-proc.o
+  CC       printf-args.o
+  CC       printf-parse.o
+  CC       time_rz.o
+  CC       timegm.o
+  CC       vasnprintf.o
+  CC       xmemdup0.o
+  GEN      charset.alias
+  GEN      ref-add.sed
+  GEN      ref-del.sed
+  AR       libpatch.a
+make[3]: Leaving directory '/mnt/lfs/sources/patch-2.7.6/lib'
+make[2]: Leaving directory '/mnt/lfs/sources/patch-2.7.6/lib'
+Making all in src
+make[2]: Entering directory '/mnt/lfs/sources/patch-2.7.6/src'
+  CC       inp.o
+  CC       patch.o
+  CC       pch.o
+  CC       safe.o
+  CC       util.o
+  CC       version.o
+  CC       merge.o
+  CCLD     patch
+make[2]: Leaving directory '/mnt/lfs/sources/patch-2.7.6/src'
+Making all in tests
+make[2]: Entering directory '/mnt/lfs/sources/patch-2.7.6/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/patch-2.7.6/tests'
+make[2]: Entering directory '/mnt/lfs/sources/patch-2.7.6'
+make[2]: Leaving directory '/mnt/lfs/sources/patch-2.7.6'
+make[1]: Leaving directory '/mnt/lfs/sources/patch-2.7.6'

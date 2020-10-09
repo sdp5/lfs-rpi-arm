@@ -1,0 +1,248 @@
+
+XZ Utils 5.2.5
+
+System type:
+checking build system type... armv7l-unknown-linux-gnueabihf
+checking host system type... armv7l-lfs-linux-gnueabihf
+
+Configure options:
+checking if debugging code should be compiled... no
+checking which encoders to build... lzma1 lzma2 delta x86 powerpc ia64 arm armthumb sparc
+checking which decoders to build... lzma1 lzma2 delta x86 powerpc ia64 arm armthumb sparc
+checking which match finders to build... hc3 hc4 bt2 bt3 bt4
+checking which integrity checks to build... crc32 crc64 sha256
+checking if external SHA-256 should be used... no
+checking if assembler optimizations should be used... no
+checking if small size is preferred over speed... no
+checking if threading support is wanted... yes, posix
+checking how much RAM to assume if the real amount is unknown... 128 MiB
+checking if library symbol versioning should be used... yes
+checking if sandboxing should be used... maybe (autodetect)
+
+checking for a shell that conforms to POSIX... /bin/sh
+
+Initializing Automake:
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for armv7l-lfs-linux-gnueabihf-strip... armv7l-lfs-linux-gnueabihf-strip
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether ln -s works... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for armv7l-lfs-linux-gnueabihf-gcc... armv7l-lfs-linux-gnueabihf-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether armv7l-lfs-linux-gnueabihf-gcc accepts -g... yes
+checking for armv7l-lfs-linux-gnueabihf-gcc option to accept ISO C89... none needed
+checking whether armv7l-lfs-linux-gnueabihf-gcc understands -c and -o together... yes
+checking dependency style of armv7l-lfs-linux-gnueabihf-gcc... gcc3
+checking for armv7l-lfs-linux-gnueabihf-gcc option to accept ISO C99... none needed
+checking dependency style of armv7l-lfs-linux-gnueabihf-gcc... gcc3
+checking how to run the C preprocessor... armv7l-lfs-linux-gnueabihf-gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+
+POSIX threading support:
+checking for a sed that does not truncate output... /bin/sed
+checking whether armv7l-lfs-linux-gnueabihf-gcc is Clang... no
+checking whether pthreads work with "-pthread" and "-lpthread"... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking whether more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... yes
+checking for library containing clock_gettime... none required
+checking for clock_gettime... yes
+checking for pthread_condattr_setclock... yes
+checking whether CLOCK_MONOTONIC is declared... yes
+
+Initializing Libtool:
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by armv7l-lfs-linux-gnueabihf-gcc... /mnt/lfs/tools/armv7l-lfs-linux-gnueabihf/bin/ld
+checking if the linker (/mnt/lfs/tools/armv7l-lfs-linux-gnueabihf/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /mnt/lfs/tools/bin/armv7l-lfs-linux-gnueabihf-nm -B
+checking the name lister (/mnt/lfs/tools/bin/armv7l-lfs-linux-gnueabihf-nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert armv7l-unknown-linux-gnueabihf file names to armv7l-lfs-linux-gnueabihf format... func_convert_file_noop
+checking how to convert armv7l-unknown-linux-gnueabihf file names to toolchain format... func_convert_file_noop
+checking for /mnt/lfs/tools/armv7l-lfs-linux-gnueabihf/bin/ld option to reload object files... -r
+checking for armv7l-lfs-linux-gnueabihf-objdump... armv7l-lfs-linux-gnueabihf-objdump
+checking how to recognize dependent libraries... pass_all
+checking for armv7l-lfs-linux-gnueabihf-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for armv7l-lfs-linux-gnueabihf-ar... armv7l-lfs-linux-gnueabihf-ar
+checking for archiver @FILE support... @
+checking for armv7l-lfs-linux-gnueabihf-strip... (cached) armv7l-lfs-linux-gnueabihf-strip
+checking for armv7l-lfs-linux-gnueabihf-ranlib... armv7l-lfs-linux-gnueabihf-ranlib
+checking command to parse /mnt/lfs/tools/bin/armv7l-lfs-linux-gnueabihf-nm -B output from armv7l-lfs-linux-gnueabihf-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for armv7l-lfs-linux-gnueabihf-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if armv7l-lfs-linux-gnueabihf-gcc supports -fno-rtti -fno-exceptions... no
+checking for armv7l-lfs-linux-gnueabihf-gcc option to produce PIC... -fPIC -DPIC
+checking if armv7l-lfs-linux-gnueabihf-gcc PIC flag -fPIC -DPIC works... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc static flag -static works... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc supports -c -o file.o... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc supports -c -o file.o... (cached) yes
+checking whether the armv7l-lfs-linux-gnueabihf-gcc linker (/mnt/lfs/tools/armv7l-lfs-linux-gnueabihf/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for armv7l-lfs-linux-gnueabihf-windres... no
+checking for windres... no
+
+Initializing gettext:
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld... /mnt/lfs/tools/armv7l-lfs-linux-gnueabihf/bin/ld
+checking if the linker (/mnt/lfs/tools/armv7l-lfs-linux-gnueabihf/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... yes
+checking for the common suffixes of directories in the library search path... lib,lib
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+
+System headers and functions:
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking immintrin.h usability... no
+checking immintrin.h presence... no
+checking for immintrin.h... no
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for int32_t... yes
+checking for uint32_t... yes
+checking for int64_t... yes
+checking for uint64_t... yes
+checking for uintptr_t... yes
+checking size of size_t... 4
+checking for struct stat.st_atim.tv_nsec... yes
+checking for struct stat.st_atimespec.tv_nsec... no
+checking for struct stat.st_atimensec... no
+checking for struct stat.st_uatime... no
+checking for struct stat.st_atim.st__tim.tv_nsec... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... 64
+checking whether byte ordering is bigendian... no
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking for getopt_long... yes
+checking whether optreset is declared... no
+checking for futimens... yes
+checking for posix_fadvise... yes
+checking whether program_invocation_name is declared... yes
+checking if __builtin_bswap16/32/64 are supported... yes
+checking if unaligned memory access should be used... no
+checking if unsafe type punning should be used... no
+checking if __builtin_assume_aligned is supported... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking how to detect the amount of physical memory... sysconf
+checking for sys/param.h... (cached) yes
+checking how to detect the number of available CPU cores... sched_getaffinity
+checking whether mbrtowc and mbstate_t are properly declared... yes
+checking for wcwidth... yes
+checking whether _mm_movemask_epi8 is declared... no
+checking sys/capsicum.h usability... no
+checking sys/capsicum.h presence... no
+checking for sys/capsicum.h... no
+checking whether cap_rights_limit is declared... no
+
+GCC extensions:
+checking whether the -Werror option is usable... yes
+checking for simple visibility declarations... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wall... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wextra... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wvla... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wformat=2... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Winit-self... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wmissing-include-dirs... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wstrict-aliasing... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wfloat-equal... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wundef... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wshadow... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wpointer-arith... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wbad-function-cast... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wwrite-strings... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wlogical-op... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Waggregate-return... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wstrict-prototypes... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wold-style-definition... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wmissing-prototypes... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wmissing-declarations... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wmissing-noreturn... yes
+checking if armv7l-lfs-linux-gnueabihf-gcc accepts -Wredundant-decls... yes
+
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Doxyfile
+config.status: creating Makefile
+config.status: creating po/Makefile.in
+config.status: creating lib/Makefile
+config.status: creating src/Makefile
+config.status: creating src/liblzma/Makefile
+config.status: creating src/liblzma/api/Makefile
+config.status: creating src/xz/Makefile
+config.status: creating src/xzdec/Makefile
+config.status: creating src/lzmainfo/Makefile
+config.status: creating src/scripts/Makefile
+config.status: creating tests/Makefile
+config.status: creating debug/Makefile
+config.status: creating src/scripts/xzdiff
+config.status: creating src/scripts/xzgrep
+config.status: creating src/scripts/xzmore
+config.status: creating src/scripts/xzless
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile

@@ -1,0 +1,192 @@
+make  all-recursive
+make[1]: Entering directory '/mnt/lfs/sources/grep-3.4'
+Making all in po
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.4/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.4/po'
+Making all in lib
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.4/lib'
+  GEN      alloca.h
+  GEN      configmake.h
+  GEN      ctype.h
+  GEN      dirent.h
+  GEN      fcntl.h
+  GEN      fnmatch.h
+  GEN      getopt.h
+  GEN      getopt-cdefs.h
+  GEN      iconv.h
+  GEN      inttypes.h
+  GEN      langinfo.h
+  GEN      limits.h
+  GEN      locale.h
+  GEN      signal.h
+  GEN      stdio.h
+  GEN      stdlib.h
+  GEN      string.h
+  GEN      sys/stat.h
+  GEN      time.h
+  GEN      sys/types.h
+  GEN      unistd.h
+  GEN      unistr.h
+  GEN      unitypes.h
+  GEN      uniwidth.h
+  GEN      wchar.h
+  GEN      wctype.h
+make  all-am
+make[3]: Entering directory '/mnt/lfs/sources/grep-3.4/lib'
+  CC       argmatch.o
+  CC       openat-proc.o
+  CC       binary-io.o
+  CC       bitrotate.o
+  CC       c-ctype.o
+  CC       c-stack.o
+  CC       c-strcasecmp.o
+  CC       c-strncasecmp.o
+  CC       cloexec.o
+  CC       close-stream.o
+  CC       closeout.o
+  CC       cycle-check.o
+  CC       dfa.o
+  CC       localeinfo.o
+  CC       dirname-lgpl.o
+  CC       basename-lgpl.o
+  CC       stripslash.o
+  CC       exclude.o
+  CC       exitfail.o
+  CC       creat-safer.o
+  CC       open-safer.o
+  CC       fd-hook.o
+  CC       fd-safer-flag.o
+  CC       dup-safer-flag.o
+  CC       filenamecat-lgpl.o
+  CC       getprogname.o
+  CC       hard-locale.o
+  CC       hash.o
+  CC       i-ring.o
+  CC       localcharset.o
+  CC       malloca.o
+  CC       mbchar.o
+  CC       mbiter.o
+  CC       mbscasecmp.o
+  CC       mbslen.o
+  CC       mbsstr.o
+  CC       mbuiter.o
+  CC       memchr2.o
+  CC       openat-die.o
+  CC       openat-safer.o
+  CC       opendirat.o
+  CC       propername.o
+  CC       quotearg.o
+  CC       safe-read.o
+  CC       save-cwd.o
+  CC       setlocale_null.o
+  CC       sig-handler.o
+  CC       stat-time.o
+  CC       striconv.o
+  CC       strnlen1.o
+  CC       glthread/threadlib.o
+  CC       trim.o
+  CC       unistd.o
+  CC       dup-safer.o
+  CC       fd-safer.o
+  CC       pipe-safer.o
+  CC       version-etc.o
+  CC       version-etc-fsf.o
+  CC       wctype-h.o
+  CC       xmalloc.o
+  CC       xalloc-die.o
+  CC       xbinary-io.o
+  CC       xstriconv.o
+  CC       xstrtoimax.o
+  CC       xstrtol.o
+  CC       xstrtoul.o
+  CC       chdir-long.o
+  CC       fcntl.o
+  CC       fnmatch.o
+  CC       fts.o
+  CC       getopt.o
+  CC       getopt1.o
+  CC       mbrlen.o
+  CC       mbrtowc.o
+  CC       memchr.o
+  CC       obstack.o
+  CC       regex.o
+  CC       strerror.o
+  CC       strstr.o
+  CC       glthread/lock.o
+  CC       unistr/u8-mbtoucr.o
+  CC       unistr/u8-uctomb.o
+  CC       unistr/u8-uctomb-aux.o
+  CC       uniwidth/width.o
+  CC       colorize.o
+  AR       libgreputils.a
+make[3]: Leaving directory '/mnt/lfs/sources/grep-3.4/lib'
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.4/lib'
+Making all in doc
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.4/doc'
+  GEN      grep.1
+  GEN      fgrep.1
+  GEN      egrep.1
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.4/doc'
+Making all in src
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.4/src'
+  CC       dfasearch.o
+  CC       grep.o
+  CC       kwsearch.o
+  CC       kwset.o
+  CC       searchutils.o
+  GEN      egrep
+  GEN      fgrep
+  CCLD     grep
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.4/src'
+Making all in tests
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.4/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.4/tests'
+Making all in gnulib-tests
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.4/gnulib-tests'
+  GEN      arpa/inet.h
+  GEN      sched.h
+  GEN      pthread.h
+  GEN      sys/ioctl.h
+  GEN      sys/select.h
+  GEN      sys/socket.h
+  GEN      sys/time.h
+  GEN      sys/uio.h
+make  all-recursive
+make[3]: Entering directory '/mnt/lfs/sources/grep-3.4/gnulib-tests'
+Making all in .
+make[4]: Entering directory '/mnt/lfs/sources/grep-3.4/gnulib-tests'
+  CC       locale.o
+  CC       hash-pjw.o
+  CC       imaxtostr.o
+  CC       inttostr.o
+  CC       offtostr.o
+  CC       uinttostr.o
+  CC       umaxtostr.o
+  CC       localename.o
+  CC       localename-table.o
+  CC       sockets.o
+  CC       sys_socket.o
+  CC       xsize.o
+  CC       xstrtol-error.o
+  CC       asnprintf.o
+  CC       ioctl.o
+  CC       localtime-buffer.o
+  CC       nanosleep.o
+  CC       perror.o
+  CC       printf-args.o
+  CC       printf-parse.o
+  CC       strerror_r.o
+  CC       vasnprintf.o
+  CC       test-localcharset.o
+  CC       glthread/thread.o
+  AR       libtests.a
+  CCLD     current-locale
+  CCLD     test-localcharset
+make[4]: Leaving directory '/mnt/lfs/sources/grep-3.4/gnulib-tests'
+make[3]: Leaving directory '/mnt/lfs/sources/grep-3.4/gnulib-tests'
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.4/gnulib-tests'
+make[2]: Entering directory '/mnt/lfs/sources/grep-3.4'
+make[2]: Leaving directory '/mnt/lfs/sources/grep-3.4'
+make[1]: Leaving directory '/mnt/lfs/sources/grep-3.4'

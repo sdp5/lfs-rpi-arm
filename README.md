@@ -76,10 +76,13 @@ source ~/.bash_profile
 
 | Compile toolchain logs: 
 [rpi1](https://github.com/sundeep-anand/lfs-rpi-arm/tree/master/rpi1-compile/), 
-[rpi3](https://github.com/sundeep-anand/lfs-rpi-arm/tree/master/rpi3-compile/)
+[rpi3](https://github.com/sundeep-anand/lfs-rpi-arm/tree/master/rpi3-compile/ch5)
 
 #### Chapter 6
     shows you how to cross-compile basic utilities using the just built cross-toolchain.
+
+| Cross compiling temporary tools logs: 
+[rpi3](https://github.com/sundeep-anand/lfs-rpi-arm/tree/master/rpi3-compile/ch6)
 
 #### Chapter 7
     then enters a "chroot" environment and uses the previously built tools to build the additional tools needed to build and test the final system.

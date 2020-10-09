@@ -1,0 +1,136 @@
+  GEN      lib/alloca.h
+  GEN      lib/ctype.h
+  GEN      lib/fcntl.h
+  GEN      lib/getopt.h
+  GEN      lib/getopt-cdefs.h
+  GEN      lib/langinfo.h
+  GEN      lib/inttypes.h
+  GEN      lib/limits.h
+  GEN      lib/locale.h
+  GEN      lib/selinux/selinux.h
+  GEN      lib/selinux/context.h
+  GEN      lib/stdio.h
+  GEN      lib/stdlib.h
+  GEN      lib/string.h
+  GEN      lib/sys/stat.h
+  GEN      lib/sys/time.h
+  GEN      lib/sys/types.h
+  GEN      lib/time.h
+  GEN      lib/unistd.h
+  GEN      lib/wchar.h
+  GEN      lib/wctype.h
+  GEN      sed/version.c
+  GEN      sed/version.h
+make  all-recursive
+make[1]: Entering directory '/mnt/lfs/sources/sed-4.8'
+Making all in po
+make[2]: Entering directory '/mnt/lfs/sources/sed-4.8/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/mnt/lfs/sources/sed-4.8/po'
+Making all in .
+make[2]: Entering directory '/mnt/lfs/sources/sed-4.8'
+  CC       sed/version.o
+  CC       sed/sed-compile.o
+  CC       sed/sed-debug.o
+  CC       sed/sed-execute.o
+  CC       sed/sed-mbcs.o
+  CC       sed/sed-regexp.o
+  CC       sed/sed-sed.o
+  CC       sed/sed-utils.o
+  CC       lib/copy-acl.o
+  CC       lib/set-acl.o
+  CC       lib/acl-errno-valid.o
+  CC       lib/acl-internal.o
+  CC       lib/get-permissions.o
+  CC       lib/set-permissions.o
+  CC       lib/binary-io.o
+  CC       lib/c-ctype.o
+  CC       lib/c-strcasecmp.o
+  CC       lib/c-strncasecmp.o
+  CC       lib/close-stream.o
+  CC       lib/closeout.o
+  CC       lib/dfa.o
+  CC       lib/localeinfo.o
+  CC       lib/dirname-lgpl.o
+  CC       lib/basename-lgpl.o
+  CC       lib/stripslash.o
+  CC       lib/exitfail.o
+  CC       lib/getprogname.o
+  CC       lib/hard-locale.o
+  CC       lib/localcharset.o
+  CC       lib/malloca.o
+  CC       lib/glthread/lock.o
+  CC       lib/progname.o
+  CC       lib/qcopy-acl.o
+  CC       lib/qset-acl.o
+  CC       lib/quotearg.o
+  CC       lib/se-context.o
+  CC       lib/se-selinux.o
+  CC       lib/setlocale_null.o
+  CC       lib/stat-time.o
+  CC       lib/tempname.o
+  CC       lib/glthread/threadlib.o
+  CC       lib/unistd.o
+  CC       lib/version-etc.o
+  CC       lib/version-etc-fsf.o
+  CC       lib/wctype-h.o
+  CC       lib/xmalloc.o
+  CC       lib/xalloc-die.o
+  CC       lib/getopt.o
+  CC       lib/getopt1.o
+  CC       lib/localtime-buffer.o
+  CC       lib/mbrlen.o
+  CC       lib/mbrtowc.o
+  CC       lib/memchr.o
+  CC       lib/obstack.o
+  CC       lib/regex.o
+  CC       lib/strerror.o
+  AR       sed/libver.a
+  AR       lib/libsed.a
+  CCLD     sed/sed
+make[2]: Leaving directory '/mnt/lfs/sources/sed-4.8'
+Making all in gnulib-tests
+make[2]: Entering directory '/mnt/lfs/sources/sed-4.8/gnulib-tests'
+  GEN      dirent.h
+  GEN      arpa/inet.h
+  GEN      sched.h
+  GEN      pthread.h
+  GEN      sys/ioctl.h
+  GEN      signal.h
+  GEN      sys/select.h
+  GEN      sys/socket.h
+  GEN      sys/uio.h
+make  all-recursive
+make[3]: Entering directory '/mnt/lfs/sources/sed-4.8/gnulib-tests'
+Making all in .
+make[4]: Entering directory '/mnt/lfs/sources/sed-4.8/gnulib-tests'
+  CC       locale.o
+  CC       cloexec.o
+  CC       fd-hook.o
+  CC       file-has-acl.o
+  CC       freading.o
+  CC       localename.o
+  CC       localename-table.o
+  CC       read-file.o
+  CC       sig-handler.o
+  CC       sockets.o
+  CC       sys_socket.o
+  CC       fcntl.o
+  CC       fflush.o
+  CC       fpurge.o
+  CC       fseek.o
+  CC       ioctl.o
+  CC       fseeko.o
+  CC       nanosleep.o
+  CC       perror.o
+  CC       pthread_sigmask.o
+  CC       strerror_r.o
+  CC       test-localcharset.o
+  CC       glthread/thread.o
+  AR       libtests.a
+  CCLD     test-localcharset
+  CCLD     current-locale
+make[4]: Leaving directory '/mnt/lfs/sources/sed-4.8/gnulib-tests'
+make[3]: Leaving directory '/mnt/lfs/sources/sed-4.8/gnulib-tests'
+make[2]: Leaving directory '/mnt/lfs/sources/sed-4.8/gnulib-tests'
+make[1]: Leaving directory '/mnt/lfs/sources/sed-4.8'
